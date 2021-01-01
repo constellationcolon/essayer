@@ -730,11 +730,7 @@ makers their audiences to pay attention to superficial attention.
 [upday]: https://play.google.com/store/apps/details?id=de.axelspringer.yana
 [voa-trump]: https://www.theguardian.com/us-news/2020/aug/31/voice-of-america-journalists-trump-boss-michael-pack
 
-
-<div class="essai-bibliography">
-{% bibliography --cited %}
-</div>
-
+{% include bibliography.html %}
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
