@@ -46,6 +46,18 @@ speak. Trimming the fat, but keeping the scraps, just in case they come in
 useful later on. Also helpful for being honest with yourself: human
 endeavours are never borne of immaculate conception.
 
+<!-- harold innis: the dogma of the written word vs git -->
+<!-- the public philosophy
+> In a Socratic dialogue the disputants are arguing co-operatively in order to
+> acquire more wisdom than either of them had when he began. In a sophistical
+> argument the sophist is out to win a case, using rhetoric and not dialectic.
+> "Both alike," says Aristotle, "are concerned with such things as come, more
+> or less, within the general ken of all men and belong to no definite
+> science." But while "dialectic is a process of criticism wherein lies the
+> path to the principles of all inquiries", "rhetoric is concerned with the
+> modes of persuasion."
+-->
+
 [^1]: Disclaimer: am not French. It is possible that this is so obvious that
     they _don't_ bother telling you that when you read it as a French person.
 

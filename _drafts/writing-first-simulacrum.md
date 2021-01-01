@@ -1,7 +1,7 @@
 ---
 layout:     essai
-title:      Writing: the First Simulacrum
-subtitle:   or, The Case Against Writing: An Essay
+title:      "Writing: the First Simulacrum"
+subtitle:   "or, The Case Against Writing: An Essay"
 ---
 
 At the confluence of several rivers of ideas I've been tracing recently, I

@@ -37,7 +37,9 @@ nlp, bag of words: tokenising our narratives and expositions to ???
 reification of (generative) art
 
 semantic drain and the meaninglessness of modern work / plastic words /
-that orwell essay?
+orwell: the english language
+
+{% cite spell-of-the-sensuous %} cf The Flesh of Language.
 
 advertising / marketing:
 tech companies: like a magpie or hermit crab collecting trinkets to pretend to
