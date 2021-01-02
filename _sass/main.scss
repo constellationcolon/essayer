@@ -1,27 +1,200 @@
-:root {
-  --ice: rgb(241, 247, 249);
-  --fog: rgb(219, 220, 228);
-  --steel: rgb(161, 163, 173);
-  --stormborn: rgb(76, 78, 101);
-  --chocolate: rgb(11, 5, 1);
-  --cedar: rgb(32, 25, 11);
-  --olive: rgb(77, 66, 44);
-  --parchment: rgb(208, 168, 122);
+// DEBUGGING
+// grid
+// body {
+//   background-size: $grid $grid;
+//   background-image:
+//     linear-gradient(to right, $color-cedar 1px, transparent 1px),
+//     linear-gradient(to bottom, $color-cedar 1px, transparent 1px);
+// }
+// dots
+// body {
+//   background-size: $grid $grid;
+//   background-image: radial-gradient(
+//     circle, $color-cedar 1px, rgba(0, 0, 0, 0) 1px
+//   );
+// }
+
+* { margin: 0; padding: 0; }
+
+html {
+  font-size: $root-em;
+  padding: $margin;
+  line-height: $grid;
 }
 
-
 body {
-  font-family: "Space Mono", monospace;
-  font-size: 11px;
+  font-family: $font-family-mono;
   text-underline-offset: 0.2em;
-  background-color: var(--ice);
-  color: var(--stormborn);
+  max-width: $body-max-width;
+  margin: auto;
+  counter-reset: sidenote-counter;
+  background-color: $color-ice;
+  color: $color-stormborn;
+}
+
+body.dark-mode {
+  background-color: $color-chocolate;
+  color: $color-parchment;
+}
+
+p, div.bibliography {
+  max-width: $left-width;
+}
+
+@media screen and (max-width: $single-column-threshold) {
+  html { font-size: 2.5vw; padding: $single-column-margin; }
+  p, div.bibliography { max-width: 100%; }
+}
+
+// HEADINGS
+h1 {
+  font-family: "Cormorant Unicase";
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: #{($grid * 5)};
+  margin-top: #{($grid * 5)};
+  padding-top: 22.5px; 
+  margin-bottom: -22.5px;
+}
+
+h2, h3 {
+  font-style: italic;
+  font-weight: normal;
+  line-height: #{($grid * 2)};
+  margin-top: #{($grid * 3)};
+}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+h4, h5, h6 {
+  font-family: "Cormorant SC";
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  line-height: $grid;
+  margin-top: #{($grid * 2)};
+}
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+// TEXT
+p {
+  margin-block-start: $grid;
+  margin-block-end: $grid;
 }
 
 code {
-  font-family: "Space Mono", monospace;
+  font-family: $font-family-mono;
   font-size: 0.8em;
+  line-height: 15px;
 }
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 0.75em;
+}
+
+sup { top: -0.5em; }
+
+sub { top: 0.5em; }
+
+.essai {
+  font-family: $font-family-serif;
+  font-size: $font-size-essai;
+  line-height: #{($grid * 2)};
+}
+
+.main-text>p:first-child,
+.main-text>div>p:first-child {
+  margin-top: #{($grid * 2)};
+}
+
+.main-text p:first-child {
+  text-indent: initial;
+}
+
+.main-text p {
+  text-indent: 1em;
+  padding-top: 10px;
+  margin-bottom: -11.5px;
+}
+
+.small-caps {
+  font-family: "Cormorant SC";
+  text-transform: lowercase;
+}
+
+// OTHERS
+nav {
+  height: $grid;
+  margin-bottom: #{($grid * 2)};
+}
+
+// TUFTE
+.sidenote {
+  position: relative;
+  top: 10px;
+  margin-bottom: -11.5px;
+  float: right;
+  clear: right;
+  width: 40%;
+  margin-right: -50%;
+  margin-block-end: $grid;
+  font-size: $font-size-note;
+  line-height: $grid;
+  vertical-align: baseline;
+  text-indent: 0;
+}
+
+.sidenote-number { counter-increment: sidenote-counter; }
+.sidenote-number:after { content: counter(sidenote-counter); }
+.sidenote:before { content: counter(sidenote-counter) ".\000a0"; }
+input.sidenote-toggle { display: none; }
+
+
+@media screen and (max-width: $single-column-threshold) {
+  .sidenote { display: none; }
+  .sidenote-number { text-decoration: underline; cursor: pointer; }
+  .sidenote-toggle:checked + .sidenote {
+    display: block;
+    top: 0;
+    float: left;
+    clear: both;
+    width: calc(100% - 2em);
+    margin: ($grid / 2) 0;
+    padding-left: 1em;
+    padding-right: 1em; 
+  }
+}
+
+// SCHOLAR
+
+.citation { white-space: nowrap; }
+
+.essai-bibliography { font-size: $font-size-note; }
+
+div.bibliography>div {
+  line-height: $grid;
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-block-start: $grid;
+  margin-block-end: $grid;
+}
+
+
+// OLD ========================================================================
+// body {
+// font-family: $font-family-mono;
+// font-size: 11px;
+// text-underline-offset: 0.2em;
+// background-color: $color-ice;
+// color: $color-stormborn;
+// }
+
 
 nav a {
   text-decoration: none;
@@ -32,29 +205,26 @@ nav a {
   margin-left: 1em;
 }
 
-.main {
-  max-width: 80ch;
-  margin: auto;
-}
-
+// .main {
+//   max-width: 80ch;
+//   margin: auto;
+// }
 a {
-  color: var(--stormborn);
+  color: $color-stormborn;
 }
 
-.dark-mode {
-  background-color: var(--chocolate);
-  color: var(--parchment);
-}
-
+// .dark-mode {
+//   background-color: $color-chocolate;
+//   color: $color-parchment;
+// }
 .dark-mode-text {
-  color: var(--parchment);
+  color: $color-parchment;
 }
 
-.essai {
-  font-family: 'Cormorant Garamond', serif, 'STFangSong';
-  font-size: 1.56em;
-}
-
+// .essai {
+//   font-family: $font-family-serif;
+//   font-size: 1.56em;
+// }
 .essai blockquote {
   font-size: 0.9em;
   margin-top: 2em;
@@ -81,20 +251,20 @@ a#title {
   line-height: initial;
 }
 
-sup,
-sub {
-  vertical-align: baseline;
-  position: relative;
-  font-size: 0.75em;
-}
+// sup,
+// sub {
+//   vertical-align: baseline;
+//   position: relative;
+//   font-size: 0.75em;
+// }
 
-sup {
-  top: -0.5em;
-}
+// sup {
+//   top: -0.5em;
+// }
 
-sub {
-  top: 0.5em;
-}
+// sub {
+//   top: 0.5em;
+// }
 
 #home {
   text-align: left;
@@ -103,32 +273,30 @@ sub {
   text-transform: uppercase;
 }
 
-.main-text p {
-  text-indent: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.6em;
-}
-
-.main-text p:first-child {
-  text-indent: initial;
-}
-
-.main-text>p:first-child,
-.main-text>div>p:first-child{
-  margin-top: 3em;
-}
-
+// .main-text p {
+//   text-indent: 1em;
+//   margin-top: 0.5em;
+//   margin-bottom: 0.5em;
+//   // line-height: 1.6em;
+// }
+// .main-text p:first-child {
+//   text-indent: initial;
+// }
+// .main-text>p:first-child,
+// .main-text>div>p:first-child{
+//   margin-top: 3em;
+// }
 .section-break {
   text-align: center;
   font-style: italic;
   margin: 1em 0;
 }
 
-.image > img {
+.image>img {
   width: 100%;
 }
-.image > figcaption {
+
+.image>figcaption {
   font-family: 'Cormorant Upright';
   font-size: 0.8em;
 }
@@ -147,10 +315,10 @@ figcaption {
 }
 
 /* font styles */
-
 sc {
   text-transform: uppercase;
 }
+
 .essai sc {
   text-transform: initial;
   font-family: 'Cormorant SC';
@@ -160,56 +328,50 @@ sc {
   font-family: 'Cormorant Unicase'
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant Unicase";
-  text-transform: lowercase;
-  font-weight: normal;
-  text-align: center;
-}
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: "Cormorant Unicase";
+//   text-transform: lowercase;
+//   font-weight: normal;
+//   text-align: center;
+// }
+// h1 {
+//   margin-bottom: 1em;
+//   font-size: 1.2em;
+// }
+// h2 {
+//   font-family: "Cormorant SC";
+//   font-size: 1em;
+//   margin-top: 2em;
+// }
+// h3 {
+//   font-family: "Cormorant SC";
+//   font-size: 0.8em;
+// }
+// h4 { font-size: 0.6em; }
+// h5 { font-size: 0.4em; }
+// h6 { font-size: 0.2em; }
+// h2.bibliography {
+//   margin-top: 2em;
+// }
+// div.bibliography>div {
+//   margin-top: 0.5em;
+//   margin-bottom: 0.5em;
+//   text-indent: -1em;
+//   padding-left: 1em;
+// }
 
-h1 {
-  margin-bottom: 1em;
-  font-size: 1.2em;
-}
+// .essai-bibliography {
+//   font-size: 0.8em;
+//   margin-top: 5em;
+// }
 
-h2 {
-  font-family: "Cormorant SC";
-  font-size: 1em;
-  margin-top: 2em;
-}
-
-h3 {
-  font-family: "Cormorant SC";
-  font-size: 0.8em;
-}
-
-h4 { font-size: 0.6em; }
-h5 { font-size: 0.4em; }
-h6 { font-size: 0.2em; }
-
-h2.bibliography {
-  margin-top: 2em;
-}
-
-div.bibliography > div {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  text-indent: -1em;
-  padding-left: 1em;
-}
-
-.essai-bibliography {
-  font-size: 0.8em;
-  margin-top: 5em;
-}
-
-.citation {
-  vertical-align: baseline;
-  position: relative;
-  font-size: 0.75em;
-  top: -0.5em;
-  white-space: nowrap;
-}
+// .citation {
+//   vertical-align: baseline;
+//   position: relative;
+//   font-size: 0.75em;
+//   top: -0.5em;
+//   white-space: nowrap;
+// }
 
 ol {
   padding-inline-start: 0em;
@@ -223,28 +385,32 @@ li {
   font-family: "Byom Icons";
   font-size: 0.8em;
 }
+
 .wiki {
   font-family: "Linux Libertine";
   letter-spacing: -0.8ch;
 }
-.cw > .cw-text {
+
+.cw>.cw-text {
   display: none;
   font-size: 0.8em;
   text-decoration: none;
-  color: var(--steel);
+  color: $color-steel;
 }
-.dark-mode .cw > .cw-text {
-  color: var(--olive);
+
+.dark-mode .cw>.cw-text {
+  color: $color-olive;
 }
-.cw:hover > .cw-text {
+
+.cw:hover>.cw-text {
   display: inline;
 }
 
 #author {
-   border-top: 1px solid var(--stormborn);
-   padding: 0.2em;
+  border-top: 1px solid $color-stormborn;
+  padding: 0.2em;
 }
 
 #author.dark-author {
-  border-top: 1px solid var(--parchment);
+  border-top: 1px solid $color-parchment;
 }

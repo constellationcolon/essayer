@@ -1,0 +1,31 @@
+
+$font-family-serif: "Cormorant Garamond", serif, "STFangSong";
+$font-family-mono: "Space Mono", monospace;
+
+// COLORS
+//// light mode
+$color-ice: rgb(241, 247, 249);         // background
+$color-fog: rgb(219, 220, 228);
+$color-steel: rgb(161, 163, 173);       // secondary text
+$color-stormborn: rgb(76, 78, 101);     // text
+//// dark mode
+$color-chocolate: rgb(11, 5, 1);        // background
+$color-cedar: rgb(32, 25, 11);
+$color-olive: rgb(77, 66, 44);          // secondary text
+$color-parchment: rgb(208, 168, 122);   // text
+
+$grid: 16px;
+
+$body-max-width: 72em;
+$single-column-threshold: 42em;
+$single-column-margin: 5vw;
+
+$left-width: 66%;
+
+$margin: #{($grid * 5)};
+$gutter: 2rem;
+
+
+$root-em: 11px;
+$font-size-essai: 1.56rem;
+$font-size-note: 1.08rem;

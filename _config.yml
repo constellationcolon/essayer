@@ -17,6 +17,7 @@ scholar:
   bibliography_template: bib
   bibliography_list_tag: div
   bibliography_item_tag: div
+  bibliography_group_tag: "h5,h6"
   bibtex_filters: [htmllinks]
   details_layout: bib-detail.html
   details_link: ✒︎
