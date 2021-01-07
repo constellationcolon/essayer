@@ -13,7 +13,7 @@ Southeast Asia_{% cite the-art-of-not-being-governed %}, where James C. Scott
 draws the link between writing state bureaucrats, and the oral traditions—and
 indeed, strategies—of state-evading peoples.
 
-By happy coincidence, I've been listening rather a lot to the IDEAS episodes
+By happy coincidence, I've been listening rather a lot to the *Ideas* episodes
 that David Cayley had produced over the years. Coming out of reading Scott, I
 jumped on _Modes of Thought_{% cite modes-of-thought %} as the logical
 continuation of that re-examination of literacy. Discussed therein: speech can

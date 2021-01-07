@@ -5,26 +5,26 @@ key: public-opinion
 It's easy to see why Walter Lippmann gets slammed for flagrant elitism.
 
 To be sure, *Public Opinion* is one momentous book; which other can claim to
-not only have coined the term <span class="sc">stereotype</span>, but also the
-phrase <span class="sc">the manufacture of consent</span>{% sidenote
-%}Referenced variously by {% cite engineering-consent %}, {% cite
-manufacturing-consent %}, {% cite engineering-public %}, amongst others.{%
-endsidenote %}? With fortuitous beginnings he points out that we who live in
-societies with spheres of influence beyond the direct experience of our 5
-senses, must inevitably act on and react to a *mediated* reality, to
-representations of fickle fidelity to the situation on the ground.
+not only have coined the term {% sc stereotype %}, but also the phrase {% sc
+the manufacture of consent %}{% sidenote %}Referenced variously by {% cite
+engineering-consent %}, {% cite manufacturing-consent %}, {% cite
+engineering-public %}, amongst others.{% endsidenote %}? With fortuitous
+beginnings he points out that we who live in societies with spheres of
+influence beyond the direct experience of our 5 senses, must inevitably act on
+and react to a *mediated* reality, to representations of fickle fidelity to
+the situation on the ground.
 
 > Now in any society that is not completely self-contained in its interests
 > and so small that everyone can know all about everything that happens,
 > ideas deal with events that are out of sight and hard to grasp.
 > {% cite public-opinion -L chapter -l 3 %}
 
-If the situation he wrote of in 1922 seems strangely familiar to our post-2016,
-filter bubble consciousness, it is probably because the situation has not
-improved in the slightest (read: it's worse). To situate ourselves a little in
-time, 1922 was right about when the TV was busy getting invented, but it wasn't
-really until the world had limped through two world wars that the average
-family had a TV set in their home.
+If the situation he wrote of in 1922 seems strangely familiar to our
+post-2016, filter bubble consciousness, it is probably because the situation
+has not improved in the slightest (read: it's worse). To situate ourselves a
+little in time, 1922 was right about when the {% sc TV %} was busy getting
+invented, but it wasn't really until the world had limped through two world
+wars that the average family had a {% sc TV %} set in their home.
 
 So imagine yourself as Lippmann, having 'gone to school in Boston', already
 writing about such mediation difficulties in an era with just the

@@ -33,8 +33,9 @@ scientist at Chartbeat.{% sidenote %}
     actually producing journalism people cared about.
 {% endsidenote %}, publishers were obsessed with the latest referral trends, 
 restless in their search for the next big source of eyeballs. Part of my job
-was to wrangle a rubbery spaghetti of referral URLs into comprehensible
-insights about how much traffic each website or app was sending to publishers.
+was to wrangle a rubbery spaghetti of referral {% sc URL %}s into
+comprehensible insights about how much traffic each website or app was sending
+to publishers.
 
 Unsurprisingly, the top 2 spots in the referral rankings invariably went to
 the duopoly, Google and Facebook, driving an order of magnitude more traffic
@@ -148,7 +149,7 @@ as human operators to specify an instruction for the machine.
 
 The unflattering denotation of the default was probably not lost on early
 designers of computer systems. Bruce Tognazzini, writing design guidelines for
-the Apple *IIe*, for instance, opens the section on 'Defaults'{% sidenote %}{% cite apple-iie-design -L page -l 37 %}{% endsidenote %} thus:
+the Apple *{% sc II %}e*, for instance, opens the section on 'Defaults'{% sidenote %}{% cite apple-iie-design -L page -l 37 %}{% endsidenote %} thus:
 
 > Please do not ever use the word default in a program designed for humans.
 > Default is something the mortgage went into right before the evil banker
@@ -283,7 +284,7 @@ What the *New York Times* doesn't tell you, when it propagates its
 Are the Product"][u-r-product] of the social networks, is that the mass media
 in crisis today was *itself* established on selling you, the consumer, as a
 product{% sidenote television-delivers-people %}
-    [{% cite television-delivers-people %}] AFAIK,
+    [{% cite television-delivers-people %}] {% sc AFAIK %},
     this short video entitled _Television delivers people_ is the first time
     that the phrase, "you are the product" gets applied to a form of media.
     Although the video refers explicitly to {% sc TV %}, the same analysis can
@@ -530,7 +531,7 @@ payments according to the frequency with which each piece of content is
 accessed. For academic publishing at least, such a model would be a
 no-brainer; why do the likes of Elsevier deserve 30% profit
 margins{% sidenote %}
-    In 2019, RELX, Elsevier's parent company, reported a profit margin
+    In 2019, {% sc RELX %}, Elsevier's parent company, reported a profit margin
     of 31.6% [{% cite elsevier-2019 -l 2 %}].    
 {% endsidenote %} for simply throwing academic research—often publicly
 funded—behind a private paywall on the internet? I wholeheartedly agree, too,
@@ -557,10 +558,10 @@ this can mean anything from [complete state control over the media][sg-media],
 reporting that are nevertheless subject to the other arms of state
 control][abc]; sometimes all occurring within the same broadcaster. The point
 here is not that public broadcasters should be abolished—where would we be
-without BBC's _Doctor Who_, or CBC's _Ideas_, or, heck, Channel 4's _Black
-Mirror_ before Netflix snatched it up? It's simply that the state ought not
-be allowed absolute monopoly over a nation's media ecosystem, and its public
-discourse by extension.
+without {% sc BBC %}'s _Doctor Who_, or {% sc CBC %}'s _Ideas_, or, heck,
+Channel 4's _Black Mirror_ before Netflix snatched it up? It's simply that the
+state ought not be allowed absolute monopoly over a nation's media ecosystem,
+and its public discourse by extension.
 
 Instead, with the death of ad-revenue, I think we should seize the moment to
 also get rid of its offspring and its enabler, the attention economy. It is

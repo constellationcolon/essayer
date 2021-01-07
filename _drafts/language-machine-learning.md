@@ -11,14 +11,14 @@ gorging itself on these fragmentary shards.
 
 -
 
-Claims that AI is taking over the world are, by now and still,
+Claims that {% sc AI %} is taking over the world are, by now and still,
 exasperatingly overblown. The moniker of "artificial intelligence" was a
 marketing exercise—the academic who came up with the term himself said it <!-- TK:
 citation needed -->—and as with most objects of marketing, its most
 unqualifiedly enthusiastic cheerleaders have been the ones furthest away from
 the sausage factory.
 
-The critiques current in discourse about the applications of ML and other
+The critiques current in discourse about the applications of {% sc ML %} and other
 black-box algorithms have focused, quite rightly, on their effects on our
 societies—especially those communities marginalised by traditional power
 structures. There is much discussion on how the biased processes of data
@@ -115,7 +115,7 @@ catch. <!-- more elaboration and examples -->
 > i.e., anthropomorphic, world in it.
 > {% cite truth-and-lies -l 254 %}
  
-(NB morbid adjectives; "preserved in aspic")
+({% sc NB %} morbid adjectives; "preserved in aspic")
 
 > That enormous structure of beams and boards of the concepts, to which the
 > poor man clings for dear life, is for the liberated intellect just a

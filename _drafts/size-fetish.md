@@ -32,12 +32,12 @@ best intentions—descend into depravity:
 >
 > First, the people. The founders and visionaries behind the company, Larry
 > Page and Sergey Brin, disengaged and left management in the hands of new
-> senior executives. A new CEO was hired to lead Google Cloud and a new CFO was
-> hired from Wall Street, and beating earnings expectations every quarter
-> became the key priority. Every year, thousands of new employees join the
-> company, overwhelming everyone who fought to preserve the company’s original
-> values and culture. When I joined the company there were under 10,000
-> Googlers and by the time I left, there were over 100,000.
+> senior executives. A new {% sc CEO %} was hired to lead Google Cloud and a
+> new {% sc CFO %} was hired from Wall Street, and beating earnings
+> expectations every quarter became the key priority. Every year, thousands of
+> new employees join the company, overwhelming everyone who fought to preserve
+> the company’s original values and culture. When I joined the company there
+> were under 10,000 Googlers and by the time I left, there were over 100,000.
 
 Without the people with the founding vision at the helm, it just gets that much
 easier for those with more pedestrian capitalist ambitions to take over. At a
@@ -51,10 +51,11 @@ it to go.
 
 In the corridors of the Columbia Center for Career Education hangs a
 collection of business-speak motivational posters. The one that I remember to
-this day was one that said: "Columbia CCE: not just finance or consulting."
+this day was one that said: "Columbia {% sc CCE %}: not just finance or
+consulting."
 
-I hope they've remembered to update it to a more modern slogan: "Columbia CCE:
-not just finance, consulting, or tech."
+I hope they've remembered to update it to a more modern slogan: "Columbia {%
+sc CCE %}: not just finance, consulting, or tech."
 
 <div class="section-break">&</div>
 
