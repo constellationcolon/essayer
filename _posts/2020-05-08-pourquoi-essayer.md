@@ -6,29 +6,36 @@ title:    "Pourquoi essayer?"
 Or as the English may have it, "Why Try?"
 
 They tell you, when you read Montaigne's _Essais_, that "essayer" means "to
-attempt", or "to test" in its native French.[^1] The _essay_, then a freshly
-minted format in the Western canon, was meant to be a piece of writing
-primarily for exploring ideas, rather than for the sake of argument, or for the
-sake of exposition.
+attempt", or "to test" in its native French.{% sidenote %}Disclaimer: am not
+French. It is possible that this is so obvious that they _don't_ bother
+telling you that when you read it as a French person.{% endsidenote %} The
+_essay_, then a freshly minted format in the Western canon, was meant to be a
+piece of writing primarily for exploring ideas, rather than for the sake of
+argument, or for the sake of exposition.
 
-400 years after Montaigne, git was born[^2], and with it, gave us a whole new
-way of writing, collaborating, and blaming other people for bad code only to
-find out definitively that it was your own damned self from one year ago all
-along.
+400 years after Montaigne, git was born{% sidenote %}TIL this fortuitous event
+took place as recently as 2005. Now 15 years later I am committing this to
+digital memory via a company that does nothing _but_ git. Yes, I know that
+SVN et al existed before that, but you're also reading this on GitHub, not
+SVNHub.{% endsidenote %}, and with it, gave us a whole new way of writing,
+collaborating, and blaming other people for bad code only to find out
+definitively that it was your own damned self from one year ago all along.
 
 And in some ways, those are the exact purposes of written discourse—to assert,
 to exchange ideas, and to blame others for logical fallacies all up until the
 point that you discover you'd laid those mental traps for yourself in the first
 place. It's a medium for extraversion and introspection alike.
 
-<center><i>&</i></center>
+{% include break.html %}
 
 There's this article, years gone, that still comes to mind. I can't remember
-what it was called, or what its subject was,[^3] but I do remember that it was
-presented as if it were a word document on edit mode, laying bare every word
-misspelled and then corrected, every paragraph typed up and subsequently
-discarded, even whole themes developed and subsequently abandoned on the way to
-producing the final opus. Kill your darlings indeed. Kill them dead.
+what it was called, or what its subject was,{% sidenote %}If you, dear reader,
+do remember such a thing floating around the internet, please do point me to
+it, will you?{% endsidenote %} but I do remember that it was presented as if
+it were a word document on edit mode, laying bare every word misspelled and
+then corrected, every paragraph typed up and subsequently discarded, even
+whole themes developed and subsequently abandoned on the way to producing the
+final opus. Kill your darlings indeed. Kill them dead.
 
 In that particular incarnation, the article turned out to be a beast to read,
 with all its green fields of newly sprouted words, its boundless grey oceans
@@ -58,13 +65,3 @@ endeavours are never borne of immaculate conception.
 > modes of persuasion."
 -->
 
-[^1]: Disclaimer: am not French. It is possible that this is so obvious that
-    they _don't_ bother telling you that when you read it as a French person.
-
-[^2]: TIL this fortuitous event took place as recently as 2005. Now 15 years
-    later I am committing this to digital memory via a company that does nothing
-    _but_ git. Yes, I know that SVN et al existed before that, but you're also
-    reading this on GitHub, not SVNHub.
-
-[^3]: If you, dear reader, do remember such a thing floating around the
-    internet, please do point me to it, will you?

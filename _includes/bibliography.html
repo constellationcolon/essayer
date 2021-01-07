@@ -1,4 +1,7 @@
+{% capture cited %}{% bibliography --cited %}{% endcapture %}
+{% if cited.size > 39 %}
 <h2>Bibliography</h2>
 <div class="essai-bibliography">
-{% bibliography --cited %}
+{{ cited }}
 </div>
+{% endif %}

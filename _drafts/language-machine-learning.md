@@ -22,8 +22,12 @@ The critiques current in discourse about the applications of ML and other
 black-box algorithms have focused, quite rightly, on their effects on our
 societies—especially those communities marginalised by traditional power
 structures. There is much discussion on how the biased processes of data
-collection, pre-processing, and algorithm[^algorithm] design all contribute to
-perpetuating pre-existing systems of oppression.
+collection, pre-processing, and algorithm {% sidenote %}Here, I differentiate
+the _algorithm_, a set of computer instructions explicitly programmed by a
+human, from a _model_, which takes inputs and spits out particular predictions
+(or prescriptions) based on its specification as well as on the data fed to
+it.{% endsidenote %} design all contribute to perpetuating pre-existing
+systems of oppression.
 
 Less frequently examined, however, are the *techniques* used in harnessing this
 data—the underpinnings of the models and algorithms themselves.
@@ -47,8 +51,11 @@ unsupervised learning sets out to accomplish.
 
 There is a profusion of such techniques out there, but at the end of the day,
 they all tend to look for groupings of data points located closely together in
-some space[^cluster]. So far so good. Drawing circles around dots huddled
-closely together seems the common sense thing to do.
+some space{% sidenote %}What constitutes "close", and which "space" we measure
+such distances in, are determined by the data, its processing, the model and
+its parameters, and ultimately the practitioner themselves.{% endsidenote %}.
+So far so good. Drawing circles around dots huddled closely together seems the
+common sense thing to do.
 
 The trouble comes after we have drawn such circles. As cw likes to point out,
 unsupervised learning is often a giant fishing expedition—you never know if
@@ -123,16 +130,4 @@ catch. <!-- more elaboration and examples -->
 > by smashing and scorning the old conceptual barricades to correspond
 > creatively to the impressions of the mighty present intuition.
 > {% cite truth-and-lies -l 256 %}
-
-{% include bibliography.html %}
-
-
-[^algorithm]: Here, I differentiate the _algorithm_, a set of computer
-    instructions explicitly programmed by a human, from a _model_, which takes
-    inputs and spits out particular predictions (or prescriptions) based on
-    its specification as well as on the data fed to it.
-
-[^cluster]: What constitutes "close", and which "space" we measure such
-    distances in, are determined by the data, its processing, the model and
-    its parameters, and ultimately the practitioner themselves.
 

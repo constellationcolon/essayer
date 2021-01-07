@@ -1,5 +1,12 @@
 ---
 ---
-p { margin: 0; }
 
-.platform { display: inline-block; width: 10ch; }
+#platforms p {
+  padding-top: 4px;
+  margin-bottom: -4px;
+}
+
+.platform {
+  display: inline-block;
+  width: 10ch;
+}

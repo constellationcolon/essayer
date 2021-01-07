@@ -1,37 +1,48 @@
 ---
-layout: essai
+layout: base
 ---
 
-<h3><span id="author">{{ page.entry.author }}</span></h3>
+<div class="essai">
 
-<div>
+<div id="detail-title">{{ page.title }}</div>
+<div id="detail-author"><span>{{ page.entry.author }}</span></div>
+
+<div class="main-text">
 {% capture this_book %}{{ site.details | where: "key", page.entry.key | first }}{% endcapture %}
 {{ this_book | markdownify }}
-</div>
 
-<div style="margin-top: 3em;">
-<p style="text-align: center; font-size: 0.64em;">{% reference page.entry.key %}</p>
-</div>
+
+<div id="detail-reference">{% reference page.entry.key %}</div>
+
 
 {% assign uncite = site.data.uncites[page.entry.key] %}
 {% if uncite %}
-<div style="margin-top: 3em;">
-<h2>Referenced in</h2>
-  {% for post in uncite %}
-    {% for sp in site.posts %}
-      {% assign post_name = sp.url | split: "/" | last | split: "." | first %}
-      {% if post == sp.url %}
-        <a href="{{ sp.url | prepend: site.baseurl }}">{{ sp.title }}</a>
-      {% endif %}
+  <div id="uncite">
+    <h2>Referenced in</h2>
+    <div>
+    {% for post in uncite %}
+      {% for sp in site.posts %}
+        {% assign post_name = sp.url | split: "/" | last | split: "." | first %}
+        {% if post == sp.url %}
+          <a href="{{ sp.url | prepend: site.baseurl }}">{{ sp.title }}</a>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
+    </div>
+  </div>
 {% endif %}
 
 {% assign see_alsos = site.data.see_alsos[page.entry.key] %}
 {% if see_alsos %}
-<div style="margin-top: 3em;">
-<h2>See also</h2>
-{% for see_also in see_alsos %}
-  <a href="{{ see_also.path | prepend: site.baseurl }}">{{ see_also.title }}</a>
-{% endfor %}
+  <div id="see-alsos">
+    <h2>See also</h2>
+    <div>
+      {% for see_also in see_alsos %}
+        <p><a href="{{ see_also.path | prepend: site.baseurl }}">{{ see_also.title }}</a></p>
+      {% endfor %}
+    </div>
+  </div>
 {% endif %}
+
+</div>
+</div>

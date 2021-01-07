@@ -3,16 +3,18 @@
 // body {
 //   background-size: $grid $grid;
 //   background-image:
-//     linear-gradient(to right, $color-cedar 1px, transparent 1px),
-//     linear-gradient(to bottom, $color-cedar 1px, transparent 1px);
+//     linear-gradient(to right, $color-grid 1px, transparent 1px),
+//     linear-gradient(to bottom, $color-grid 1px, transparent 1px);
 // }
 // dots
 // body {
 //   background-size: $grid $grid;
 //   background-image: radial-gradient(
-//     circle, $color-cedar 1px, rgba(0, 0, 0, 0) 1px
+//     circle, $color-grid 1px, rgba(0, 0, 0, 0) 1px
 //   );
 // }
+
+// GENERAL
 
 * { margin: 0; padding: 0; }
 
@@ -37,25 +39,49 @@ body.dark-mode {
   color: $color-parchment;
 }
 
-p, div.bibliography {
+.essai p, .essai div.bibliography {
   max-width: $left-width;
 }
 
 @media screen and (max-width: $single-column-threshold) {
   html { font-size: 2.5vw; padding: $single-column-margin; }
-  p, div.bibliography { max-width: 100%; }
+  .essai p, .essai div.bibliography { max-width: 100%; }
+}
+
+// NAVIGATION
+
+nav {
+  height: $grid;
+  padding-top: 3px;
+  padding-bottom: 13px;
+  margin-bottom: ($grid * 2);
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.nav-item { margin-left: $grid; }
+
+#home {
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1ch;
+  text-transform: uppercase;
 }
 
 // HEADINGS
+
 h1 {
   font-family: "Cormorant Unicase";
   text-transform: lowercase;
   font-weight: normal;
   font-size: 5rem;
-  line-height: #{($grid * 5)};
+  line-height: #{($grid * 3)};
   margin-top: #{($grid * 5)};
-  padding-top: 22.5px; 
-  margin-bottom: -22.5px;
+  padding-top: 22px; 
+  margin-bottom: -22px;
 }
 
 h2, h3 {
@@ -64,7 +90,11 @@ h2, h3 {
   line-height: #{($grid * 2)};
   margin-top: #{($grid * 3)};
 }
-h2 { font-size: 2rem; }
+h2 {
+  font-size: 2rem;
+  padding-top: 8px;
+  margin-bottom: -8px;
+}
 h3 { font-size: 1.75rem; }
 
 h4, h5, h6 {
@@ -76,19 +106,32 @@ h4, h5, h6 {
   margin-top: #{($grid * 2)};
 }
 h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
+h5 {
+  font-size: 1.25rem;
+  padding-top: 3px;
+  margin-bottom: -3px;
+}
 h6 { font-size: 1rem; }
 
-// TEXT
-p {
-  margin-block-start: $grid;
-  margin-block-end: $grid;
+// INDEX
+
+.post {
+  padding-top: 3px; 
+  margin-bottom: (2 * $grid - 3px);
 }
+
+// TEXT
+
+.dark-mode-text {
+  color: $color-parchment;
+}
+
+a { color: $color-stormborn; }
 
 code {
   font-family: $font-family-mono;
   font-size: 0.8em;
-  line-height: 15px;
+  line-height: 0.95;
 }
 
 sup,
@@ -96,11 +139,14 @@ sub {
   vertical-align: baseline;
   position: relative;
   font-size: 0.75em;
+  line-height: $grid;
 }
 
 sup { top: -0.5em; }
 
 sub { top: 0.5em; }
+
+ol { padding-inline-start: 0; }
 
 .essai {
   font-family: $font-family-serif;
@@ -108,9 +154,14 @@ sub { top: 0.5em; }
   line-height: #{($grid * 2)};
 }
 
+.essai p {
+  margin-block-start: $grid;
+  margin-block-end: $grid;
+}
+
 .main-text>p:first-child,
 .main-text>div>p:first-child {
-  margin-top: #{($grid * 2)};
+  margin-top: #{($grid * 3)};
 }
 
 .main-text p:first-child {
@@ -118,32 +169,62 @@ sub { top: 0.5em; }
 }
 
 .main-text p {
-  text-indent: 1em;
-  padding-top: 10px;
-  margin-bottom: -11.5px;
+  text-indent: $grid;
+  padding-top: $root-em;
+  margin-bottom: -$root-em;
 }
 
 .small-caps {
   font-family: "Cormorant SC";
   text-transform: lowercase;
 }
+.section-break {
+  text-align: center;
+  font-style: italic;
+  margin: $grid 0;
+}
 
-// OTHERS
-nav {
-  height: $grid;
+// QUOTES
+
+.essai blockquote {
+  font-size: 0.9em;
+  margin: $grid $grid;
+  line-height: (2 * $grid);
+}
+.essai blockquote .block-cite { text-align: right; }
+.essai blockquote .citation { font-style: normal; }
+
+// FIGURES
+
+figure {
+  margin-top: #{($grid * 2)};
   margin-bottom: #{($grid * 2)};
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figcaption {
+  font-size: 0.5em;
+  font-family: "Space Mono";
+  text-align: right;
+  float: right;
+}
+
+.viz-altair {
+  width: 100%;
+  height: (30 * $grid);
+  margin-top: (2 * $grid);
 }
 
 // TUFTE
 .sidenote {
   position: relative;
-  top: 10px;
-  margin-bottom: -11.5px;
   float: right;
   clear: right;
   width: 40%;
+  padding-top: 9px;
   margin-right: -50%;
-  margin-block-end: $grid;
+  margin-bottom: ($grid - 9px);
   font-size: $font-size-note;
   line-height: $grid;
   vertical-align: baseline;
@@ -166,8 +247,8 @@ input.sidenote-toggle { display: none; }
     clear: both;
     width: calc(100% - 2em);
     margin: ($grid / 2) 0;
-    padding-left: 1em;
-    padding-right: 1em; 
+    padding-left: $grid;
+    padding-right: $grid; 
   }
 }
 
@@ -175,210 +256,23 @@ input.sidenote-toggle { display: none; }
 
 .citation { white-space: nowrap; }
 
-.essai-bibliography { font-size: $font-size-note; }
+div.bibliography {
+  padding-top: 3px;
+  margin-bottom: -3px;
+}
 
 div.bibliography>div {
   line-height: $grid;
-  text-indent: -1em;
-  padding-left: 1em;
-  margin-block-start: $grid;
-  margin-block-end: $grid;
+  text-indent: -$grid;
+  padding-left: $grid;
+  margin-block-start: ($grid / 2);
+  margin-block-end: ($grid / 2);
 }
 
-
-// OLD ========================================================================
-// body {
-// font-family: $font-family-mono;
-// font-size: 11px;
-// text-underline-offset: 0.2em;
-// background-color: $color-ice;
-// color: $color-stormborn;
-// }
-
-
-nav a {
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
-#nav-item {
-  margin-left: 1em;
-}
-
-// .main {
-//   max-width: 80ch;
-//   margin: auto;
-// }
-a {
-  color: $color-stormborn;
-}
-
-// .dark-mode {
-//   background-color: $color-chocolate;
-//   color: $color-parchment;
-// }
-.dark-mode-text {
-  color: $color-parchment;
-}
-
-// .essai {
-//   font-family: $font-family-serif;
-//   font-size: 1.56em;
-// }
-.essai blockquote {
-  font-size: 0.9em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.essai blockquote .block-cite {
-  text-align: right;
-}
-
-.essai blockquote .citation {
-  font-style: normal;
-}
-
-a#title {
-  text-transform: lowercase;
-  text-decoration: none;
-  font-family: 'Cormorant Unicase';
-}
-
-.footnotes {
-  margin-top: 5em;
-  font-size: 0.8em;
-  line-height: initial;
-}
-
-// sup,
-// sub {
-//   vertical-align: baseline;
-//   position: relative;
-//   font-size: 0.75em;
-// }
-
-// sup {
-//   top: -0.5em;
-// }
-
-// sub {
-//   top: 0.5em;
-// }
-
-#home {
-  text-align: left;
-  font-weight: bold;
-  letter-spacing: 1ch;
-  text-transform: uppercase;
-}
-
-// .main-text p {
-//   text-indent: 1em;
-//   margin-top: 0.5em;
-//   margin-bottom: 0.5em;
-//   // line-height: 1.6em;
-// }
-// .main-text p:first-child {
-//   text-indent: initial;
-// }
-// .main-text>p:first-child,
-// .main-text>div>p:first-child{
-//   margin-top: 3em;
-// }
-.section-break {
-  text-align: center;
-  font-style: italic;
-  margin: 1em 0;
-}
-
-.image>img {
-  width: 100%;
-}
-
-.image>figcaption {
-  font-family: 'Cormorant Upright';
-  font-size: 0.8em;
-}
-
-figure {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-figcaption {
-  font-size: 0.5em;
-  font-family: "Space Mono";
-  text-align: right;
-}
-
-/* font styles */
-sc {
-  text-transform: uppercase;
-}
-
-.essai sc {
-  text-transform: initial;
-  font-family: 'Cormorant SC';
-}
-
-.uc {
-  font-family: 'Cormorant Unicase'
-}
-
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: "Cormorant Unicase";
-//   text-transform: lowercase;
-//   font-weight: normal;
-//   text-align: center;
-// }
-// h1 {
-//   margin-bottom: 1em;
-//   font-size: 1.2em;
-// }
-// h2 {
-//   font-family: "Cormorant SC";
-//   font-size: 1em;
-//   margin-top: 2em;
-// }
-// h3 {
-//   font-family: "Cormorant SC";
-//   font-size: 0.8em;
-// }
-// h4 { font-size: 0.6em; }
-// h5 { font-size: 0.4em; }
-// h6 { font-size: 0.2em; }
-// h2.bibliography {
-//   margin-top: 2em;
-// }
-// div.bibliography>div {
-//   margin-top: 0.5em;
-//   margin-bottom: 0.5em;
-//   text-indent: -1em;
-//   padding-left: 1em;
-// }
-
-// .essai-bibliography {
-//   font-size: 0.8em;
-//   margin-top: 5em;
-// }
-
-// .citation {
-//   vertical-align: baseline;
-//   position: relative;
-//   font-size: 0.75em;
-//   top: -0.5em;
-//   white-space: nowrap;
-// }
-
-ol {
-  padding-inline-start: 0em;
-}
-
-li {
-  margin: 0.5em 0;
+.wiki {
+  font-family: "Linux Libertine";
+  letter-spacing: -0.8ch;
+  line-height: $grid;
 }
 
 .sup-mat {
@@ -386,31 +280,60 @@ li {
   font-size: 0.8em;
 }
 
-.wiki {
-  font-family: "Linux Libertine";
-  letter-spacing: -0.8ch;
+.essai-bibliography { font-size: $font-size-note; }
+
+.stacks-bibliography div.bibliography {
+  max-width: 100%;
+}
+.stacks-bibliography div.bibliography>div {
+  line-height: (3/2 * $grid);
+  margin-block-start: ($grid / 2);
+  margin-block-end: ($grid / 2);
 }
 
-.cw>.cw-text {
-  display: none;
-  font-size: 0.8em;
-  text-decoration: none;
-  color: $color-steel;
+// DETAIL
+
+#detail-title { 
+  font-family: "Cormorant Unicase";
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: (2 * $grid);
+  padding-top: 6px;
+  margin-top: (5 * $grid);
+  margin-bottom: -6px;
+  text-align: center;
 }
 
-.dark-mode .cw>.cw-text {
-  color: $color-olive;
+#detail-author {
+  @extend .small-caps;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: (2 * $grid);
+  padding-bottom: (2 * $grid - 2px);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
-.cw:hover>.cw-text {
-  display: inline;
-}
-
-#author {
+#detail-author>span { 
   border-top: 1px solid $color-stormborn;
-  padding: 0.2em;
 }
 
-#author.dark-author {
+.dark-mode #detail-author>span {
+  padding-top: 2px;
   border-top: 1px solid $color-parchment;
+}
+
+#detail-reference {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: (5 * $grid);
+  padding-top: 5px;
+  margin-bottom: -5px;
+  line-height: $grid;
+}
+
+#uncite>div, #see-alsos>div {
+  padding-top: $root-em;
+  margin-bottom: -$root-em;
 }

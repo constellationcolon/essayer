@@ -60,9 +60,12 @@ not just finance, consulting, or tech."
 
 What sort of a totem is a company like Google? 
 
-There is nothing so certain in life as death and taxes[^taxes], which makes
-both worthy of close examination (cf [this other post on boundary
-conditions]({% post_url boundary-conditions %})). Mortal man, doomed to die;
+There is nothing so certain in life as death and taxes{% sidenote %}And the
+latter certain only if you are a subject of a state. Most people in the 21st
+century are such subjects, having no other choice, nation-states having now
+successfully enclosed every last square inch of the Earth.{% endsidenote %},
+which makes both worthy of close examination (cf [this other post on boundary
+conditions](boundary-conditions.html)). Mortal man, doomed to die;
 in _Denial of Death_, Ernest Becker points to that strain of thought passed to
 us from the Homeric epics of the heroic self, transcending death through famed
 deeds that will be remembered through the generations. "Man cannot endure his
@@ -75,13 +78,5 @@ the Earth, the only way for man to honourably conquer death is through his
 intellect and those faculties he deems to be uniquely human.
 
 
-<div style="display: none;">
-  {% cite google-ir-head-left %}
-</div>
+<div style="display: none;">{% cite google-ir-head-left %}</div>
 
-<div class="essai-bibliography">{% bibliography --cited %}</div>
-
-[^taxes]: And the latter certain only if you are a subject of a state. Most
-  people in the 21st century are such subjects, having no other choice,
-  nation-states having now successfully enclosed every last square inch of the
-  Earth.

@@ -20,7 +20,7 @@ Of course, that still hasn't stopped the physicists, thinking they've solved
 the secrets of universe, from [flouncing into other fields][trivial],
 [pronouncing those fields 'trivial'][witten], and [imposing their 'expert'
 opinion on them][covid-19-physicist] by [slapping an Ising model on the whole
-shebang][covid-19-ising].[^gut]
+shebang][covid-19-ising].
 
 ## The Bored at Work Network
 
@@ -54,8 +54,6 @@ shebang][covid-19-ising].[^gut]
 
 This exact observation was dubbed the ["Bored at Work Network" (BWN)][bwn] by
 none other than the king of listicles himself, BuzzFeed founder Jonah Peretti.
-
-[^gut]: How's that grand unified theory going, by the way? :)
 
 
 [bwn]: https://web.archive.org/web/20080223064617/http://www.stayfreemagazine.org/archives/25/jonah-peretti-interview.html

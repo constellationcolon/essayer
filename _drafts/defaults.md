@@ -72,9 +72,9 @@ then the third largest (external) referrer after {% sc FB %}
 and {% sc GOOG %}. (You can see {% sc GCS %} just barely peeking over
 the {% sc TWTR %} horizon in '18 in the chart below.)
 
-<figure>
-  <div style="width: 100%; height: calc(16px * 30); margin-top: calc(16px * 2 - 10px);" id="viz"></div>
-  <figcaption style="margin-top: -11.5px;">
+<figure style="padding-bottom: 4px;">
+  <div style="padding-top: 6px;" class="viz-altair" id="fig-mobile-visits"></div>
+  <figcaption>
     Data: <a href="https://ona18.journalists.org/wp-content/uploads/
                    sites/16/2018/10/The-Global-State-of-Reader-Engagement.pdf">
       Chartbeat
@@ -130,7 +130,7 @@ whether that uptick in Google traffic was coming from people more actively
 searching out information on Google Search, or from more passive consumers of
 the new feed clicking through to recommended links.
 
-<div class="section-break">&</div>
+{% include break.html %}
 
 It's a bit of a mystery how we came to use the word *default* to mean {% sc the
 standard fall-back option in the absence of an explicitly declared choice %}.
@@ -148,7 +148,7 @@ as human operators to specify an instruction for the machine.
 
 The unflattering denotation of the default was probably not lost on early
 designers of computer systems. Bruce Tognazzini, writing design guidelines for
-the Apple *IIe*, for instance, opens the section on 'Defaults'{% sidenote %}{% cite apple-iie-design -L page -l 37%}{% endsidenote %} thus:
+the Apple *IIe*, for instance, opens the section on 'Defaults'{% sidenote %}{% cite apple-iie-design -L page -l 37 %}{% endsidenote %} thus:
 
 > Please do not ever use the word default in a program designed for humans.
 > Default is something the mortgage went into right before the evil banker
@@ -163,7 +163,7 @@ the Apple *IIe*, for instance, opens the section on 'Defaults'{% sidenote %}{% c
 Bruce is probably out there somewhere today, spinning with confusion and
 anger.
 
-<div class="section-break">&</div>
+{% include break.html %}
 
 I already hear you protesting: Su, what do you have against feeds? Feeds are
 great! I want to be an empowered and informed member of society. News is by
@@ -497,7 +497,7 @@ people would have laughed at the absurdity of the script. Spoiler alert: it's
 business as usual that's brought us here. We cannot, must not, return to
 pre-2020 "normal".
 
-<div class="section-break">&</div>
+{% include break.html %}
 
 So where do we go from here? Prudent polemicists generally refrain from
 prescribing solutions to the ills that they denounce. This is probably wise,
@@ -637,7 +637,7 @@ soon.{% sidenote %}
     be an appetite for such a paid service, especially as younger, hipper, and
     free platforms are mushrooming up all the time to upstage the older
     networks.
-{% sidenote %}
+{% endsidenote %}
 
 This means that, for the foreseeable future, the dynamics of these platforms
 would continue to favour the sorts of attention-seeking Content™ we so
@@ -727,21 +727,20 @@ makers their audiences to pay attention to superficial attention.
 [upday]: https://play.google.com/store/apps/details?id=de.axelspringer.yana
 [voa-trump]: https://www.theguardian.com/us-news/2020/aug/31/voice-of-america-journalists-trump-boss-michael-pack
 
-{% include bibliography.html %}
-
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <script type="text/javascript">
 function darkCharts(state) {
+    const figId = "fig-mobile-visits";
     if ( state ) {
-        var viz = document.getElementById("viz")
+        var viz = document.getElementById(figId);
         while (viz.firstChild) { viz.firstChild.remove(); }
-        vegaEmbed("#viz", "{% link /assets/vega/ona18-dark.json %}", {"renderer": "svg", "actions": false});
+        vegaEmbed(`#${figId}`, "{% link /assets/vega/ona18-dark.json %}", {"renderer": "svg", "actions": false});
     } else {
-        var viz = document.getElementById("viz")
+        var viz = document.getElementById(figId);
         while (viz.firstChild) { viz.firstChild.remove(); }
-        vegaEmbed("#viz", "{% link /assets/vega/ona18-light.json %}", {"renderer": "svg", "actions": false});
+        vegaEmbed(`#${figId}`, "{% link /assets/vega/ona18-light.json %}", {"renderer": "svg", "actions": false});
     }
 }
 localStorage.dark == "true" ? darkCharts(true) : darkCharts(false);
