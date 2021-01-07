@@ -5,7 +5,10 @@ url: https://constellationcolon.github.io
 permalink: none
 exclude: [bin]
 
-collections: [details]
+collections:
+  details:
+  poems:
+    output: true
 
 github: constellationcolon
 linkedin: suhang42

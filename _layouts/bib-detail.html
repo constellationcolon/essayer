@@ -4,15 +4,14 @@ layout: base
 
 <div class="essai">
 
-<div id="detail-title">{{ page.title }}</div>
-<div id="detail-author"><span>{{ page.entry.author }}</span></div>
+<div id="title">{{ page.title }}</div>
+<div id="author"><span>{{ page.entry.author }}</span></div>
 
 <div class="main-text">
 {% capture this_book %}{{ site.details | where: "key", page.entry.key | first }}{% endcapture %}
 {{ this_book | markdownify }}
 
-
-<div id="detail-reference">{% reference page.entry.key %}</div>
+<div id="reference">{% reference page.entry.key %}</div>
 
 
 {% assign uncite = site.data.uncites[page.entry.key] %}

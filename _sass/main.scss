@@ -291,9 +291,9 @@ div.bibliography>div {
   margin-block-end: ($grid / 2);
 }
 
-// DETAIL
+// COLLECTIONS
 
-#detail-title { 
+#title { 
   font-family: "Cormorant Unicase";
   text-transform: lowercase;
   font-weight: normal;
@@ -305,7 +305,7 @@ div.bibliography>div {
   text-align: center;
 }
 
-#detail-author {
+#author {
   @extend .small-caps;
   text-align: center;
   padding-top: 5px;
@@ -315,16 +315,16 @@ div.bibliography>div {
   line-height: 1.25rem;
 }
 
-#detail-author>span { 
+#author>span { 
   border-top: 1px solid $color-stormborn;
 }
 
-.dark-mode #detail-author>span {
+.dark-mode #author>span {
   padding-top: 2px;
   border-top: 1px solid $color-parchment;
 }
 
-#detail-reference {
+#reference {
   text-align: center;
   font-size: 1rem;
   margin-top: (5 * $grid);
@@ -336,4 +336,15 @@ div.bibliography>div {
 #uncite>div, #see-alsos>div {
   padding-top: $root-em;
   margin-bottom: -$root-em;
+}
+
+verse {
+  display: block;
+  white-space: pre-wrap;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.essai verse p {
+  max-width: unset;
 }
