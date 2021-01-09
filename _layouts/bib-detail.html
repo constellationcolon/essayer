@@ -8,8 +8,8 @@ layout: base
 <div id="author"><span>{{ page.entry.author }}</span></div>
 
 <div class="main-text">
-{% capture this_book %}{{ site.details | where: "key", page.entry.key | first }}{% endcapture %}
-{{ this_book | markdownify }}
+{% capture details %}{{ site.details | where: "key", page.entry.key | first }}{% endcapture %}
+{{ details | markdownify }}
 
 <div id="reference">{% reference page.entry.key %}</div>
 

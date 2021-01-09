@@ -3,7 +3,7 @@ description: Try again. Fail again. Fail better.
 baseurl: /essayer
 url: https://constellationcolon.github.io
 permalink: none
-exclude: [bin]
+exclude: [archive, bin]
 
 collections:
   details:
