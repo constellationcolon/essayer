@@ -1,3 +1,2 @@
 ---
-key: the-second-sex
 ---

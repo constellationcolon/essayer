@@ -1,5 +1,4 @@
 ---
-key: public-opinion
 ---
 
 It's easy to see why Walter Lippmann gets slammed for flagrant elitism.

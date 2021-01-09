@@ -1,5 +1,4 @@
 ---
-key: public-philosophy
 ---
 
 # On private property

@@ -10,5 +10,3 @@ title:      Academic Fields as Tweets
 > <cite>{% cite the-art-of-not-being-governed -L chapter -l 5 %}</cite>
 > {: class="block-cite"}
 
-
-{% bibliography --cited %}

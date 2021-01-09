@@ -8,7 +8,12 @@ layout: base
 <div id="author"><span>{{ page.entry.author }}</span></div>
 
 <div class="main-text">
-{% capture details %}{{ site.details | where: "key", page.entry.key | first }}{% endcapture %}
+{% capture details %}
+{% for d in site.details %}
+  {% assign key = d.path | split: "/" | last | split: "." | first %}
+  {% if key == page.entry.key %}{{ d.content }}{% break %}{% endif %}
+{% endfor %}
+{% endcapture %}
 {{ details | markdownify }}
 
 <div id="reference">{% reference page.entry.key %}</div>
@@ -19,13 +24,9 @@ layout: base
   <div id="uncite">
     <h2>Referenced in</h2>
     <div>
-    {% for post in uncite %}
-      {% for sp in site.posts %}
-        {% assign post_name = sp.url | split: "/" | last | split: "." | first %}
-        {% if post == sp.url %}
-          <a href="{{ sp.url | prepend: site.baseurl }}">{{ sp.title }}</a>
-        {% endif %}
-      {% endfor %}
+    {% for uncite_id in uncite %}
+      {% assign post = site.posts | where: "id", uncite_id | first %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     {% endfor %}
     </div>
   </div>
@@ -37,7 +38,8 @@ layout: base
     <h2>See also</h2>
     <div>
       {% for see_also in see_alsos %}
-        <p><a href="{{ see_also.path | prepend: site.baseurl }}">{{ see_also.title }}</a></p>
+        {% assign url = see_also.id | prepend: '/bibliography/' | prepend: site.baseurl | append: '.html' %}
+        <a href="{{ url }}">{{ see_also.title }}</a>
       {% endfor %}
     </div>
   </div>

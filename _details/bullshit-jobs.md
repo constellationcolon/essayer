@@ -1,5 +1,4 @@
 ---
-key: bullshit-jobs
 ---
 
 ## On physicists

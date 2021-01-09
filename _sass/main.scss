@@ -43,8 +43,9 @@ body.dark-mode {
   max-width: $left-width;
 }
 
-@media screen and (max-width: $single-column-threshold) {
-  html { font-size: 2.5vw; padding: $single-column-margin; }
+@media screen and (max-width: $single-column-threshold),
+       screen and (pointer: coarse) and (hover: none) {
+  html { font-size: 3vw; padding: $single-column-margin; }
   .essai p, .essai div.bibliography { max-width: 100%; }
 }
 
@@ -146,7 +147,7 @@ sup { top: -0.5em; }
 
 sub { top: 0.5em; }
 
-ol { padding-inline-start: 0; }
+ol, ul { padding-inline-start: 0; }
 
 .essai {
   font-family: $font-family-serif;
@@ -184,6 +185,11 @@ ol { padding-inline-start: 0; }
   margin: $grid 0;
 }
 
+@media screen and (max-width: $single-column-threshold),
+       screen and (pointer: coarse) and (hover: none) {
+  ol, ul { padding-inline-start: (2 * $grid); }
+}
+
 // QUOTES
 
 .essai blockquote {
@@ -217,7 +223,8 @@ figcaption {
 }
 
 // TUFTE
-.sidenote {
+
+.sidenote, .marginnote {
   position: relative;
   float: right;
   clear: right;
@@ -234,22 +241,53 @@ figcaption {
 .sidenote-number { counter-increment: sidenote-counter; }
 .sidenote-number:after { content: counter(sidenote-counter); }
 .sidenote:before { content: counter(sidenote-counter) ".\000a0"; }
-input.sidenote-toggle { display: none; }
+.marginnote-symbol {
+  display: none;
+  text-decoration: underline;
+  font-size: 1rem;
+}
 
+.hidden-sidenote { border-bottom: 1px dotted $color-stormborn; }
+.hidden-sidenote .dark-mode { border-bottom: 1px dotted $color-parchment; }
+.hidden-sidenote .hidden { visibility: hidden; }
+.hidden-sidenote:hover .hidden { visibility: visible; }
 
-@media screen and (max-width: $single-column-threshold) {
-  .sidenote { display: none; }
-  .sidenote-number { text-decoration: underline; cursor: pointer; }
-  .sidenote-toggle:checked + .sidenote {
+input.sidenote-toggle,
+input.marginnote-toggle,
+input.hidden-sidenote-toggle {
+  display: none;
+}
+
+@media screen and (max-width: $single-column-threshold),
+       screen and (pointer: coarse) and (hover: none) {
+  .sidenote, .marginnote { display: none; }
+  .sidenote-number { text-decoration: underline; }
+  .marginnote-symbol { display: inline }
+  
+  .hidden-sidenote .hidden {
+    display: none;
+    visibility: visible;
+  }
+
+  .sidenote-number, .marginnote-symbol, .hidden-sidenote { cursor: pointer; }
+
+  .sidenote-toggle:checked + .sidenote,
+  .marginnote-toggle:checked + .marginnote,
+  .hidden-sidenote-toggle:checked + .sidenote {
     display: block;
     top: 0;
     float: left;
     clear: both;
-    width: calc(100% - 2em);
     margin: ($grid / 2) 0;
+    padding-top: 0px;
+  }
+  .sidenote-toggle:checked + .sidenote,
+  .marginnote-toggle:checked + .marginnote {
+    width: calc(100% - 2 * #{$grid});
     padding-left: $grid;
     padding-right: $grid; 
   }
+  .hidden-sidenote-toggle:checked + .sidenote { width: 100%; }
 }
 
 // SCHOLAR

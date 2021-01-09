@@ -1,5 +1,4 @@
 ---
-key: denial-of-death
 ---
 
 > It is only logical, then, that if the genius is going to follow to the letter
