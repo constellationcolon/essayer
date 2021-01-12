@@ -39,6 +39,17 @@ body.dark-mode {
   color: $color-parchment;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $color-chocolate;
+    color: $color-parchment;
+  }
+  body.light-mode {
+    background-color: $color-ice;
+    color: $color-stormborn;
+  }
+}
+
 .essai p, .essai div.bibliography {
   max-width: $left-width;
 }
@@ -123,11 +134,13 @@ h6 { font-size: 1rem; }
 
 // TEXT
 
-.dark-mode-text {
-  color: $color-parchment;
-}
-
 a { color: $color-stormborn; }
+.dark-mode a { color: $color-parchment; }
+
+@media (prefers-color-scheme: dark) {
+  a { color: $color-parchment; }
+  .light-mode a { color: $color-stormborn; }
+}
 
 code {
   font-family: $font-family-mono;
@@ -214,12 +227,22 @@ figcaption {
   font-family: "Space Mono";
   text-align: right;
   float: right;
+  line-height: $grid;
 }
 
 .viz-altair {
   width: 100%;
   height: (30 * $grid);
   margin-top: (2 * $grid);
+}
+
+.caption {
+  font-size: $font-size-note;
+}
+
+table {
+  // border-collapse: collapse;
+  // border-spacing: 0;
 }
 
 // TUFTE
@@ -249,6 +272,12 @@ figcaption {
 
 .hidden-sidenote { border-bottom: 1px dotted $color-stormborn; }
 .hidden-sidenote .dark-mode { border-bottom: 1px dotted $color-parchment; }
+
+@media (prefers-color-scheme: dark) {
+  .hidden-sidenote { border-bottom: 1px dotted $color-parchment; }  
+  .light-mode .hidden-sidenote { border-bottom: 1px dotted $color-stormborn; }
+}
+
 .hidden-sidenote .hidden { visibility: hidden; }
 .hidden-sidenote:hover .hidden { visibility: visible; }
 
@@ -360,6 +389,11 @@ div.bibliography>div {
 .dark-mode #author>span {
   padding-top: 2px;
   border-top: 1px solid $color-parchment;
+}
+
+@media (prefers-color-scheme: dark) {
+  #author>span { border-top: 1px solid $color-parchment; }
+  .light-mode #author>span { border-top: 1px solid $color-stormborn; }
 }
 
 #reference {

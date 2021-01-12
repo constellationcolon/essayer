@@ -16,23 +16,18 @@ grid: 16px
     </div>
     <footer></footer>
     <script type="text/javascript">
-      const text_tags = ["a", "input", "textarea"];
       function darkMode(state) {
+        document.body.classList.toggle("light-mode", !state);
         document.body.classList.toggle("dark-mode", state);
-        text_tags.forEach(
-          tag => Array.from(document.getElementsByTagName(tag))
-                      .map(e => e.classList.toggle("dark-mode-text", state)));
-        var submit = document.querySelector("input[type=submit]");
-        submit ? submit.classList.toggle("dark-submit", state) : null;
-        var author = document.getElementById("author");
-        author ? author.classList.toggle("dark-author", state) : null;
         try { darkCharts(state); } catch { }
         localStorage.dark = state.toString();
       }
       function toggleDarkMode() {
         localStorage.dark == "true" ? darkMode(false) : darkMode(true);
       }
-      localStorage.dark == "true" ? darkMode(true) : darkMode(false);
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      const dark = prefersDarkScheme || (localStorage.dark == "true")
+      dark ? darkMode(true) : darkMode(false);
     </script>
   </body>
 </html>
