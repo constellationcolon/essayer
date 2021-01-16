@@ -15,6 +15,10 @@ collections:
 
 markdown: Kramdown
 
+incremental: true
+show_drafts: true
+livereload: true
+
 scholar:
   bibliography: "**/*.bib{,tex}"
   bibliography_template: bib
