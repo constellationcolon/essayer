@@ -81,3 +81,5 @@ So much tea packed into one book:
     government bonds)? That's basically you financing {% sc US %} government
     debt, above and on top of what you already pay in taxes. And so where does
     the money come from to finance the interest on those government loans? ;)
+
+{% include bibliography.html %}

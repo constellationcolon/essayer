@@ -1,8 +1,6 @@
 module Jekyll
   class MarginnoteTagBlock < Liquid::Block
 
-    @@n = 0
-
     def initialize(tag_name, args, tokens)
       super
 
@@ -11,9 +9,7 @@ module Jekyll
         @marginnote_id = ("marginnote-" + @n.to_s)
       end
 
-      @n = @@n
-      @@n += 1
-
+      @n = 0
     end
 
     def render(context)
@@ -22,6 +18,7 @@ module Jekyll
       rendered << "<label for='toggle-marginnote-#{@n}' class='marginnote-symbol'>✥</label>"
       rendered << "<input id='toggle-marginnote-#{@n}' class='marginnote-toggle' type='checkbox'>"
       rendered << "<span id='#{@marginnote_id}' class='marginnote'>#{text}</span>"
+      @n += 1
       rendered
     end
 

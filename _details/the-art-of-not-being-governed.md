@@ -85,3 +85,5 @@
 
 [hills]: https://english.stackexchange.com/a/80685
 [rousseau]: https://www.goodreads.com/quotes/102375-the-first-person-who-having-enclosed-a-plot-of-land
+
+{% include bibliography.html %}

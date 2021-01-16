@@ -61,3 +61,5 @@ Jonah Peretti.
 [covid-19-physicist]: https://xkcd.com/2355/
 [trivial]: https://xkcd.com/793/
 [witten]: https://twitter.com/daniela_witten/status/1301632149951410177
+
+{% include bibliography.html %}

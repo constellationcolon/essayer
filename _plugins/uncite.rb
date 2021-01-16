@@ -16,9 +16,9 @@ module Jekyll
 
       for post in site.posts.docs
         content = post.content.gsub(/[\n]/, " ")
-        cited = content.scan(/\{% cite (\S+).*? %}/).uniq
+        cited = content.scan(/\{% (cite(_details)?|reference) (\S+).*? %}/).uniq
         for cite_key in cited
-          site.data["uncites"][cite_key[0]].push(post.id)
+          site.data["uncites"][cite_key[-1]].push(post.id)
         end
       end
 
@@ -26,13 +26,13 @@ module Jekyll
         detail_key = detail.id.split("/").last
         detail_title = (entries.find { |e| e.key == detail_key }).title
         content = detail.content.gsub(/[\n]/, " ")
-        see_alsos = content.scan(/\{% cite (\S+).*? %}/).uniq
+        see_alsos = content.scan(/\{% (cite(_details)?|reference) (\S+).*? %}/).uniq
         for see_also in see_alsos
-          if see_also == detail_key
+          if see_also[-1] == detail_key
             next
           end
           sa = {"id" => detail_key, "title" => detail_title.to_s}
-          site.data["see_alsos"][see_also[0]].push(sa)
+          site.data["see_alsos"][see_also[-1]].push(sa)
         end
       end
 

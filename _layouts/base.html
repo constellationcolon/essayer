@@ -27,7 +27,7 @@ grid: 16px
         localStorage.dark == "true" ? darkMode(false) : darkMode(true);
       }
       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-      const dark = prefersDarkScheme || (localStorage.dark == "true")
+      const dark = (localStorage.dark == null && prefersDarkScheme) || (localStorage.dark == "true");
       dark ? darkMode(true) : darkMode(false);
     </script>
   </body>

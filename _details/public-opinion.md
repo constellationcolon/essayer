@@ -114,3 +114,5 @@ economy right into the [yawning maw of inequality][inequality] it is now in.
 [people]: https://www.improbable.com/2015/03/22/ig-nobel-prize-winner-lee-kuan-yew-dies-in-singapore/
 [stopped]: https://w.wiki/gEU
 [trying]: https://www.improbable.com/2020/10/02/ig-nobel-medical-education-prize-winner-continues-his-lesson/
+
+{% include bibliography.html %}

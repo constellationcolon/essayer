@@ -3,15 +3,15 @@ description: Try again. Fail again. Fail better.
 baseurl: /essayer
 url: https://constellationcolon.github.io
 permalink: none
-exclude: [archive, bin]
 
+github: constellationcolon
+linkedin: suhang42
+
+exclude: [archive, bin]
 collections:
   details:
   poems:
     output: true
-
-github: constellationcolon
-linkedin: suhang42
 
 markdown: Kramdown
 
