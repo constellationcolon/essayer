@@ -1,3 +1,7 @@
+# renders the marginnote tag
+# usage:
+#   {% marginnote %}<text>{% endmarginnote %}
+
 module Jekyll
   class MarginnoteTagBlock < Liquid::Block
 

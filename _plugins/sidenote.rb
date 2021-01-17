@@ -1,3 +1,7 @@
+# renders the sidenote tag
+# usage:
+#   {% sidenote %}<text>{% endsidenote %}
+
 module Jekyll
   class SidenoteTagBlock < Liquid::Block
 

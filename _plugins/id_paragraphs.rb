@@ -1,3 +1,5 @@
+# assigns enumerated ids to paragraph elements per page
+
 require 'nokogiri'
 
 module Jekyll

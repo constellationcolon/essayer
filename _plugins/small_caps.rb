@@ -1,3 +1,7 @@
+# shorthand for styling a text snippet as smallcaps
+# usage:
+# {% sc <text> %}
+
 module Jekyll
   class SmallCapsTag < Liquid::Tag
 

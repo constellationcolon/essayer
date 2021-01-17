@@ -1,3 +1,12 @@
+# shorthand for putting citations in the margin
+# 
+# usage:
+#   {% sidecite <cite-key> %}
+#   > {% sidenote %}{% cite <cite-key> %}{% sidenote %}
+#
+#   {% margincite <cite-key> %}
+#   > {% marginnote %}{% cite <cite-key> %}{% marginnote %}
+#
 module Jekyll
   class ExpandSidecite
     class << self

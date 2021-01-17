@@ -1,3 +1,5 @@
+# generates list of places where key was cited for a detail page
+
 module Jekyll
   class UnciteGenerator < Jekyll::Generator
     include Scholar::Utilities
