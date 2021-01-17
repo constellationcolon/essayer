@@ -23,12 +23,13 @@ grid: 16px
         try { darkCharts(state); } catch { }
         localStorage.dark = state.toString();
       }
-      function toggleDarkMode() {
-        localStorage.dark == "true" ? darkMode(false) : darkMode(true);
-      }
-      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-      const dark = (localStorage.dark == null && prefersDarkScheme) || (localStorage.dark == "true");
-      dark ? darkMode(true) : darkMode(false);
+      function toggleDarkMode() { darkMode(localStorage.dark != "true"); }
+      const prefersDarkScheme =
+          window.matchMedia("(prefers-color-scheme: dark)");
+      const dark =
+          (localStorage.dark == null && prefersDarkScheme)
+          || (localStorage.dark == "true");
+      darkMode(dark);
     </script>
   </body>
 </html>
