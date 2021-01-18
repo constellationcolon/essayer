@@ -3,5 +3,5 @@
 
 {{ reference }}
 {% if entry.warning %}<span class="cw"><u>⚠︎</u><span class="cw-text"> {{ entry.warning }}</span></span>{% endif %}
-{% if entry.wiki %}<a style="white-space: pre;" href="https://en.wikipedia.org/wiki/{{ entry.wiki }}"><span class="wiki">VV</span>  </a>{% endif %}
+{% if entry.wiki %}<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/{{ entry.wiki }}"><span class="wiki">VV</span>  </a>{% endif %}
 {% if link %}<a class="sup-mat" title="Supporting Material" href="{{ link }}">A</a>{% endif %}

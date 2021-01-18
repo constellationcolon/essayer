@@ -14,7 +14,7 @@ layout: base
   {% if key == page.entry.key %}{{ d.content }}{% break %}{% endif %}
 {% endfor %}
 {% endcapture %}
-{{ details | markdownify }}
+{{ details }}
 
 <div id="reference">{% reference page.entry.key %}</div>
 
@@ -43,6 +43,20 @@ layout: base
     </div>
   </div>
 {% endif %}
+
+{% assign zettel = site.data.zettel[page.entry.key] %}
+{% if zettel %}
+  <div id="zettel">
+    <h2>Zettel</h2>
+    <div>
+    {% for zettel_id in zettel %}
+      {% assign zettel = site.zettel | where: "id", zettel_id | first %}
+      <a href="{{ zettel.url | prepend: site.baseurl }}">{{ zettel.title }}</a>
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
 
 </div>
 </div>

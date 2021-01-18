@@ -178,12 +178,12 @@ ol, ul { padding-inline-start: 0; }
   margin-top: #{($grid * 3)};
 }
 
-.main-text p:first-child {
-  text-indent: initial;
-}
+.main-text p:first-child { text-indent: initial; }
+.main-text p { text-indent: $grid; }
 
-.main-text p {
-  text-indent: $grid;
+.main-text p,
+.main-text ol,
+.main-text ul {
   padding-top: $root-em;
   margin-bottom: -$root-em;
 }
@@ -331,6 +331,8 @@ div.bibliography>div {
   margin-block-end: ($grid / 2);
 }
 
+.anchor-wiki { white-space: pre; }
+
 .wiki {
   font-family: "Linux Libertine";
   letter-spacing: -0.8ch;
@@ -414,4 +416,69 @@ verse {
 }
 .essai verse p {
   max-width: unset;
+}
+
+.zettel {
+  
+  max-width: 79ch;
+
+  p,
+  h1, h2, h3, h4, h5, h6,
+  div.bibliography {
+    margin-block-start: $grid;
+    padding-top: 4px;
+    margin-bottom: -4px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    line-height: $grid;
+    margin-top: $grid;
+    font-style: normal;
+    font-family: $font-family-mono;
+    text-transform: none;
+    letter-spacing: unset;
+  }
+
+  h1, h2, h3 {
+    text-transform: uppercase;
+    margin-top: (2 * $grid);
+  }
+
+  h1::before { content: "[ "; }
+  h1::after { content: " ]"; }
+
+  .bibliography { font-size: 1rem; }
+
+  div.bibliography > div {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .wiki {
+    font-family: $font-family-mono;
+    letter-spacing: -0.4ch;
+  }
+
+  .anchor-wiki { white-space: normal; }
+
+  ol, ul {
+    margin-block-start: $grid;
+    margin-block-end: $grid;
+  }
+
+  ol.desc-list, ul.desc-list { margin-block-start: 0px; }
+
+  li {
+    padding-top: 4px;
+    margin-bottom: -4px;
+  }
+
+  li p { 
+    padding-top: 0px;
+    margin-bottom: -0px;
+  }
+
+  blockquote { margin: $grid 2ch; }
+
 }

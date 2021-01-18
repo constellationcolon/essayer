@@ -12,6 +12,8 @@ collections:
   details:
   poems:
     output: true
+  zettel:
+    output: true
 
 markdown: Kramdown
 
@@ -35,5 +37,6 @@ scholar:
     article: Articles
     inproceedings: Conference Proceedings
     wiki: Wikipedia Entries
+    radio: Radio
     documentary: Documentaries
   style: /assets/csl/apa.csl  
