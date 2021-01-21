@@ -45,7 +45,7 @@ certain size and stature in the market, it becomes hard _not_ to attract the
 type of employee that seizes upon the company primarily in its position as
 widely acknowledged status symbol; a fetish object, if you'd like—the type of
 employee who is prepared to take the company precisely where Wall Street wants
-it to go.
+it to go. See also: {% cite breakdown-of-nations -L page -l 28 %}
 
 <div class="section-break">&</div>
 

@@ -1,5 +1,6 @@
 ---
-title: The Stacks
+title: STACKS
+on-page-title: Librarian's Picks
 layout: essai
 ---
 

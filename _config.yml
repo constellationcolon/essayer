@@ -17,7 +17,6 @@ collections:
 
 markdown: Kramdown
 
-incremental: true
 show_drafts: true
 livereload: true
 
@@ -28,6 +27,7 @@ scholar:
   bibliography_item_tag: div
   bibliography_group_tag: "h5,h6"
   bibtex_filters: [htmllinks]
+  details_dir: stacks
   details_layout: bib-detail.html
   details_link: ✒︎
   group_by: type
@@ -36,7 +36,8 @@ scholar:
   type_names:
     article: Articles
     inproceedings: Conference Proceedings
-    wiki: Wikipedia Entries
-    radio: Radio
     documentary: Documentaries
+    music: Music
+    radio: Radio
+    wiki: Wikipedia Entries
   style: /assets/csl/apa.csl  

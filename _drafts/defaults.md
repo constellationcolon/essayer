@@ -468,6 +468,9 @@ public broadcasters should be abolished—where would we be without {% sc BBC
 Mirror_? But the state ought not be allowed absolute monopoly
 over a nation's media ecosystem either—or its public discourse by extension.
 
+<!-- bbc christmas tree "refer upstairs" mi5 cf q1 series k kris kringle 23:00
+-->
+
 Instead, with the death of ad-revenue, I think we should seize the moment to
 clean house. We need to get rid of the simultaneous offspring and enabler of
 the advertising model: the attention economy. It is high time to say goodbye
