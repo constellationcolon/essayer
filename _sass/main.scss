@@ -51,7 +51,7 @@ body.dark-mode {
 }
 
 .essai {
-  p, div.bibliography, li { max-width: $left-width; }
+  p, div.bibliography, li, blockquote { max-width: $left-width; }
   li p { max-width: unset; }
 }
 
@@ -218,8 +218,11 @@ ol, ul { padding-inline-start: 0; }
   margin: $grid $grid;
   line-height: (2 * $grid);
 }
-.essai blockquote .block-cite { text-align: right; }
-.essai blockquote .citation { font-style: normal; }
+blockquote cite.attribution {
+  display: block;
+  text-align: right;
+}
+blockquote cite.attribution::before { content: "— "; }
 
 // FIGURES
 
@@ -247,6 +250,15 @@ figcaption {
 .caption {
   font-size: $font-size-note;
 }
+
+// TABLES
+
+table {
+  border-collapse: collapse;
+  display: block;
+}
+
+td { vertical-align: top; }
 
 // TUFTE
 
@@ -492,8 +504,42 @@ verse {
   }
 
   blockquote { margin: $grid 2ch; }
+  
+  .main-text { margin-top: #{($grid * 2)}; }  
 
-  .main-text>p:first-child { margin-top: #{($grid * 2)}; }
+  table { padding-top: 4px; margin-bottom: -5px; }
+  
+  th {
+    text-align: left;
+    font-weight: normal;
+    line-height: ($grid - 2px);
+  }
+
+  th {
+    border-top: 1px solid $color-stormborn;
+    border-bottom: 1px solid $color-stormborn;
+  }
+  tr:last-child>td { border-bottom: 1px solid $color-stormborn; }
+  .dark-mode th {
+    border-top: $color-parchment;
+    border-bottom: $color-parchment;
+  }
+  .dark-mode tr:last-child>td { border-bottom: $color-parchment; }
+
+  @media (prefers-color-scheme: dark) {
+    th {
+      border-top: 1px solid $color-parchment;
+      border-bottom: 1px solid $color-parchment;
+    }
+    tr:last-child>td { border-bottom: 1px solid $color-parchment; }
+    .light-mode th {
+      border-top: $color-stormborn;
+      border-bottom: $color-stormborn;
+    }
+    .light-mode tr:last-child>td { border-bottom: $color-stormborn; }
+  }
+
+  blockquote cite.attribution { font-style: normal; }
 
 }
 
