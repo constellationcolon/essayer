@@ -21,14 +21,14 @@ module Jekyll
         content = post.content.gsub(/[\n]/, " ")
         cited = content.scan(/\{% ((side)?(margin)?cite(_details)?|reference) (\S+).*? %}/).uniq
         for cite_key in cited
-          site.data["uncites"][cite_key[-1]].push(post.id)
+          site.data["uncites"][cite_key[-1]].push(post)
         end
       end
       for doc in site.collections["zettel"].docs
         content = doc.content.gsub(/[\n]/, " ")
         cited = content.scan(/\{% ((side)?(margin)?cite(_details)?|reference) (\S+).*? %}/).uniq
         for cite_key in cited
-          site.data["zettel"][cite_key[-1]].push(doc.id)
+          site.data["zettel"][cite_key[-1]].push(doc)
         end
       end
 

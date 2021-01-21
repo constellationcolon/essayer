@@ -50,8 +50,9 @@ body.dark-mode {
   }
 }
 
-.essai p, .essai div.bibliography {
-  max-width: $left-width;
+.essai {
+  p, div.bibliography, li { max-width: $left-width; }
+  li p { max-width: unset; }
 }
 
 @media screen and (max-width: $single-column-threshold),
@@ -173,19 +174,26 @@ ol, ul { padding-inline-start: 0; }
   margin-block-end: $grid;
 }
 
-.main-text>p:first-child,
-.main-text>div>p:first-child {
-  margin-top: #{($grid * 3)};
-}
+.essai {
 
-.main-text p:first-child { text-indent: initial; }
-.main-text p { text-indent: $grid; }
+  .main-text>p:first-child,
+  .main-text>div>p:first-child {
+    text-indent: initial;
+    margin-top: #{($grid * 3)};
+  }
 
-.main-text p,
-.main-text ol,
-.main-text ul {
-  padding-top: $root-em;
-  margin-bottom: -$root-em;
+  .main-text>h2+p,
+  .main-text>p.section-break+p {
+    text-indent: initial;
+  }
+
+  .main-text>p { text-indent: $grid; }
+
+  .main-text p {
+    padding-top: $root-em;
+    margin-bottom: -$root-em;
+  }
+
 }
 
 .small-caps {
@@ -445,8 +453,8 @@ verse {
     margin-top: (2 * $grid);
   }
 
-  h1::before { content: "[ "; }
-  h1::after { content: " ]"; }
+  h2 { text-indent: -2ch; }
+  h2::before { content: "# "; }
 
   .bibliography { font-size: 1rem; }
 
@@ -469,6 +477,10 @@ verse {
 
   ol.desc-list, ul.desc-list { margin-block-start: 0px; }
 
+  ul { list-style: none; }
+  ul li:before { content: "- "; }
+  ul li { text-indent: -2ch; }
+
   li {
     padding-top: 4px;
     margin-bottom: -4px;
@@ -481,4 +493,18 @@ verse {
 
   blockquote { margin: $grid 2ch; }
 
+  .main-text>p:first-child { margin-top: #{($grid * 2)}; }
+
+}
+
+.zettel-id {
+  padding-top: 4px;
+  margin-bottom: -4px;
+  color: $color-steel;
+}
+.dark-mode .zettel-id { color: $color-olive; }
+
+@media (prefers-color-scheme: dark) {
+  .light-mode .zettel-id { color: $color-steel; }
+  .zettel-id { color: $color-olive; }
 }

@@ -1,6 +1,7 @@
 ---
 layout: zettel
 title: Danny says we're living in a simulation
+to_read: [fashionable-nonsense]
 ---
 
 The first time I came across Curtis' thesis in HyperNormalisation [{% cite
@@ -20,7 +21,9 @@ more at creating an *impression* of scientific technique than at conducting
 any sort of rigorous analysis of modern scientific technique / its effects in
 social reality (possibly cf: [{% cite plastic-words %}]). I would not be
 surprised, however, if this was a deliberate (if annoying) stylistic choice in
-service of advancing his "post-modern" argument.
+service of advancing his "post-modern" argument. Apparently, some people
+were so irked by writing like this they wrote an entire book about it
+[{% cite fashionable-nonsense %}].
 
 I will concede in both cases, however, that there is probably a tiny kernel of
 truth buried deep, deep underneath the overburden of pretentious terms and

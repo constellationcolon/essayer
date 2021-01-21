@@ -1,6 +1,40 @@
+{% assign is_landing = false %}
+{% assign landing_pages = "/|/zettel.html|/stacks.html" | split: "|" %}
+{% if landing_pages contains page.url %}
+  {% assign is_landing = true %}
+{% endif %}
+
+{% capture home_href %}{%
+  if page.url == "/"
+    %}/essayer/stacks/{%
+  elsif page.url contains "/stacks" and is_landing == false
+    %}/essayer/stacks/{%
+  elsif page.url contains "/stacks" and is_landing == true
+    %}/essayer/zettel/{%
+  elsif page.url contains "/zettel" and is_landing == false
+    %}/essayer/zettel/{%
+  elsif page.url contains "/zettel" and is_landing == true
+    %}{% link index.md %}{%
+  else
+  %}{% link index.md %}{%
+  endif
+%}{% endcapture %}
+
+{% capture department %}{%
+  if page.url contains "/zettel"
+    %}ZETTELKASTEN{%
+  elsif page.url contains "/stacks"
+    %}STACKS{%
+  else
+    %}ESSAYER{%
+  endif
+%}{% endcapture %}
+
 <nav>
-  <a id="home" href="{% link index.md %}">
-    {% if page.url == '/'%}[{% endif %}ESSAYER{% if page.url == '/'%}]{% endif %}
+  <a id="home" href="{{ home_href }}">
+    {% if is_landing %}[{% endif %}{{
+      department
+    }}{% if is_landing %}]{% endif %}
   </a>
   <span style="float: right;">
     {% for item in site.data.navigation %}
@@ -10,4 +44,4 @@
     {% endfor %}
     <a class="nav-item" onclick="toggleDarkMode()" href="#">☯︎</a>
   </span>
-</nav>
+</nav>  

@@ -8,24 +8,23 @@ layout: base
 <div id="author"><span>{{ page.entry.author }}</span></div>
 
 <div class="main-text">
+
+
 {% capture details %}
 {% for d in site.details %}
-  {% assign key = d.path | split: "/" | last | split: "." | first %}
+  {% assign key = d.id | split: "/" | last %}
   {% if key == page.entry.key %}{{ d.content }}{% break %}{% endif %}
 {% endfor %}
 {% endcapture %}
-{{ details }}
-
-<div id="reference">{% reference page.entry.key %}</div>
+{{ details | markdownify }}
 
 {% assign uncite = site.data.uncites[page.entry.key] %}
 {% if uncite %}
   <div id="uncite">
     <h2>Referenced in</h2>
     <div>
-    {% for uncite_id in uncite %}
-      {% assign post = site.posts | where: "id", uncite_id | first %}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% for post in uncite %}
+      <a href="{% link {{ post.path }} %}">{{ post.title }}</a>
     {% endfor %}
     </div>
   </div>
@@ -37,7 +36,7 @@ layout: base
     <h2>See also</h2>
     <div>
       {% for see_also in see_alsos %}
-        {% assign url = see_also.id | prepend: '/bibliography/' | prepend: site.baseurl | append: '.html' %}
+        {% assign url = see_also.id | prepend: '/stacks/' | prepend: site.baseurl | append: '.html' %}
         <a href="{{ url }}">{{ see_also.title }}</a>
       {% endfor %}
     </div>
@@ -49,14 +48,14 @@ layout: base
   <div id="zettel">
     <h2>Zettel</h2>
     <div>
-    {% for zettel_id in zettel %}
-      {% assign zettel = site.zettel | where: "id", zettel_id | first %}
-      <a href="{{ zettel.url | prepend: site.baseurl }}">{{ zettel.title }}</a>
+    {% for z in zettel %}
+      <a href="{% link {{ z.path }} %}">{{ z.title }}</a>
     {% endfor %}
     </div>
   </div>
 {% endif %}
 
+<div id="reference">{% reference page.entry.key %}</div>
 
 </div>
 </div>

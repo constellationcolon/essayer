@@ -48,4 +48,9 @@ common people", but literally means the Classic Hundred Surnames.
 > establishment of permanent patronyms and the creation of the patrilineal
 > family itself can be attributed to early state simplification.
 
+## Grids and legibility
+
+cf {% cite discipline-and-punish %}, especially "functional sites" in 
+"The art of distributions".
+
 {% include bibliography.html %}
