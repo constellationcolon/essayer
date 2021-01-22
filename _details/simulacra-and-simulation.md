@@ -13,4 +13,3 @@ Science"{% sidenote %}{% cite exactitude-in-science %}{% endsidenote %}.
 > simulacrum.
 
 
-{% include bibliography.html %}

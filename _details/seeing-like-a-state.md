@@ -52,5 +52,3 @@ common people", but literally means the Classic Hundred Surnames.
 
 cf {% cite discipline-and-punish %}, especially "functional sites" in 
 "The art of distributions".
-
-{% include bibliography.html %}

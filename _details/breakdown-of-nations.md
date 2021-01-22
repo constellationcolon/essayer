@@ -72,12 +72,12 @@ Oof.{% marginnote %}{% quote power-corrupts %}{% endmarginnote %}
 > any statistician, after correlating a community’s size with its density and
 > the pace of its population,’ can predict everything from the number of its
 > deaths, fatal accidents, and false fire alarms to the fact that, for
-> instance, in Chicago,
+> instance, in Chicago, [...]
+
 Ok but NYC is remarkably safe despite its size and density?? But I may be
 biased.
 
 > {% margincite breakdown-of-nations -L page -l 30 %}
-> {% marginnote %}{% quote deaths-numbers %}{% endmarginnote %}
 > As long as the victims of persecution are few, the method of execution or,
 > to use a Marxian term, the *mode of production*, will consist in ceremonial
 > knifings, hangings, or shootings, preceded by a semblance of legal process
@@ -93,7 +93,20 @@ biased.
 > the requirements of new situations which could not be handled with previous
 > means.
 
+> {% margincite breakdown-of-nations -L page -l 31 %}
+> Discussing the ‘economics of extermination’ the British mathematician and
+> astronomer Fred Hoyle calculated that, while the cost of killing in World
+> War II was still several thousand pounds per victim, the new atomic rate per
+> corpse has been brought down to a single pound ($2.80).
 
+> {% margincite breakdown-of-nations -L page -l 31 %}
+> the degree of human disapproval, the philosophy of censure, reveals a
+> proportionate and equally natural tendency to decline. Were this not so, the
+> experience of witnessing mounting misery would soon overtax our compassion
+> and kill us. In fact, the greater our decency and ability for compassion,
+> the faster we would succumb.
+
+cf [compassion fatigue]({% link _zettel/202101220222-compassion-fatigue.md %})
 
 ## Questions
 
@@ -103,8 +116,8 @@ biased.
     over-size in corporations, organisations, nations?
 
 1.  One of the premises of the EU is that such a regional union fosters
-    cooperation and peace, truce in contrast to their bloody history. Yet there
-    are detractors from such oversized unions—of which this book is possibly
-    one, who claim that on the contrary, it is the mega-unions waging wars
-    eternal. Is it possible to keep the peace without having to resort to
+    cooperation and peace, truce in contrast to their bloody history. Yet
+    there are detractors from such oversized unions—of which this book is
+    possibly one, who claim that on the contrary, it is the mega-unions waging
+    wars eternal. Is it possible to keep the peace without having to resort to
     hegemony?

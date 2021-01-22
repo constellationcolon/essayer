@@ -449,5 +449,3 @@ cf {% cite seeing-like-a-state %}.
 > the regulated movement of wealth.
 
 Again, cf {% cite seeing-like-a-state %}.
-
-{% include bibliography.html %}

@@ -120,5 +120,3 @@ and yet
 > embodiments that make a mockery of earthly logic—and in doing so, it relieves
 > the absurdity of earthly life, all the impossible limitations and
 > frustrations of living matter.
-
-{% include bibliography.html %}

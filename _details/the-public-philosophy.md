@@ -29,5 +29,3 @@ Concerns of children (who can't vote & whose opinions are taken less seriously)
 Concerns of the dead & the unborn
 
 TK: citations
-
-{% include bibliography.html %}
