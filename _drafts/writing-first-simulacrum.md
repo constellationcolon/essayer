@@ -1,5 +1,4 @@
 ---
-layout:     essai
 title:      "Writing: the First Simulacrum"
 subtitle:   "or, The Case Against Writing: An Essay"
 ---

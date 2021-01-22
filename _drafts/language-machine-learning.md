@@ -1,5 +1,4 @@
 ---
-layout:     essai
 title:      Language / Modernism / Machine Learning
 ---
 

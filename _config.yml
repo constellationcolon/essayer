@@ -8,12 +8,21 @@ github: constellationcolon
 linkedin: suhang42
 
 exclude: [archive, bin]
+
 collections:
   details:
-  poems:
-    output: true
-  zettel:
-    output: true
+  poems: {output: true}
+  zettel: {output: true}
+
+defaults:
+  - scope: {path: "", type: "zettel"}
+    values: {layout: "zettel"}
+  - scope: {path: "", type: "poems"}
+    values: {layout: "poem"}
+  - scope: {path: "", type: "posts"}
+    values: {layout: "essai"}
+  - scope: {path: "", type: "drafts"}
+    values: {layout: "essai"}
 
 markdown: Kramdown
 

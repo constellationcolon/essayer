@@ -1,5 +1,4 @@
 ---
-layout: zettel
 title: The North Star Becomes the North Pole
 ---
 

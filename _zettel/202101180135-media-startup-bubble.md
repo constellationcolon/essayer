@@ -1,5 +1,4 @@
 ---
-layout: zettel
 title: The Media Startup Bubble of the Noughties
 ---
 

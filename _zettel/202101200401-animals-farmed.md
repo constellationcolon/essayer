@@ -1,5 +1,4 @@
 ---
-layout: zettel
 title: Animals Farmed
 ---
 

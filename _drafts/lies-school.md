@@ -1,5 +1,4 @@
 ---
-layout:     essai
 title:      Lies Alma Mater Fed Me
 ---
 

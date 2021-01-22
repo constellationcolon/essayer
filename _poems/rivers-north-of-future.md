@@ -1,5 +1,4 @@
 ---
-layout: poem
 cite_key: "rivers-north-of-future"
 title: In the rivers
 author: Paul Celan

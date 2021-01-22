@@ -1,5 +1,4 @@
 ---
-layout: zettel
 title: Danny says we're living in a simulation
 to_read: [fashionable-nonsense]
 ---

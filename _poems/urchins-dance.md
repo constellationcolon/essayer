@@ -1,5 +1,4 @@
 ---
-layout: poem
 cite_key: "magic-casement"
 title: "The Urchins' Dance"
 author: "John M. Lyly"

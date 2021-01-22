@@ -1,5 +1,4 @@
 ---
-layout:     essai
 title:      The Size Fetish
 ---
 

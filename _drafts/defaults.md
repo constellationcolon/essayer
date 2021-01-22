@@ -1,5 +1,4 @@
 ---
-layout:   essai
 title:    Defaults
 blurb:    Ripping out the IV drip of the news feed
 ---

@@ -1,5 +1,4 @@
 ---
-layout: poem
 cite_key: "magic-casement"
 title: I Know a Bank
 author: Shakespeare
