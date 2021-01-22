@@ -1,5 +1,6 @@
 ---
 title: Animals Farmed
+tags: [animals, postmodernity, agriculture, farming, more-than-human]
 ---
 
 *The Guardian* has a series called "[Animals Farmed]" that talks about the

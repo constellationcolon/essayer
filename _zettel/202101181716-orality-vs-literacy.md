@@ -1,5 +1,6 @@
 ---
 title: Orality vs. Literacy
+tags: [writing, orality]
 ---
 
 Literacy, printing necessary for establishment of non-arbitrary laws "set in

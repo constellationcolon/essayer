@@ -1,6 +1,13 @@
 ---
 title: Danny says we're living in a simulation
 to_read: [fashionable-nonsense]
+tags:
+    - semiotics
+    - representation
+    - modelling
+    - interpretability
+    - reification
+    - postmodernism
 ---
 
 The first time I came across Curtis' thesis in HyperNormalisation [{% cite

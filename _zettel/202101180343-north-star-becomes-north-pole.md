@@ -1,5 +1,6 @@
 ---
 title: The North Star Becomes the North Pole
+tags: [representation, semiotics]
 ---
 
 Consider the model of words and concepts as vectors (e.g. word2vec).

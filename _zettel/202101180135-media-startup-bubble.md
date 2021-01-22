@@ -1,5 +1,6 @@
 ---
 title: The Media Startup Bubble of the Noughties
+tags: [media, startups]
 ---
 
 Around this point, virality-driven ad revenue from social media networks,
