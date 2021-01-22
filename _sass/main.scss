@@ -51,7 +51,7 @@ body.dark-mode {
 }
 
 .essai {
-  p, div.bibliography, li, blockquote { max-width: $left-width; }
+  p, div.bibliography, li, cite { max-width: $left-width; }
   li p { max-width: unset; }
 }
 
@@ -215,9 +215,9 @@ ol, ul { padding-inline-start: 0; }
 
 .essai blockquote {
   font-size: 0.9em;
-  margin: $grid $grid;
   line-height: (2 * $grid);
 }
+.essai blockquote p { padding: $grid; }
 blockquote cite.attribution {
   display: block;
   text-align: right;
@@ -258,7 +258,7 @@ table {
   display: block;
 }
 
-td { vertical-align: top; }
+th, td { vertical-align: top; }
 
 // TUFTE
 
@@ -274,6 +274,10 @@ td { vertical-align: top; }
   line-height: $grid;
   vertical-align: baseline;
   text-indent: 0;
+}
+blockquote .marginnote,
+blockquote .sidenote {
+  margin-right: calc(-50% + #{$grid});
 }
 
 .sidenote-number { counter-increment: sidenote-counter; }
