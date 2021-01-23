@@ -50,15 +50,29 @@ body.dark-mode {
   }
 }
 
-.essai {
-  p, div.bibliography, li, cite { max-width: $left-width; }
-  li p { max-width: unset; }
+// .essai {
+//   p, div.bibliography, li, cite { max-width: $left-width; }
+//   li p { max-width: unset; }
+// }
+
+.essai>.main-text>p,
+.essai>.main-text>div.essai-bibliography,
+.essai>.main-text>*>li {
+  max-width: $left-width;
 }
+
 
 @media screen and (max-width: $single-column-threshold),
        screen and (pointer: coarse) and (hover: none) {
-  html { font-size: 3vw; padding: $single-column-margin; }
-  .essai p, .essai div.bibliography { max-width: 100%; }
+  html {
+    font-size: 3vw;
+    padding: $single-column-margin;
+  }
+  .essai>.main-text>p,
+  .essai>.main-text>div.essai-bibliography,
+  .essai>.main-text>*>li {
+    max-width: 100%;
+  }
 }
 
 // NAVIGATION
@@ -216,8 +230,11 @@ ol, ul { padding-inline-start: 0; }
 .essai blockquote {
   font-size: 0.9em;
   line-height: (2 * $grid);
+  padding: $grid;
 }
-.essai blockquote p { padding: $grid; }
+.essai>.main-text>blockquote {
+  max-width: calc(#{$left-width} - 2 * #{$grid});
+}
 blockquote cite.attribution {
   display: block;
   text-align: right;
@@ -277,7 +294,9 @@ th, td { vertical-align: top; }
 }
 blockquote .marginnote,
 blockquote .sidenote {
-  margin-right: calc(-50% + #{$grid});
+  --full: calc((100% - 2 * #{$grid}) / 0.66);
+  width: calc(0.4 * var(--full));
+  margin-right: calc(-0.5 * var(--full));
 }
 
 .sidenote-number { counter-increment: sidenote-counter; }
@@ -438,9 +457,7 @@ verse {
   margin-left: auto;
   margin-right: auto;
 }
-.essai verse p {
-  max-width: unset;
-}
+.essai verse p { max-width: unset; }
 
 .zettel {
   
