@@ -8,15 +8,47 @@ layout: base
   <div class="main-text">
   {{ content }}
   {% if page.to_read %}
-  <div class="to-read">
-    <h2>To read</h2>
-    <p>
-    {% for to_read in page.to_read %}
-      <span>[{% cite to_read %}]</span>
-    {% endfor %}
-    </p>
-  </div>
-  {% endif %}  
+    <div class="to-read">
+      <h2>To read</h2>
+      <p>
+      {% for to_read in page.to_read %}
+        <span>[{% cite to_read %}]</span>
+      {% endfor %}
+      </p>
+    </div>
+  {% endif %}
   {% include bibliography.html %}
+  {% assign backlinks = site.data.backlinks[page.id] %}
+  {% if backlinks %}
+    <div class="backlinks">
+      <h2>Pages that link here</h2>
+      <h5>Posts</h5>
+      <p>
+        {% for backlink in backlinks %}
+          {% if backlink.collection == "posts" %}
+            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
+          {% endif %}
+        {% endfor %}
+      </p>
+      <h5>Stacks</h5>
+      <p>
+        {% for backlink in backlinks %}
+          {% assign url_parts = backlink.url | split: "/"  %}
+          {% if url_parts[1] == "stacks" %}
+            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
+          {% endif %}
+        {% endfor %}
+      </p>
+      <h5>Other Zettel</h5>
+      <p>
+        {% for backlink in backlinks %}
+          {% assign url_parts = backlink.url | split: "/"  %}
+          {% if url_parts[1] == "zettel" %}
+            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  {% endif %}
   </div>
 </div>
