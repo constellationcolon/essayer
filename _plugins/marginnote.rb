@@ -5,7 +5,7 @@
 module Jekyll
   class MarginnoteTagBlock < Liquid::Block
 
-    @@n = Hash.new { |h, k| h[k] = [] }
+    @@n = Hash.new(0)
 
     def initialize(tag_name, args, tokens)
       super
@@ -14,11 +14,7 @@ module Jekyll
 
     def render(context)
       page_id = context.registers[:page].id
-      if @@n.key?(context.registers[:page].id)
-        @@n[page_id] += 1
-      else
-        @@n[page_id] = 0
-      end
+      @@n[page_id] += 1
       if @marginnote_id == ""
         @marginnote_id = "marginnote-#{@@n[page_id].to_s}"
       end
