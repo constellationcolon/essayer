@@ -54,6 +54,26 @@ layout: base
   </div>
 {% endif %}
 
+{% capture within %}
+  {% bibliography --query @*[key={{ page.entry.in }}] %}
+{% endcapture %}
+{% if within.size > 4 %}
+  <div id="within">
+    <h2>Appears in</h2>
+    <div>{{ within }}</div>
+  </div>
+{% endif %}
+
+{% capture contents %}
+  {% bibliography --query @*[in={{ page.entry.key }}] %}
+{% endcapture %}
+{% if contents.size > 4 %}
+  <div id="contents">
+    <h2>Contains</h2>
+    <div>{{ contents }}</div>
+  </div>
+{% endif %}
+
 <div id="reference">{% reference page.entry.key %}</div>
 
 </div>
