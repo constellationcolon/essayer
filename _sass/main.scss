@@ -98,6 +98,14 @@ nav a {
   text-transform: uppercase;
 }
 
+#dark-toggle.disable { color: $color-steel; }
+.dark-mode #dark-toggle.disable { color: $color-olive; }
+
+@media (prefers-color-scheme: dark) {
+  .light-mode #dark-toggle.disable { color: $color-steel; }
+  #dark-toggle.disable { color: $color-olive; }
+}
+
 // HEADINGS
 
 h1 {
@@ -465,7 +473,8 @@ verse {
 
   p,
   h1, h2, h3, h4, h5, h6,
-  div.bibliography {
+  div.bibliography,
+  cite {
     margin-block-start: $grid;
     padding-top: 4px;
     margin-bottom: -4px;

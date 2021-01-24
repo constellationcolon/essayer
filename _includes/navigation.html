@@ -42,6 +42,7 @@
         {% if page.url == item.rel_path %}[{% endif %} {{ item.name }} {% if page.url == item.rel_path %}]{% endif %}
       </a>
     {% endfor %}
-    <a class="nav-item" onclick="toggleDarkMode()" href="#">☯︎</a>
+    <a id="dark-toggle" class="nav-item" onclick="toggleDarkMode()"
+    href="#">☯︎</a>
   </span>
 </nav>  

@@ -17,18 +17,31 @@ grid: 16px
     </div>
     <footer></footer>
     <script type="text/javascript">
+      const darkToggleMap = {
+        "false": true, "true": undefined, undefined: false
+      }
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
       function darkMode(state) {
         document.body.classList.toggle("light-mode", !state);
         document.body.classList.toggle("dark-mode", state);
         try { darkCharts(state); } catch { }
-        localStorage.dark = state.toString();
       }
-      function toggleDarkMode() { darkMode(localStorage.dark != "true"); }
-      const prefersDarkScheme =
-          window.matchMedia("(prefers-color-scheme: dark)");
+      function toggleDarkMode() {
+        var newDark = darkToggleMap[localStorage.dark];
+        if (newDark !== undefined) {
+          localStorage.dark = newDark.toString();
+        } else {
+          delete localStorage.dark;
+        }
+        darkMode(newDark === undefined ? prefersDarkScheme : newDark);
+        document.getElementById("dark-toggle")
+                .classList.toggle("disable", newDark === undefined);
+      }
       const dark =
-          (localStorage.dark == null && prefersDarkScheme)
-          || (localStorage.dark == "true");
+          (!("dark" in localStorage) && prefersDarkScheme)
+          || (localStorage.dark === "true");
+      document.getElementById("dark-toggle")
+              .classList.toggle("disable", !("dark" in localStorage));
       darkMode(dark);
     </script>
   </body>
