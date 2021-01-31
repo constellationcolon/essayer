@@ -32,16 +32,16 @@ module Jekyll
         end
       end
 
-      for detail in site.collections["details"].docs
-        detail_key = detail.id.split("/").last
-        detail_title = (entries.find { |e| e.key == detail_key }).title
-        content = detail.content.gsub(/[\n]/, " ")
-        see_alsos = (content.scan(/\{% ((side)?(margin)?cite(_details)?|reference) (\S+).*? %}/).map { |match| match[-1] }).uniq
+      for stack in site.collections["stacks"].docs
+        stack_key = stack.id.split("/").last
+        stack_title = (entries.find { |e| e.key == stack_key }).title
+        content = stack.content.gsub(/[\n]/, " ")
+        see_alsos = (content.scan(/\{% ((side)?(margin)?cite(_stacks)?|reference) (\S+).*? %}/).map { |match| match[-1] }).uniq
         for see_also in see_alsos
-          if see_also == detail_key
+          if see_also == stack_key
             next
           end
-          sa = {"id" => detail_key, "title" => detail_title.to_s}
+          sa = {"id" => stack_key, "title" => stack_title.to_s}
           site.data["see_alsos"][see_also].push(sa)
         end
       end

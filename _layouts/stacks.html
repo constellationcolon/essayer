@@ -2,22 +2,26 @@
 layout: base
 ---
 
+{% assign key = page.id | split: "/" | last %}
+
 <div class="essai">
 
-<div id="title">{{ page.title }}</div>
-<div id="author"><span>{{ page.entry.author }}</span></div>
+<div id="title">{{ site.data.bib[key].title }}</div>
+<div id="author"><span>{{ site.data.bib[key].author }}</span></div>
 
 <div class="main-text">
 
-{% capture details %}
-{% for d in site.details %}
-  {% assign key = d.id | split: "/" | last %}
-  {% if key == page.entry.key %}{{ d.content }}{% break %}{% endif %}
-{% endfor %}
-{% endcapture %}
-{{ details | markdownify }}
+{{ content }}
 
-{% assign uncite = site.data.uncites[page.entry.key] %}
+{% capture citations %}{% bibliography --cited %}{% endcapture %}
+{% if citations.size > 39 %}
+<h2>Bibliography</h2>
+<div class="essai-bibliography">
+{{ citations }}
+</div>
+{% endif %}
+
+{% assign uncite = site.data.uncites[key] %}
 {% if uncite %}
   <div id="uncite">
     <h2>Referenced in</h2>
@@ -29,7 +33,7 @@ layout: base
   </div>
 {% endif %}
 
-{% assign see_alsos = site.data.see_alsos[page.entry.key] %}
+{% assign see_alsos = site.data.see_alsos[key] %}
 {% if see_alsos %}
   <div id="see-alsos">
     <h2>See also</h2>
@@ -42,7 +46,7 @@ layout: base
   </div>
 {% endif %}
 
-{% assign zettel = site.data.zettel[page.entry.key] %}
+{% assign zettel = site.data.zettel[key] %}
 {% if zettel %}
   <div id="zettel">
     <h2>Zettel</h2>
@@ -54,18 +58,8 @@ layout: base
   </div>
 {% endif %}
 
-{% capture within %}
-  {% bibliography --query @*[key={{ page.entry.in }}] %}
-{% endcapture %}
-{% if within.size > 4 %}
-  <div id="within">
-    <h2>Appears in</h2>
-    <div>{{ within }}</div>
-  </div>
-{% endif %}
-
 {% capture contents %}
-  {% bibliography --query @*[in={{ page.entry.key }}] %}
+  {% bibliography --query @*[in={{ key }}] %}
 {% endcapture %}
 {% if contents.size > 4 %}
   <div id="contents">
@@ -74,7 +68,9 @@ layout: base
   </div>
 {% endif %}
 
-<div id="reference">{% reference page.entry.key %}</div>
+<div id="reference">{% reference key %}</div>
+
 
 </div>
+
 </div>

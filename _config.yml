@@ -1,5 +1,5 @@
 title: Essayer
-description: Try again. Fail again. Fail better.
+description: 
 baseurl: /essayer
 url: https://constellationcolon.github.io
 permalink: none
@@ -15,11 +15,13 @@ plugins_dir:
   - _nonessential_plugins
 
 collections:
-  details:
+  stacks: {output: true}
   poems: {output: true}
   zettel: {output: true}
 
 defaults:
+  - scope: {path: "", type: "stacks"}
+    values: {layout: "stacks"}
   - scope: {path: "", type: "zettel"}
     values: {layout: "zettel"}
   - scope: {path: "", type: "poems"}
@@ -41,9 +43,6 @@ scholar:
   bibliography_item_tag: div
   bibliography_group_tag: "h5,h6"
   bibtex_filters: [htmllinks]
-  details_dir: stacks
-  details_layout: bib-detail.html
-  details_link: ✒︎
   group_by: type
   repository: /assets/files
   type_order: [book, article, wiki, inproceedings, manual]
