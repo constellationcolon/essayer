@@ -12,10 +12,10 @@ _essay_, then a freshly minted format in the Western canon, was meant to be a
 piece of writing primarily for exploring ideas, rather than for the sake of
 argument, or for the sake of exposition.
 
-400 years after Montaigne, git was born{% sidenote %}{% sc TIL %} this
+400 years after Montaigne, git was born{% sidenote %}<span class='small-caps'>TIL</span> this
 fortuitous event took place as recently as 2005. Now 15 years later I am
 committing this to digital memory via a company that does nothing _but_ git.
-Yes, I know that {% sc SVN %} et al existed before that, but you're also
+Yes, I know that <span class='small-caps'>SVN</span> et al existed before that, but you're also
 reading this on GitHub, not SVNHub.{% endsidenote %}, and with it, gave us a
 whole new way of writing, collaborating, and blaming other people for bad code
 only to find out definitively that it was your own damned self from one year

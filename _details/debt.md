@@ -3,11 +3,11 @@
 
 So much tea packed into one book.
 
-_The {% sc TL;DR %} on the "third-world debt crisis"_ you hear from time to
-time (but whose origins never get explained): the {% sc OPEC %} had a glut of
+_The <span class='small-caps'>TL;DR</span> on the "third-world debt crisis"_ you hear from time to
+time (but whose origins never get explained): the <span class='small-caps'>OPEC</span> had a glut of
 money lying around from the oil crisis in the 70's, and deposited it in
 Western banks. Western banks now had a glut of money they wanted to get
-interest on, so they teamed up with the {% sc IMF %} / World Bank and started
+interest on, so they teamed up with the <span class='small-caps'>IMF</span> / World Bank and started
 offering "development loans" to "developing" countries, agreed upon by the
 ruling elites of those countries. That borrowed money didn't exactly trickle
 down to the ordinary people in those countries, but it was still ultimately
@@ -49,8 +49,7 @@ rather sooner have nothing more to do with the other. Graeber dubs this the
 _military-slavery-coinage complex_.
 
 This complex started in what he dubs _the Axial Age_—the same age in which
-Pythagoras, the Buddha, and Confucius were contemporaries (circa 500 {% sc BC
-%}), and the major world philosophies/religions arose, in response to this
+Pythagoras, the Buddha, and Confucius were contemporaries (circa 500 <span class='small-caps'>BC</span>), and the major world philosophies/religions arose, in response to this
 great rending of social relations due to incessant warfare.
 
 _Interest—usury—was banned_ / considered immoral under most / all of these
@@ -73,7 +72,7 @@ from over-supply.) Eventually, though, they got tired of having to export so
 much bullion that they started the Opium War to try and settle that balance of
 payments.
 
-_Your 401K_ (or equivalent retirement account invested in {% sc US %} government
-bonds)? That's basically you financing {% sc US %} government debt, above and
+_Your 401K_ (or equivalent retirement account invested in <span class='small-caps'>US</span> government
+bonds)? That's basically you financing <span class='small-caps'>US</span> government debt, above and
 on top of what you already pay in taxes. And so where does the money come from
 to finance the interest on those government loans? ;)

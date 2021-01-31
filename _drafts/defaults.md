@@ -3,9 +3,7 @@ title:    Defaults
 blurb:    Ripping out the IV drip of the news feed
 ---
 
-It's a bit of a mystery how we came to use the word *default* to mean {% sc
-the standard fall-back option in the absence of an explicitly declared choice
-%}. But one can guess: its Latin roots, *de* 'away' + *fallo* 'deceive, cheat,
+It's a bit of a mystery how we came to use the word *default* to mean <span class='small-caps'>the standard fall-back option in the absence of an explicitly declared choice</span>. But one can guess: its Latin roots, *de* 'away' + *fallo* 'deceive, cheat,
 escape notice of', point their spindly fingers at a slippery skiver. With its
 older senses, we speak of failure, of negligence, in meeting any of a variety
 of obligations: failing to make payments, we default on a loan; failing to
@@ -25,7 +23,7 @@ The unflattering denotation of the default was not lost on early designers of
 computer systems. Bruce Tognazzini, setting down design guidelines for the
 Apple *IIe*, for instance, opens the section on 'Defaults' thus:
 
-> {% margincite apple-iie-design -L page -l 37 %} Please do not ever use the
+> {% marginnote %}{% cite apple-iie-design -L page -l 37 %}{% endmarginnote %} Please do not ever use the
 > word default in a program designed for humans. Default is something the
 > mortgage went into right before the evil banker stole the Widow Parson's
 > house. There is an exhaustive list of substitutes (previous, automatic,
@@ -43,7 +41,7 @@ clamouring for market share—nor on government officials looking to engineer
 social behaviour. Not least because we humans can be consistently relied upon
 to be very lazy indeed: back in the days of the First Browser War, Microsoft
 had infamously managed to propel Internet Explorer to market dominance by
-bundling it into their popular Windows operating system. That made {% sc IE %}
+bundling it into their popular Windows operating system. That made <span class='small-caps'>IE</span>
 the default browser, the browser of lazy consumer (non-)choice, and in the
 process effectively killed off Netscape, the most popular browser at the time.
 All told, a stellar strategy for the lumbering tech giant attempting to break
@@ -74,7 +72,7 @@ by deep-pocketed advertisers. News proprietors were historically flush with
 cash, for no other could provide such untrammelled access to consumer
 attention. Circulation had made the fortunes of the press barons back in the
 day. Reach made the fortunes of the media moguls when broadcasting came onto
-the post-war scene. But it is {% sc DAU %}s{% sidenote %}**D**aily **A**ctive
+the post-war scene. But it is <span class='small-caps'>DAU</span>s{% sidenote %}**D**aily **A**ctive
 **U**sers{% endsidenote %} that now make the fortunes of Zuckerberg, Pichai,
 and Dorsey, leaving news sites, these former titans of advertising, to tussle
 over the dwindling scraps of online traffic referred to them from the Internet
@@ -92,9 +90,7 @@ Chrome's _Articles for You_{% sidenote %}[At Chartbeat, we'd dubbed it
 Google Chrome Suggestions.][afy]{% endsidenote %} on
 the browser's new tab page. The amount of monthly traffic it was referring had
 grown 21x over the course of just a year, and had even surpassed even that of
-Twitter, then the third largest referrer after {% sc FB %} and {%
-sc GOOG %}. (You can see it just barely peeking over the {% sc TWTR
-%} horizon in '18 in the chart below.)
+Twitter, then the third largest referrer after <span class='small-caps'>FB</span> and <span class='small-caps'>GOOG</span>. (You can see it just barely peeking over the <span class='small-caps'>TWTR</span> horizon in '18 in the chart below.)
 
 <figure>
   <div style="padding-top: 6px;" class="viz-altair" id="fig-mobile-visits"></div>
@@ -166,7 +162,7 @@ Well. Humour me for a minute, and think back to the last time you (doom)scrolled
     Just the word _feed_ itself—like the word _default_—gives me the
     heebie-jeebies. What is it, to be a consumer of a feed? Of animal feed? Of
     prolefeed? To be a pig, in a cage, on antibiotics? [{% cite fitter-happier
-    %}]
+    %}] Cf [The Breakdown of Nations](stacks/breakdown-of-nations.html#active-vs-passive).
 {% endsidenote %}; Facebook, Twitter, whichever, doesn't matter. Of the news
 items you came across, how many did you simply scan over the headlines and
 preview image or autoplay video of? How many did you actually click through to
@@ -174,7 +170,7 @@ peruse? Of those you perused, how many would you say had a direct impact on
 your life, that you've done something differently on account of having read or
 watched it? Or was it just another piece of trivia you instinctively
 retweeted, and then brought up as a bit of idle chit-chat as you ran into
-other people that day? [As {% sc NPR %} so cheekily demonstrated, who even
+other people that day? [As <span class='small-caps'>NPR</span> so cheekily demonstrated, who even
 reads anymore?][npr-read] As we collect articles and share links like hermit
 crabs scrabbling to encrust the shells of our online personae with the shiny,
 discarded excreta of our mediated reality, what becomes of that reality known
@@ -187,7 +183,7 @@ decontextualised, objectivised view from nowhere, blasting 24/7 through the
 media firehose—does not contain information that most of us can realistically
 *act* on. In his 1985 book _Amusing Ourselves to Death_{% sidenote cite-aotd
 %}{% cite amusing-ourselves-to-death %}{% endsidenote %}, written in the
-golden age of {% sc MTV %}, Postman coined the term _information-action ratio_
+golden age of <span class='small-caps'>MTV</span>, Postman coined the term _information-action ratio_
 as a précis for the phenomenon. Others have compared news consumption to an
 [information diet][info-diet], which, like the stuff that we eat, has
 increasingly come to be made up of junk: high in calories, low in actual
@@ -196,7 +192,7 @@ over unironically in the industry—references would be made to the production
 of "snackable content", little packets of bite-sized content that the "busy
 professional" would consume on the go as they went about their day to keep
 boredom and FOMO at bay.{% sidenote %}Not that this is a perspective uniformly
-shared by all publishers. [A.G. Sulzberger, publisher of the {% sc NYT %},
+shared by all publishers. [A.G. Sulzberger, publisher of the <span class='small-caps'>NYT</span>,
 complained in an interview with Time magazine][time-ag], "I actually hate the
 word content. It’s a word for junk … the junk you shovel into Facebook. What
 we do is journalism." But even with clean, honest journalism, a small voice
@@ -207,9 +203,9 @@ concerned, but ultimately powerless?{% endsidenote %}
 
 How did we get this way, drowning in information and still so lost at sea?
 Postman drew on Marshall McLuhan's "medium is the message" maxim in uncovering
-{% sc TV %} as a medium that inherently short-circuited any attempt at
+<span class='small-caps'>TV</span> as a medium that inherently short-circuited any attempt at
 measured discourse, tugging on the false visual intimacy created between rapt
-viewer and dazzling {% sc TV %} personality to relay its visceral messages.
+viewer and dazzling <span class='small-caps'>TV</span> personality to relay its visceral messages.
 But it is certainly not the case today that all feeds simply beam autoplay
 videos into our eyeballs. Content™ comes at us in galleries, videos, and
 listicles alike. The medium being the message, in any case, doesn't explain
@@ -223,14 +219,13 @@ Circulation was king. The lifestyle section and the Sunday paper were just two
 of the "innovations" that publications came up with in their drive to reach
 ever widening audiences and demographics—to women, especially, who were known
 as the ones to actually go out and spend money on the wares the advertisers
-were hawking. Similarly, when the hey-day of {% sc TV %} rolled around, the
+were hawking. Similarly, when the hey-day of <span class='small-caps'>TV</span> rolled around, the
 wider the reach of a network, the higher its Nielsen ratings, and the more the
 broadcaster was able to charge for a spot of advertising.
 
 All this, obviously, changed with the internet. At first, the internet was
 just this dinky little hippie space that everyone would just put their
-articles up on for free, a [technological curiosity obsessed over by the {% sc
-IT %} nerds lurking in the basement][nyt-twtr]. But it seemed one day we were
+articles up on for free, a [technological curiosity obsessed over by the <span class='small-caps'>IT</span> nerds lurking in the basement][nyt-twtr]. But it seemed one day we were
 inking our fingers and smudging our cheeks with powdery grey transfers from
 newsprint, and the very next, our eyes were glued to our smartphones,
 glassy-eyed captives in the walled gardens of the Books of Faces. And so it
@@ -260,10 +255,10 @@ What the *New York Times* doesn't tell you, when it propagates its
 Are the Product"][u-r-product] of the social networks, is that the mass media
 in crisis today was *itself* established on selling you, the consumer, as a
 product{% sidenote television-delivers-people %}
-    [{% cite television-delivers-people %}] {% sc AFAIK %},
+    [{% cite television-delivers-people %}] <span class='small-caps'>AFAIK</span>,
     this short video entitled _Television delivers people_ is the first time
     that the phrase, "you are the product" gets applied to a form of media.
-    Although the video refers explicitly to {% sc TV %}, the same analysis can
+    Although the video refers explicitly to <span class='small-caps'>TV</span>, the same analysis can
     certainly apply to any form of media that is (nearly) free to
     consume—including the newspaper.
 {% endsidenote %} to the advertiser. Not only were you
@@ -273,15 +268,14 @@ already the product, the mass media's claims to "truth" and
     and "default positions", but that will have to wait for another time.
 {% endsidenote %} were instituted not so much on the grounds of some noble
 sense of journalistic integrity, but more so out of fear of upsetting the
-paying advertiser{% sidecite media-future-past %},
-or losing access to valuable high-level sources{% sidecite
-manufacturing-consent -L chapter -l 1 %}. Its imperatives
+paying advertiser{% sidenote %}{% cite media-future-past %}{% endsidenote %},
+or losing access to valuable high-level sources{% sidenote %}{% cite manufacturing-consent -L chapter -l 1 %}{% endsidenote %}. Its imperatives
 for scale, the need to sell more papers, or to reach a wider audience, did not
 derive primarily from the need for direct reader revenue. Rather, it was to
 the much more lucrative end of cultivating a captive audience to sell on to
 the advertiser that the mass media sought out the masses. As soon as a medium
 started to derive most of its revenue from the advertiser{% sidenote ad-rev %}
-    As one point of reference: in 1966, the {% sc NYT %} was [N° 404 on the
+    As one point of reference: in 1966, the <span class='small-caps'>NYT</span> was [N° 404 on the
     Fortune 500][nyt-fortune-500], that had a "350-man department that
     [brought] in more than $100 million a year by selling ads," and moreover,
     "the revenue derived from advertising [was] three times what the paper
@@ -364,11 +358,11 @@ fingertips in real-time—and who cares if it's delivered in fragmented factoids
 stripped of personal context or human meaning? Breaking News: more sanctions
 against nuclear-aspirant Iran—who cares if it was a CIA-backed coup that
 overthrew their inchoate democracy and brought about the rise of the
-ultra-religious republic?{% sidecite all-the-shahs-men %} Now This: another
+ultra-religious republic?{% sidenote %}{% cite all-the-shahs-men %}{% endsidenote %} Now This: another
 third-world country facing an intractable debt-crisis—who cares if the foreign
 aid so "generously" disbursed upon the global south has tended to entrench
 them further into debt bondage, rather than lifting them out of poverty as the
-aid agencies claim?{% sidecite debt-boomerang %} All this *information*, so
+aid agencies claim?{% sidenote %}{% cite debt-boomerang %}{% endsidenote %} All this *information*, so
 readily accessible to us in neat, bite-sized packets, optimised for the
 maximal delivery of commercial propaganda, presents to us but an aesthetic
 surface. It is a hard, smooth, shell of constructed narratives against which
@@ -442,8 +436,7 @@ When elite publications put up walls restricting access to information, they
 serve only to further entrench the informational inequalities that plague our
 society{% sidenote %}So much for the liberal bias of the mainstream media!{%
 endsidenote %} As Nathan Robinson outlined in his excellent article, "Truth is
-Paywalled but the Lies are Free"{% sidecite
-truth-is-paywalled-but-lies-are-free %}, it's little wonder
+Paywalled but the Lies are Free"{% sidenote %}{% cite truth-is-paywalled-but-lies-are-free %}{% endsidenote %}, it's little wonder
 that the likes of Breitbart has had so much success spewing their lies on
 Facebook. When responsible publications deem their reporting to be privileged
 information for only those who can pay, truth and integrity are readily
@@ -456,7 +449,7 @@ proposes that governments draw on our taxes in order to fund
 publications—academic and media alike—allotting payments according to how
 often each piece of content is accessed. For academic publishing at least,
 such a model could be a no-brainer; why do the likes of Elsevier deserve 30%
-profit margins{% sidenote %} In 2019, {% sc RELX %}, Elsevier's parent
+profit margins{% sidenote %} In 2019, <span class='small-caps'>RELX</span>, Elsevier's parent
 company, reported a profit margin of 31.6% [{% cite elsevier-2019 -l 2 %}]. {%
 endsidenote %} for simply throwing academic research—often *already* funded by
 our tax dollars—behind a private paywall on the internet? I wholeheartedly
@@ -482,8 +475,7 @@ this can mean anything from [complete state control over the media][sg-media],
 [neo-colonial whitewashing][moral-maze], to [fearless public-interest
 reporting that are nevertheless subject to other arms of state control][abc];
 possibly all occurring within the same broadcaster. The point here is not that
-public broadcasters should be abolished—where would we be without {% sc BBC
-%}'s _Doctor Who_, or {% sc CBC %}'s _Ideas_, or, heck, Channel 4's _Black
+public broadcasters should be abolished—where would we be without <span class='small-caps'>BBC</span>'s _Doctor Who_, or <span class='small-caps'>CBC</span>'s _Ideas_, or, heck, Channel 4's _Black
 Mirror_? But the state ought not be allowed absolute monopoly
 over a nation's media ecosystem either—or its public discourse by extension.
 
@@ -502,7 +494,7 @@ What I'm truly excited about today, is open, reader-supported, participatory
 journalism. Journalism that finally re-aligns the financial incentives and
 power structures in favour of those that it purports today to serve. As some
 have noted, the best part about subscribing to the New York Times is being
-able to call up and threaten to cancel.{% sidecite citation-needed %} As the
+able to call up and threaten to cancel.{% sidenote %}{% cite citation-needed %}{% endsidenote %} As the
 ad-supported model becomes increasingly insupportable, publishers would do
 well to now recognise the interests of the people, instead of the will of the
 corporations—who have unceremoniously abandoned them now that the tech giants
@@ -511,8 +503,7 @@ the news media could scrape together.
 
 The Anglophone publication that has done best in this regard, in my opinion,
 is The Guardian. It has purposefully rejected the use of a paywall{% sidenote
-%}though it remains to be seen how the [data-wall] skirmishes in the {% sc EU
-%}/{% sc CA %} will work out{% endsidenote %}, in favour of keeping its
+%}though it remains to be seen how the [data-wall] skirmishes in the <span class='small-caps'>EU</span>/<span class='small-caps'>CA</span> will work out{% endsidenote %}, in favour of keeping its
 journalism free and open. Though it still serves up ads to fund part of this
 open access, 28% of its funding now comes via subscriptions and donations
 from its members and readers.{% sidenote gmg-2018 %}
@@ -586,7 +577,7 @@ glossed over by dominant corporate media narratives that they sour and ferment
 in people's hearts, building up unreleased pressure and resentment over time.
 Concerns that, again and again, have proven to be dangerous and explosive when
 they have gone un-addressed. It is, I think, not always enough to conduct
-citizen journalism in the form of verbatim recordings of events {% sc IRL %},
+citizen journalism in the form of verbatim recordings of events <span class='small-caps'>IRL</span>,
 even though it has undoubtedly produced some admirable results. Human events
 attain their significance only in context, and we are, for better or for
 worse, creatures of narrative. To piece together a comprehensive and

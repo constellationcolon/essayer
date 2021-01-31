@@ -4,7 +4,7 @@
 "The Precession of Simulacra" opens with a reference to "On Exactitude in
 Science"{% sidenote %}{% cite exactitude-in-science %}{% endsidenote %}.
 
-> {% margincite simulacra-and-simulation -l 6 %}Such would be the successive
+> {% marginnote %}{% cite simulacra-and-simulation -l 6 %}{% endmarginnote %}Such would be the successive
 > phases of the image:<br/>
 > it is the reflection of a profound reality;<br/>
 > it masks and denatures a profound reality;<br/>

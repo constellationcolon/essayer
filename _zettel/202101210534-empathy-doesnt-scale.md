@@ -3,9 +3,16 @@ title: Empathy Doesn't Scale
 tags: [scale, humanism]
 ---
 
-{% blockquote people-dont-scale %}
+<blockquote>
+  <div class="quote">{{ site.data.quotes["people-dont-scale"]["quote"] }}</div>
+  <cite class="attribution">{{ site.data.quotes["people-dont-scale"]["attribution"] }}</cite>
+</blockquote>
 
-{% blockquote deaths-numbers %}
+<blockquote>
+  <div class="quote">{{ site.data.quotes["deaths-numbers"]["quote"] }}</div>
+  <cite class="attribution">{{ site.data.quotes["deaths-numbers"]["attribution"] }}</cite>
+</blockquote>
+
 
 > As long as the victims of persecution are few, the method of execution or,
 > to use a Marxian term, the *mode of production*, will consist in ceremonial

@@ -51,8 +51,7 @@ shebang][covid-19-ising].
 > have at their disposal in workplaces where even when there’s nothing for
 > them to do, they still can’t admit it openly.
 
-This exact observation was dubbed the "Bored at Work Network" ({% sc BWN %}){%
-sidecite bored-at-work %} by none other than the king of listicles himself,
+This exact observation was dubbed the "Bored at Work Network" (<span class='small-caps'>BWN</span>){% sidenote %}{% cite bored-at-work %}{% endsidenote %} by none other than the king of listicles himself,
 BuzzFeed founder Jonah Peretti.
 
 [covid-19-ising]: https://twitter.com/tobiasgalla/status/1243485690039582721?s=20

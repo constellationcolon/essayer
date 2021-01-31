@@ -3,7 +3,10 @@ title: Scale Primitives
 tags: [agriculture, scale, states, war]
 ---
 
-{% blockquote mirrors-copulation-multiply %}
+<blockquote>
+  <div class="quote">{{ site.data.quotes["mirrors-copulation-multiply"]["quote"] }}</div>
+  <cite class="attribution">{{ site.data.quotes["mirrors-copulation-multiply"]["attribution"] }}</cite>
+</blockquote>
 
 Despite all the hype surrounding "scale" today from SV, it seems to be a
 civilisational instinct that's been with us since the earliest states,

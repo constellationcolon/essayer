@@ -2,7 +2,7 @@
 ---
 
 ## Four general rules
-{% margincite discipline-and-punish -L chapter-l 1.1 %}
+{% marginnote %}{% cite discipline-and-punish -L chapter-l 1.1 %}{% endmarginnote %}
 1. "Regard punishment as a complex social function."
 1. "Regard punishment as a political tactic."
 1. "[I]n short, make the technology of power the very principle both of the
@@ -14,7 +14,7 @@ relations."
 
 ## Political economy of the body
 
-> {% margincite discipline-and-punish  -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l I.1 %}{% endmarginnote %}
 > We must first rid ourselves of the illusion that penality is above all (if
 > not exclusively) a means of reducing crime and [...] tend towards expiation
 > of obtaining redress, towards the pursuit of individuals or the attribution
@@ -36,13 +36,13 @@ relations."
 > forced labour in the mechanisms of punishment diminishes accordingly and
 > 'corrective' detention takes its place.
 
-> {% margincite discipline-and-punish  -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l I.1 %}{% endmarginnote %}
 > the systems of punishment are to be situated in a certain 'political
 > economy' of the body [...] But can one write such a history against the
 > background of a history of bodies, when such systems of punishment claim to
 > have only the secret souls of criminals as their objective?
 
-> {% margincite discipline-and-punish  -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l I.1 %}{% endmarginnote %}
 > Historians long ago began to write the history of the body. [...] they have
 > shown to what extent historical processes were involved in what might seem
 > to be the purely biological base of existence [...] But the body is also
@@ -64,7 +64,7 @@ relations."
 > of validity is situated in a sense between these great functionings and the
 > bodies themselves with their materiality and their forces.
 
-> {% margincite discipline-and-punish -L chapter -l II.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l II.1 %}{% endmarginnote %}
 > It was not so much, or not only, the privileges of justice, its
 > arbitrariness, its archaic arrogance, its uncontrolled rights that were
 > criticized; but rather the mixture of its weaknesses and excesses, its
@@ -89,7 +89,7 @@ relations."
 
 ## Micro-physics of power
 
-> {% margincite discipline-and-punish -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l I.1 %}{% endmarginnote %}
 > one should decipher in it a network of relations, constantly in tension, in
 > activity, rather than a privilege that one might possess; that one should
 > take as its model a perpetual battle rather than a contract regulating a
@@ -108,7 +108,7 @@ relations."
 > inscribed in history except by the effects that it induces on the entire
 > network in which it is caught up.
 
-> {% margincite discipline-and-punish -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l I.1 %}{% endmarginnote %}
 > The history of this 'micro-physics' of the punitive power would then be a
 > genealogy or an element in a genealogy of the modern 'soul'. Rather than
 > seeing this soul as the reactivated remnants of an ideology, one would see
@@ -123,7 +123,7 @@ relations."
 
 ## Power and Knowedge
 
-> {% margincite discipline-and-punish -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l I.1 %}{% endmarginnote %}
 > Perhaps we should abandon the belief that power makes mad and that, by the
 > same token, the renunciation of power is one of the conditions of knowledge.
 > We should admit rather that power produces knowledge (and not simply by
@@ -133,7 +133,7 @@ relations."
 > knowledge, nor any knowledge that does not presuppose and constitute at the
 > same time power relations.
 
-> {% margincite discipline-and-punish  -L chapter -l I.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l I.1 %}{% endmarginnote %}
 > To analyse the political investment of the body and the micro-physics of
 > power presupposes, therefore, that one abandons – where power is concerned –
 > the violence-ideology opposition, the metaphor of property, the model of the
@@ -147,10 +147,10 @@ relations."
 
 ## Spectacle of the Scaffold
 
-> {% margincite discipline-and-punish  -L chapter -l I.2 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l I.2 %}{% endmarginnote %}
 > The public execution did not re-establish justice; it reactivated power.
 
-> {% margincite discipline-and-punish  -L chapter -l II.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l II.1 %}{% endmarginnote %}
 > There is, then, a shift in the mechanics of example: in a penality employing
 > public torture and execution, example was the answer to the crime; it had,
 > by a sort of twin manifestation, to show the crime and at the same time to
@@ -163,8 +163,8 @@ relations."
 
 ## Semio-technique for the power to punish
 
-1. *The rule of minimum quantity*{% margincite discipline-and-punish  -L
-   chapter -l II.1 %}
+1. *The rule of minimum quantity*{% marginnote %}{% cite discipline-and-punish
+   -L chapter -l II.1 %}{% endmarginnote %}
 
 1. *The rule of sufficient ideality*
 
@@ -196,7 +196,7 @@ relations."
 
 ## Man-the-machine
 
-> {% margincite discipline-and-punish  -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l III.1 %}{% endmarginnote %}
 > The classical age discovered the body as object and target of power. [...]
 > The great book of Man-the-Machine was written simultaneously on two
 > registers: the anatomico-metaphysical register, of which Descartes wrote the
@@ -219,7 +219,7 @@ relations."
 
 ## Docile bodies
 
-> {% margincite discipline-and-punish  -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l III.1 %}{% endmarginnote %}
 > What was so new in these projects of docility that interested the eighteenth
 > century so much? It was certainly not the first time that the body had
 > become the object of such imperious and pressing investments; in every
@@ -250,7 +250,7 @@ New in the eighteenth century projects of docility:
 
 ## Disciplines
 
-> {% margincite discipline-and-punish  -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l III.1 %}{% endmarginnote %}
 > These methods, which made possible the meticulous control of the operations
 > of the body, which assured the constant subjection of its forces and imposed
 > upon them a relation of docility-utility, might be called 'disciplines'.
@@ -260,7 +260,7 @@ New in the eighteenth century projects of docility:
 
 Different from slavery, from service, from vassalage, from asceticism and from 'disciplines' of a monastic type.
 
-> {% margincite discipline-and-punish  -L chapter -l III.1 %} 
+> {% marginnote %}{% cite discipline-and-punish  -L chapter -l III.1 %}{% endmarginnote %} 
 > The historical moment of the disciplines was the moment when an art of the
 > human body was born, which was directed not only at the growth of its
 > skills, nor at the intensification of its subjection, but at the formation
@@ -272,7 +272,7 @@ Different from slavery, from service, from vassalage, from asceticism and from '
 > the efficiency that one determines. Thus discipline produces subjected and
 > practised bodies, 'docile' bodies.
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %} 
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %} 
 > Discipline increases the forces of the body (in economic terms of utility)
 > and diminishes these same forces (in political terms of obedience). In
 > short, it dissociates power from the body; on the one hand, it turns it into
@@ -285,7 +285,7 @@ Different from slavery, from service, from vassalage, from asceticism and from '
 
 ## Disciplinary institutions
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > The 'invention' of this new political anatomy must not be seen as a sudden
 > discovery. [...] They were at work in secondary education at a
 > very early date, later in primary schools; they slowly invested the space of
@@ -301,7 +301,7 @@ Different from slavery, from service, from vassalage, from asceticism and from '
 
 cf {% cite deschooling-society %} and other Illich works.
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > These were always meticulous, often minute, techniques, but they had their
 > importance: because they defined a certain mode of detailed political
 > investment of the body, a 'new micro-physics' of power; and because, since
@@ -314,7 +314,7 @@ cf {% cite deschooling-society %} and other Illich works.
 
 ## State surveillance
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > Napoleon did not discover this world; but we know that he set out to
 > organize it; and he wished to arrange around him a mechanism of power that
 > would enable him to see the smallest event that occurred in the state he
@@ -418,7 +418,7 @@ cf {% cite seeing-like-a-state %}.
 
 ## "Can't manage what you can't measure"
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > The first of the great operations of discipline is, therefore, the
 > constitution of ‘tableaux vivants’, which transform the confused, useless or
 > dangerous multitudes into ordered multiplicities. The drawing up of ‘tables’
@@ -456,7 +456,7 @@ Again, cf {% cite seeing-like-a-state %}.
 
 ## Referents
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > Historians of ideas usually attribute the dream of a perfect society to the
 > philosophers and jurists of the eighteenth century; but there was also a
 > military dream of society; its fundamental reference was not to the state of
@@ -467,7 +467,7 @@ Again, cf {% cite seeing-like-a-state %}.
 
 ## Ozymandaian
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > ‘Discipline must be made national,’ said Guibert. ‘The state that I depict
 > will have a simple, reliable, easily controlled administration. It will
 > resemble those huge machines, which by quite uncomplicated means produce
@@ -479,7 +479,7 @@ Again, cf {% cite seeing-like-a-state %}.
 
 ## Examinations
 
-> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.2 %}{% endmarginnote %}
 > The examination transformed the economy of visibility into the exercise of
 > power. Traditionally, power was what was seen, what was shown and what was
 > manifested and, paradoxically, found the principle of its force in the
@@ -505,7 +505,7 @@ vernacular societies.
 
 ## Statistics & discipline
 
-> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.1 %}{% endmarginnote %}
 > The power of the Norm appears through the disciplines. Is this the new law
 > of modern society? Let us say rather that, since the eighteenth century, it
 > has joined other powers – the Law, the Word (Parole) and the Text, Tradition
@@ -519,13 +519,13 @@ vernacular societies.
 > Canguilhem, 171–91). Like surveillance and with it, normalization becomes
 > one of the great instruments of power at the end of the classical age.
 
-> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.2 %}{% endmarginnote %}
 > The other innovations of disciplinary writing concerned the correlation of
 > these elements, the accumulation of documents, their seriation, the
 > organization of comparative fields making it possible to classify, to form
 > categories, to determine averages, to fix norms.
 
-> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.2 %}{% endmarginnote %}
 > Thanks to the whole apparatus of writing that accompanied it, the
 > examination opened up two correlative possibilities: firstly, the
 > constitution of the individual as a describable, analysable object, not in
@@ -542,7 +542,7 @@ vernacular societies.
 Emphasis on deviation (deviance) rather than on the mean + the systematised
 population.
 
-> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.2 %}{% endmarginnote %}
 > These small techniques of notation, of registration, of constituting files,
 > of arranging facts in columns and tables that are so familiar to us now,
 > were of decisive importance in the epistemological ‘thaw’ of the sciences of
@@ -564,7 +564,7 @@ population.
 
 <https://data-ppf.github.io/>
 
-> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> {% marginnote %}{% cite discipline-and-punish -L chapter -l III.2 %}{% endmarginnote %}
 > For a long time ordinary individuality – the everyday individuality of
 > everybody – remained below the threshold of description. To be looked at,
 > observed, described in detail, followed from day to day by an uninterrupted

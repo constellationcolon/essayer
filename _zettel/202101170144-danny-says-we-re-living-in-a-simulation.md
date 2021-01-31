@@ -84,7 +84,14 @@ over-hyped specimens from the AI/ML world.
 understood. I'd also hasten to add, "in limited contexts." Oft quoted is the
 George Box version:
 
-{% blockquote all-models-are-wrong %}
+<blockquote>
+<div class="quote">
+{{ site.data.quotes["all-models-are-wrong"]["quote"] }}
+</div>
+<cite class="attribution">
+{{ site.data.quotes["all-models-are-wrong"]["attribution"] }}
+</cite>
+</blockquote>
 
 Timely and germane is the example of how [wildfires have been handled in
 California][wildfire]. 

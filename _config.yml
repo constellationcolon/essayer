@@ -8,6 +8,11 @@ github: constellationcolon
 linkedin: suhang42
 
 exclude: [archive, bin]
+keep_files: [assets]
+
+plugins_dir:
+  - _essential_plugins
+  - _nonessential_plugins
 
 collections:
   details:

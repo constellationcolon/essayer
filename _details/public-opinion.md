@@ -4,8 +4,7 @@
 It's easy to see why Walter Lippmann gets slammed for flagrant elitism.
 
 To be sure, *Public Opinion* is one momentous book; which other can claim to
-not only have coined the term {% sc stereotype %}, but also the phrase {% sc
-the manufacture of consent %}{% sidenote %}Referenced variously by {% cite
+not only have coined the term <span class='small-caps'>stereotype</span>, but also the phrase <span class='small-caps'>the manufacture of consent</span>{% sidenote %}Referenced variously by {% cite
 engineering-consent %}, {% cite manufacturing-consent %}, {% cite
 engineering-public %}, amongst others.{% endsidenote %}? With fortuitous
 beginnings he points out that we who live in societies with spheres of
@@ -21,9 +20,9 @@ the situation on the ground.
 If the situation he wrote of in 1922 seems strangely familiar to our
 post-2016, filter bubble consciousness, it is probably because the situation
 has not improved in the slightest (read: it's worse). To situate ourselves a
-little in time, 1922 was right about when the {% sc TV %} was busy getting
+little in time, 1922 was right about when the <span class='small-caps'>TV</span> was busy getting
 invented, but it wasn't really until the world had limped through two world
-wars that the average family had a {% sc TV %} set in their home.
+wars that the average family had a <span class='small-caps'>TV</span> set in their home.
 
 So imagine yourself as Lippmann, having 'gone to school in Boston', already
 writing about such mediation difficulties in an era with just the

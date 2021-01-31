@@ -17,4 +17,7 @@ tags: [creativity, constraints]
 |-----------------------------------------------|---------------------------|-------------------|--------------------------|
 
 
-{% blockquote spark-across-the-gap %}
+<blockquote>
+  <div class="quote">{{ site.data.quotes["spark-across-the-gap"]["quote"] }}</div>
+  <cite class="attribution">{{ site.data.quotes["spark-across-the-gap"]["attribution"] }}</cite>
+</blockquote>
