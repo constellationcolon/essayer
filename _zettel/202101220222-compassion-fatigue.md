@@ -1,8 +1,8 @@
 ---
 title: Compassion Fatigue
+tags: [humanism, media]
 ---
 
-More to read:
 - [Compassion fatigue and modern journalism][compassion-fatigue]
 - [Compassion fatigue on Wikipedia][compassion-fatigue-wiki]
 - [Traumatic Stress & The News Audience][traumatic-stress-news]

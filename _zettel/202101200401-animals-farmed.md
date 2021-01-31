@@ -51,4 +51,7 @@ animals-territory-metamorphoses %}]
 > death renders the example of the animals more shocking still than that of
 > men on an assembly line.
 
+[AI hog-farming in China][ai-pig-china]
+
 [Animals Farmed]: https://www.theguardian.com/environment/series/animals-farmed
+[ai-pig-china]: https://www.theguardian.com/environment/2020/oct/08/behind-chinas-pork-miracle-how-technology-is-transforming-rural-hog-farming

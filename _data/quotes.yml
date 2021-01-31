@@ -11,6 +11,7 @@ power-corrupts:
   attribution: Lord Acton
 deaths-numbers:
   quote: One death is a tragedy, one million a statistic.
+  attribution: Joseph Stalin (apocryphal)
 spark-across-the-gap:
   quote: |-
     Like most conversations and most chess games, we all start off the same and
@@ -18,3 +19,20 @@ spark-across-the-gap:
     Fertilization to fertilizer. Ashes to ashes. And we spark across the gap.
   attribution: Brian Christian
   cite: most-human-human
+people-dont-scale:
+  quote: People don't scale.
+  attribution: Sheryl Sandberg
+  cite: citation-needed
+mirrors-copulation-multiply:
+  quote: |-
+    Mirrors and copulation are abominable, for they multiply the number of
+    mankind
+  attribution: Jorge Luis Borge
+  cite: tlon-uqbar-orbis-tertius
+all-models-are-wrong:
+  quote: |-
+    ... all models are approximations. Essentially, all models are wrong, but
+    some are useful. However, the approximate nature of the model must always
+    be borne in mind....
+  attribution: George Box
+  wiki: All_models_are_wrong

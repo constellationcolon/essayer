@@ -1,6 +1,6 @@
 ---
 title: Danny says we're living in a simulation
-to_read: [fashionable-nonsense]
+to_read: [fashionable-nonsense, mismeasure-of-men]
 tags:
     - semiotics
     - representation
@@ -8,6 +8,7 @@ tags:
     - interpretability
     - reification
     - postmodernism
+    - media
 ---
 
 The first time I came across Curtis' thesis in HyperNormalisation [{% cite
@@ -65,12 +66,13 @@ this customer would keep their subscription, and that one would churn? Knowing
 the why would enable the business to take action, for example, by ameliorating
 whatever the root causes of customer churn was. On the other hand, complex
 models, while usually more accurate, were less interpretable, with fewer easy
-explanations of "X factor increases Y outcome". Such analyses was not only
-less actionable to people around the company, they can also be perceived as
-being less trustworthy—nobody likes a black box with the potential of yielding
-arbitrarily wild predictions. And so the simplest of models have stayed fast
-in the toolboxes of data scientists through the years, despite all the recent
-advances and hype surrounding deep learning.
+explanations of "X factor increases Y outcome". (This is known as [Bonini's
+paradox][bonini].) Such analyses was not only less actionable to people around
+the company, they can also be perceived as being less trustworthy—nobody likes
+a black box with the potential of yielding arbitrarily wild predictions. And
+so the simplest of models have stayed fast in the toolboxes of data scientists
+through the years, despite all the recent advances and hype surrounding deep
+learning.
 
 The attitude I've just described—the preference for interpretability over
 accuracy—sits, in some ways, on the enlightened end of the spectrum. More
@@ -79,7 +81,10 @@ some magical silver bullet. This applies to all models, and not just those
 over-hyped specimens from the AI/ML world.
 
 "All models are wrong, but some are useful," is an adage I wish more people
-understood. I'd also hasten to add, "in limited contexts."
+understood. I'd also hasten to add, "in limited contexts." Oft quoted is the
+George Box version:
+
+{% blockquote all-models-are-wrong %}
 
 Timely and germane is the example of how [wildfires have been handled in
 California][wildfire]. 
@@ -132,4 +137,5 @@ anything, we've been hypernormalised since the birth of the state. Possibly
 before. From Baudrillard: what he calls the precession of simulacra, I call the
 precession of models.
 
+[bonini]: https://en.wikipedia.org/wiki/Bonini%27s_paradox
 [wildfire]: https://www.wired.com/story/west-coast-california-wildfire-infernos/
