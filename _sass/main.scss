@@ -316,16 +316,20 @@ blockquote .sidenote {
   font-size: 1rem;
 }
 
-.hidden-sidenote { border-bottom: 1px dotted $color-stormborn; }
-.hidden-sidenote .dark-mode { border-bottom: 1px dotted $color-parchment; }
-
-@media (prefers-color-scheme: dark) {
-  .hidden-sidenote { border-bottom: 1px dotted $color-parchment; }  
-  .light-mode .hidden-sidenote { border-bottom: 1px dotted $color-stormborn; }
+.hidden-sidenote-label { border-bottom: 1px dotted $color-stormborn; }
+.hidden-sidenote-label .dark-mode {
+  border-bottom: 1px dotted $color-parchment;
 }
 
-.hidden-sidenote .hidden { visibility: hidden; }
-.hidden-sidenote:hover .hidden { visibility: visible; }
+@media (prefers-color-scheme: dark) {
+  .hidden-sidenote-label { border-bottom: 1px dotted $color-parchment; }  
+  .light-mode .hidden-sidenote-label {
+    border-bottom: 1px dotted $color-stormborn;
+  }
+}
+
+.hidden-sidenote-label .hidden-sidenote { visibility: hidden; }
+.hidden-sidenote-label:hover .hidden-sidenote { visibility: visible; }
 
 input.sidenote-toggle,
 input.marginnote-toggle,
@@ -339,12 +343,16 @@ input.hidden-sidenote-toggle {
   .sidenote-number { text-decoration: underline; }
   .marginnote-symbol { display: inline }
   
-  .hidden-sidenote .hidden {
+  .hidden-sidenote {
     display: none;
     visibility: visible;
   }
 
-  .sidenote-number, .marginnote-symbol, .hidden-sidenote { cursor: pointer; }
+  .sidenote-number,
+  .marginnote-symbol,
+  .hidden-sidenote-label {
+    cursor: pointer;
+  }
 
   .sidenote-toggle:checked + .sidenote,
   .marginnote-toggle:checked + .marginnote,

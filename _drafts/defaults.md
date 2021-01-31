@@ -48,12 +48,10 @@ the default browser, the browser of lazy consumer (non-)choice, and in the
 process effectively killed off Netscape, the most popular browser at the time.
 All told, a stellar strategy for the lumbering tech giant attempting to break
 into a new market; why bother doing all the hard work of developing a better
-product <label for="toggle-hidden-sidenote-1" class="hidden-sidenote"><input
-id='toggle-hidden-sidenote-1' class="hidden-sidenote-toggle"
-type="checkbox"><img class="hidden sidenote" src="{% link
-/assets/images/flex_tape.gif %}">when you could just tack it on to your
-already-popular platform</label>, and make all your pre-existing users adopt
-it?
+product {% hidden_sidenote %}when you could just tack it on to your
+already-popular platform<hidden_sidenote><img class="hidden sidenote" src="{%
+link /assets/images/flex_tape.gif %}">{% endhidden_sidenote %}, and make all
+your pre-existing users adopt it?
 
 This story of the demise of Netscape came back to me again and again as I was
 looking into referral sources to news websites. Referral traffic had been
