@@ -411,6 +411,8 @@ we live and the stories we tell ourselves that's brought us here.
 
 {% include break.html %}
 
+<p class="section-break">&</p>
+
 Where do we go from here? Ad-revenue, for better or for worse, is now out of
 the question for media outlets fighting tooth and nail now to survive. The
 instinct for many has been to put up paywalls, the most obvious way of

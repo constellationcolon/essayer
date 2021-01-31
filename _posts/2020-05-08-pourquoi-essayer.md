@@ -26,7 +26,7 @@ to exchange ideas, and to blame others for logical fallacies all up until the
 point that you discover you'd laid those mental traps for yourself in the first
 place. It's a medium for extraversion and introspection alike.
 
-{% include break.html %}
+<p class="section-break">&</p>
 
 There's this article, years gone, that still comes to mind. I can't remember
 what it was called, or what its subject was,{% sidenote %}If you, dear reader,
