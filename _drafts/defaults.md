@@ -354,26 +354,45 @@ apps and feeds that have come to occupy every waking moment of our lives. To
 paraphrase Tognazzini, the default is what we've accepted right before the
 technocrats stole our powers to self-determination.
 
-Why on earth have we accepted such a state of things? I think it has something
-to do with the implacable "more is better" ideology of our times: more growth
-*must* lead to higher standards of living; more healthcare *must* lead to a
-healthier populace; more information *must* lead to better decision making.
-Quantity trumps quality any day. All noise must of course be signal, utility
-be damned. All the information in the world, available at our fingertips in
-real-time—and who cares if it's delivered in fragmented factoids stripped of
-personal context or human meaning? Breaking News: more sanctions against
-nuclear-aspirant Iran—who cares if it was a CIA-backed coup that overthrew
-their inchoate democracy and brought about the rise of the ultra-religious
-republic?{% sidecite all-the-shahs-men %} Now This:
-another third-world country facing an intractable debt-crisis—who cares if the
-foreign aid so "generously" disbursed upon the global south has tended to
-entrench them further into debt bondage, rather than lifting them out of
-poverty as the aid agencies claim?{% sidecite debt-boomerang %}
-All this *information*, so readily accessible to us in neat,
-bite-sized packets, optimised for the maximal delivery of commercial
-propaganda, presents to us but an aesthetic surface. It is a hard, smooth,
-shell of constructed narratives against which our attention simply glances
-off, finding no purchase or in-roads to the messy reality seething underneath.
+Why on earth have we come to live with such a state of things? I think it has
+something to do with the implacable "more is better" ideology of our times:
+more growth *must* lead to higher standards of living; more healthcare *must*
+lead to a healthier populace; more information *must* lead to better decision
+making. Quantity trumps quality any day. All noise must of course be signal,
+utility be damned. All the information in the world, available at our
+fingertips in real-time—and who cares if it's delivered in fragmented factoids
+stripped of personal context or human meaning? Breaking News: more sanctions
+against nuclear-aspirant Iran—who cares if it was a CIA-backed coup that
+overthrew their inchoate democracy and brought about the rise of the
+ultra-religious republic?{% sidecite all-the-shahs-men %} Now This: another
+third-world country facing an intractable debt-crisis—who cares if the foreign
+aid so "generously" disbursed upon the global south has tended to entrench
+them further into debt bondage, rather than lifting them out of poverty as the
+aid agencies claim?{% sidecite debt-boomerang %} All this *information*, so
+readily accessible to us in neat, bite-sized packets, optimised for the
+maximal delivery of commercial propaganda, presents to us but an aesthetic
+surface. It is a hard, smooth, shell of constructed narratives against which
+our attention simply glances off, finding no purchase or in-roads to the messy
+reality seething underneath.
+
+<!-- global/local
+
+- the growth imperative of wall-street/vcs/modern economics incentivises
+  "scale" and global markets
+- empathy doesn't scale
+- we're encouraged to keep up with such news as "responsible global citizens"
+  (and because localised events quickly turn into global ones that can affect
+  us: financial crises, pandemics, etc.)
+- though the informational reach of our sights is global, the direct reach of
+  our civic and political rights—i.e. things that we can affect—conferred by
+  citizenship is necessarily local
+- not so for MNCs, inter-governmental orgs, and the people that run them
+- we end up paying proportionally more attention to events we have no control
+  over, seeing them through the lens of a self-selecting media priesthood, and
+  proportionally less to happenings and opportunities closer at hand,
+  which get dismissed as parochial, trite, insular
+
+-->
 
 The most egregious example of the harms of relying on the attention merchants
 for an accurate representation of reality comes in the form of our gravest
@@ -409,7 +428,8 @@ taking up so much of the air in our social exchanges as to choke out the
 difficult, but important conversations around what exactly it is about the way
 we live and the stories we tell ourselves that's brought us here.
 
-{% include break.html %}
+<!-- TK: links to compassion fatigue?
+_zettel/202101220222-compassion-fatigue.md -->
 
 <p class="section-break">&</p>
 
@@ -482,7 +502,7 @@ What I'm truly excited about today, is open, reader-supported, participatory
 journalism. Journalism that finally re-aligns the financial incentives and
 power structures in favour of those that it purports today to serve. As some
 have noted, the best part about subscribing to the New York Times is being
-able to call up and threaten to cancel.{% sidecite cite-needed %} As the
+able to call up and threaten to cancel.{% sidecite citation-needed %} As the
 ad-supported model becomes increasingly insupportable, publishers would do
 well to now recognise the interests of the people, instead of the will of the
 corporations—who have unceremoniously abandoned them now that the tech giants
@@ -576,7 +596,7 @@ journalists—who have the experience—work with the people—doing the living 
 the celebrating and the suffering—that we can truly address the informational
 inequalities that dog us and our communities.
 
-To put it bluntly: I don't care about your posts about avocado toast. Nothing
+<!-- To put it bluntly: I don't care about your posts about avocado toast. Nothing
 against avocado toast—I love a good one myself. The posts, though: we have too
 many posts about avocado toast taking up our attention and airspace, choking
 out the important issues we really need to be advocating against: our
@@ -593,9 +613,9 @@ for help from our neighbours in need, drowned out by the over-amplified
 surface hostilities. I want to hear all those questioning thoughts, those
 moments of non-comprehension that flashed across your mind for just a brief
 second before you tucked it away again securely in those dusty recesses of
-your mind reserved for sharp objects.
+your mind reserved for sharp objects. -->
 
-I'm excited about reclaiming democracy from the technocracy, about reclaiming
+<!-- I'm excited about reclaiming democracy from the technocracy, about reclaiming
 our very own pulse. I'm excited about the long tail, about the people taking
 our communities seriously enough to report on our everyday lives as bona fide
 news, about those busy making audiences the news makers and the news makers
@@ -603,7 +623,7 @@ the audiences, for whom Chartbeat and Google Analytics and Omniture are means
 to an end, not the end itself. Because it's too socially expensive, because
 it's already too late an hour, because it is profligate madness to continue
 pouring our attention down the drain of monetised attention.
-
+ -->
 [abc]: https://www.abc.net.au/news/2019-06-05/abc-raided-by-australian-federal-police-afghan-files-stories/11181162
 [afy]: https://www.niemanlab.org/2018/03/this-is-the-next-major-traffic-driver-for-publishers-chromes-mobile-article-recommendations-up-2100-percent-in-one-year/
 [attenborough-tiptoe]: https://www.theguardian.com/environment/2020/sep/18/dont-look-away-now-are-viewers-finally-ready-for-the-truth-about-nature-aoe
