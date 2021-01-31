@@ -449,3 +449,128 @@ cf {% cite seeing-like-a-state %}.
 > the regulated movement of wealth.
 
 Again, cf {% cite seeing-like-a-state %}.
+
+> All these serializations formed a permanent grid: confusion was eliminated2: that is to say, production was divided up and the labour process was articulated, on the one hand, according to its stages or elementary operations, and, on the other hand, according to the individuals, the particular bodies, that carried it out: each variable of this force – strength, promptness, skill, constancy – would be observed, and therefore characterized, assessed, computed and related to the individual who was its particular agent. Thus, spread out in a perfectly legible way over the whole series of individual bodies, the work force may be analysed in individual units. At the emergence of large-scale industry, one finds, beneath the division of the production process, the individualizing fragmentation of labour power; the distributions of the disciplinary space often assured both.
+
+"Grid", "legibility"—influences on Scott? e.g. {% cite seeing-like-a-state %}
+
+## Referents
+
+> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> Historians of ideas usually attribute the dream of a perfect society to the
+> philosophers and jurists of the eighteenth century; but there was also a
+> military dream of society; its fundamental reference was not to the state of
+> nature, but to the meticulously subordinated cogs of a machine, not to the
+> primal social contract, but to permanent coercions, not to fundamental
+> rights, but to indefinitely progressive forms of training, not to the
+> general will but to automatic docility.
+
+## Ozymandaian
+
+> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> ‘Discipline must be made national,’ said Guibert. ‘The state that I depict
+> will have a simple, reliable, easily controlled administration. It will
+> resemble those huge machines, which by quite uncomplicated means produce
+> great effects; the strength of this state will spring from its own strength,
+> its prosperity from its own prosperity. Time, which destroys all, will
+> increase its power. It will disprove that vulgar prejudice by which we are
+> made to imagine that empires are subjected to an imperious law of decline
+> and ruin’
+
+## Examinations
+
+> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> The examination transformed the economy of visibility into the exercise of
+> power. Traditionally, power was what was seen, what was shown and what was
+> manifested and, paradoxically, found the principle of its force in the
+> movement by which it deployed that force. Those on whom it was exercised
+> could remain in the shade; they received light only from that portion of
+> power that was conceded to them, or from the reflection of it that for a
+> moment they carried. Disciplinary power, on the other hand, is exercised
+> through its invisibility; at the same time it imposes on those whom it
+> subjects a principle of compulsory visibility. In discipline, it is the
+> subjects who have to be seen. Their visibility assures the hold of the power
+> that is exercised over them. It is the fact of being constantly seen, of
+> being able always to be seen, that maintains the disciplined individual in
+> his subjection. And the examination is the technique by which power, instead
+> of emitting the signs of its potency, instead of imposing its mark on its
+> subjects, holds them in a mechanism of objectification. In this space of
+> domination, disciplinary power manifests its potency, essentially, by
+> arranging objects. The examination is, as it were, the ceremony of this
+> objectification.
+
+Compare: ancient Chinese imperial examinations. Role of discipline
+(administration) in mass societies, vs role of punishment (power play) in
+vernacular societies.
+
+## Statistics & discipline
+
+> {% margincite discipline-and-punish -L chapter -l III.1 %}
+> The power of the Norm appears through the disciplines. Is this the new law
+> of modern society? Let us say rather that, since the eighteenth century, it
+> has joined other powers – the Law, the Word (Parole) and the Text, Tradition
+> – imposing new delimitations upon them. The Normal is established as a
+> principle of coercion in teaching with the introduction of a standardized
+> education and the establishment of the écoles normales (teachers’ training
+> colleges); it is established in the effort to organize a national medical
+> profession and a hospital system capable of operating general norms of
+> health; it is established in the standardization of industrial processes and
+> products (on this topic, one should refer to the important contribution of
+> Canguilhem, 171–91). Like surveillance and with it, normalization becomes
+> one of the great instruments of power at the end of the classical age.
+
+> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> The other innovations of disciplinary writing concerned the correlation of
+> these elements, the accumulation of documents, their seriation, the
+> organization of comparative fields making it possible to classify, to form
+> categories, to determine averages, to fix norms.
+
+> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> Thanks to the whole apparatus of writing that accompanied it, the
+> examination opened up two correlative possibilities: firstly, the
+> constitution of the individual as a describable, analysable object, not in
+> order to reduce him to ‘specific’ features, as did the naturalists in
+> relation to living beings, but in order to maintain him in his individual
+> features, in his particular evolution, in his own aptitudes or abilities,
+> under the gaze of a permanent corpus of knowledge; and, secondly, the
+> constitution of a comparative system that made possible the measurement of
+> overall phenomena, the description of groups, the characterization of
+> collective facts, the calculation of the gaps between individuals, their
+> distribution in a given ‘population’.
+
+
+Emphasis on deviation (deviance) rather than on the mean + the systematised
+population.
+
+> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> These small techniques of notation, of registration, of constituting files,
+> of arranging facts in columns and tables that are so familiar to us now,
+> were of decisive importance in the epistemological ‘thaw’ of the sciences of
+> the individual. One is no doubt right to pose the Aristotelean problem: is a
+> science of the individual possible and legitimate? A great problem needs
+> great solutions perhaps. But there is the small historical problem of the
+> emergence, towards the end of the eighteenth century, of what might
+> generally be termed the ‘clinical’ sciences; the problem of the entry of the
+> individual (and no longer the species) into the field of knowledge; the
+> problem of the entry of the individual description, of the
+> cross-examination, of anamnesis, of the ‘file’ into the general functioning
+> of scientific discourse. To this simple question of fact, one must no doubt
+> give an answer lacking in ‘nobility’: one should look into these procedures
+> of writing and registration, one should look into the mechanisms of
+> examination, into the formation of the mechanisms of discipline, and of a
+> new type of power over bodies. Is this the birth of the sciences of man? It
+> is probably to be found in these ‘ignoble’ archives, where the modern play
+> of coercion over bodies, gestures and behaviour has its beginnings.
+
+<https://data-ppf.github.io/>
+
+> {% margincite discipline-and-punish -L chapter -l III.2 %}
+> For a long time ordinary individuality – the everyday individuality of
+> everybody – remained below the threshold of description. To be looked at,
+> observed, described in detail, followed from day to day by an uninterrupted
+> writing was a privilege. The chronicle of a man, the account of his life,
+> his historiography, written as he lived out his life formed part of the
+> rituals of his power. The disciplinary methods reversed this relation,
+> lowered the threshold of describable individuality and made of this
+> description a means of control and a method of domination. It is no longer a
+> monument for future memory, but a document for possible use.
