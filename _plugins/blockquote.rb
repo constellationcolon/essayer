@@ -6,7 +6,12 @@ require 'nokogiri'
 module Jekyll
   class BlockQuoteTag < Liquid::Tag
 
-    @@TEMPLATE = IO.read("_includes/blockquote.html")
+    @@TEMPLATE = \
+    "<blockquote>" \
+      "<div class='quote'><p>%{q}</p></div>" \
+      "<cite class='attribution'>%{a}</cite>" \
+    "</blockquote>"
+    
 
     def initialize(tag_name, text, tokens)
       super
@@ -14,11 +19,8 @@ module Jekyll
     end
 
     def render(context)
-      template = Nokogiri::HTML(@@TEMPLATE).at_css("blockquote")
       quote = context.registers[:site].data["quotes"][@quote_key]
-      template.at_css(".quote").content = quote["quote"]
-      template.at_css(".attribution").content = quote["attribution"]
-      template.to_html
+      @@TEMPLATE % { :q => quote["quote"], :a => quote["attribution"] }
     end
   end
 end

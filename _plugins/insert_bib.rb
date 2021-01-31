@@ -4,7 +4,12 @@ module Jekyll
     class << self
       def insert(doc)
         if doc.path.include? "_details/"
-          doc.content << "\n{% include bibliography.html %}"
+          doc.content << \
+          "{% capture citations %}{% bibliography --cited %}{% endcapture %}" \
+          "{% if citations.size > 39 %}" \
+            "<h2>Bibliography</h2>" \
+            "<div class='essai-bibliography'>{{ citations }}</div>" \
+          "{% endif %}"
         end
       end
     end

@@ -6,6 +6,12 @@ layout: base
   <h1>{% if page.on-page-title %}{{ page.on-page-title }}{% else %}{{ page.title }}{% endif %}</h1>
   <div class="main-text">
     {{ content }}
-    {% include bibliography.html %}
+    {% capture citations %}{% bibliography --cited %}{% endcapture %}
+    {% if citations.size > 39 %}
+    <h2>Bibliography</h2>
+    <div class="essai-bibliography">
+    {{ citations }}
+    </div>
+    {% endif %}
   </div>
 </div>

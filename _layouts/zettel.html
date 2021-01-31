@@ -17,7 +17,13 @@ layout: base
       </p>
     </div>
   {% endif %}
-  {% include bibliography.html %}
+
+  {% capture citations %}{% bibliography --cited %}{% endcapture %}
+  {% if citations.size > 39 %}
+    <h2>Bibliography</h2>
+    <div class='essai-bibliography'>{{ citations }}</div>
+  {% endif %}
+
   {% assign backlinks = site.data.backlinks[page.id] %}
   {% if backlinks %}
     <div class="backlinks">

@@ -12,7 +12,52 @@ grid: 16px
   </head>
   <body>
     <div class="main">
-      {% include navigation.html %}
+      {% assign is_landing = false %}
+      {% assign landing_pages = "/|/zettel.html|/stacks.html" | split: "|" %}
+      {% if landing_pages contains page.url %}
+        {% assign is_landing = true %}
+      {% endif %}
+      {% capture home_href %}{%
+        if page.url == "/"
+          %}/essayer/stacks/{%
+        elsif page.url contains "/stacks" and is_landing == false
+          %}/essayer/stacks/{%
+        elsif page.url contains "/stacks" and is_landing == true
+          %}/essayer/zettel/{%
+        elsif page.url contains "/zettel" and is_landing == false
+          %}/essayer/zettel/{%
+        elsif page.url contains "/zettel" and is_landing == true
+          %}{% link index.md %}{%
+        else
+        %}{% link index.md %}{%
+        endif
+      %}{% endcapture %}
+      {% capture department %}{%
+        if page.url contains "/zettel"
+          %}ZETTELKASTEN{%
+        elsif page.url contains "/stacks"
+          %}STACKS{%
+        else
+          %}ESSAYER{%
+        endif
+      %}{% endcapture %}
+      <nav>
+        <a id="home" href="{{ home_href }}">
+          {% if is_landing %}[{% endif %}{{
+            department
+          }}{% if is_landing %}]{% endif %}
+        </a>
+        <span style="float: right;">
+          {% for item in site.data.navigation %}
+            <a class="nav-item" href="{{ item.rel_path | prepend: site.baseurl }}">
+              {% if page.url == item.rel_path %}[{% endif %} {{ item.name }} {% if page.url == item.rel_path %}]{% endif %}
+            </a>
+          {% endfor %}
+          <a id="dark-toggle" class="nav-item" onclick="toggleDarkMode()"
+          href="#">☯︎</a>
+        </span>
+      </nav>  
+
       {{ content }}
     </div>
     <footer></footer>
