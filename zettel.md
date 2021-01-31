@@ -3,7 +3,8 @@ layout: base
 title: ZETTELKASTEN
 ---
 
-{% for zettel in site.zettel %}
+{% assign all_zettel = site.zettel | reverse %}
+{% for zettel in all_zettel %}
   <span class="zettel-id">{{ zettel.id | split: "/" | last }}</span>
   <a href="{% link {{ zettel.path }} %}">{{ zettel.title }}</a>
 {% endfor %}
