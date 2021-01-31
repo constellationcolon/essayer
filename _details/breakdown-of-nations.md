@@ -282,6 +282,115 @@ Kohr: limit corporations to within state boundaries
 > and soundness adhere only to bodies of middle weight or, to put emphasis
 > where it belongs, to bodies that are relatively small.
 
+## Static vs Dynamic Equilibria
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 85-6 %}{% endmarginnote %}
+> There are two ways by which equilibrium and order can be achieved. One is by
+> means of a stable and the other by means of a mobile balance. When in their
+> proper element, both are self-regulatory. The stable balance is the balance
+> of the stagnant and the huge. It creates equilibrium by bringing two objects
+> into a fixed and unchanging relationship with each other such as a house
+> with its ground, or a mountain with its plain. Instead of creating harmony,
+> it moulds its diverse parts into unity. Being the balance of the rigid and
+> fixed, it could be conceived as a universal principle only if the universe
+> were still, non-moving, lifeless. Then the existence of only a few large
+> bodies would make sense and, for that matter, even the existence of a single
+> one. But in the bottomless vastness of the abyss of creation, it could be
+> maintained only by the ever-conscious will of God Himself who, in order to
+> prevent it from dropping into nowhere, would have to do nothing less than
+> hold it perpetually in His hands.
+>
+> Since this was obviously not His intent, He created instead a moving,
+> breathing, and dynamic universe, maintained in order not by unity but
+> harmony, and based not on the stable balance of the dead, but the *mobile
+> balance* of the living. In contrast to the stable balance, this balance is
+> self-regulatory not because of the fixity of its relationships but because
+> of the coexistence of countless mobile little parts of which no one is
+> ever allowed to accumulate enough mass to disturb the harmony of the whole.
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 88-9 %}{% endmarginnote %}
+> For what seems wrong with our political universe is, of course, not that it
+> is *balanced*, but that it is *badly* balanced. And it is badly balanced
+> because, unlike the physical universe, it is no longer composed of a great
+> number of small mobile units which, as we have seen, are essential to an
+> orderly pattern of behaviour, but of a *small* and shrinking number of
+> immobile, though still moving, huge units—the great powers. With their
+> emergence, the mobile balance, dependent on manifold littleness, could no
+> longer function satisfactorily, and had to he replaced by a stable balance.
+> 
+> This does not mean that a stable balance is without merit. To be adequate, a
+> balance must furnish an automatic equilibrium which relieves its creators of
+> the absorbing and sterile task of keeping ii under constant supervision. It
+> must rest in itself. In a world of dead matter, a stable balance meets this
+> requirement to perfection. In fact, it is the only form of balance that
+> keeps inanimate things in their fixed relationships. But, while it fulfils
+> the requirement of adequacy in an inanimate, non-moving world, it loses its
+> self-regulatory character when applied to a moving and living system such as
+> a society of nations. Here a mobile balance is required to ensure proper
+> operation and the necessary correlation of perpetually occurring changes.
+> But a mobile balance, as we have just seen, is dependent on a multitudinous
+> small-cell arrangement which is disrupted when cell unifications take place
+> and large solidified organisms are created in the form of big powers in the
+> political body or of cancerous overgrowth in the human body.
+
+## Active vs Passive
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 101 %}{% endmarginnote %}
+> Man the individual, the active, is replaced in mass states by man the type,
+> the passive.’ Nothing illustrates more tellingly this transformation than
+> our increasing preference for the passive voice in our speech. We no longer
+> fly to London. With a touch of pride we now say that we are flown there by
+> the government or an air line. We no longer eat, but are fed. We are housed,
+> entertained, schooled, evacuated, and taken care of in many important
+> respects by mother government and father state. Previously we allowed
+> ourselves to be treated as passives only as babies, invalids, or corpses.
+> Now we are treated in this manner all our lives and, instead of resenting
+> it, actually demand it.
+
+## Large states are by nature undemocratic
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 98 %}{% endmarginnote %}
+> The rulers of a small state, if they can be called that, are the citizen’s
+> neighbours. Since he knows them closely, they will never be able to hide
+> themselves in mysterious shrouds under whose cover they might take on the
+> dim and aloof appearance of supermen.
+
+<> Lippmann re: society being too large for anyone to know everything that
+goes on in it. [{% cite public-opinion %}]
+
+> {% marginnote %}Aristotle, via {% cite breakdown-of-nations -L page -l 107 %}{% endmarginnote %}
+> But if the citizens of a state are to judge and to distribute offices
+> according to merit, then they must know each other’s character: where they
+> do not possess this knowledge, both the election to offices and the decision
+> of lawsuits will go wrong. When the population is very large they are
+> manifestly settled at haphazard, which clearly ought not to be. Besides, in
+> an overpopulous state foreigners and metics will readily acquire the rights
+> of citizens, for who will find them out? Clearly then the best limit of the
+> population of a state is the largest number which suffices for the purposes
+> of life, and can be taken in at a single view.
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 99 %}{% endmarginnote %}
+> While every kind of small state, whether republic or monarchy, is thus by
+> nature democratic, every kind of large state is by nature undemocratic
+
+The dilution of representation in large states
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 104 %}{% endmarginnote %}
+> Thus, the greater the aggregation, the more dwarfish becomes man. But this
+> is not all, for along with the decline of a person’s share in sovereignty
+> goes a decline in his share in government. Since effective legislatures
+> cannot expand their membership in proportion to the growth of their
+> countries, increasing population must ultimately lessen democratic
+> representation. In 1790, the average constituency of a member of the House
+> of Representatives in the United States comprised 33,000 citizens. If this
+> ratio were still tO prevail, the membership of the House would today be in
+> the neighbourhood of 4,760, a figure that would make any sensible
+> legislative action all but impossible.
+
+(Q: connection to logic of collective choice? Fairer outcome => more
+concentration of power?)
+
+
 
 ## Questions
 

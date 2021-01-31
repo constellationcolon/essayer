@@ -403,6 +403,20 @@ div.bibliography>div {
   font-size: 0.8em;
 }
 
+.cw > .cw-text {
+  display: none;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: $color-steel;
+}
+.dark-mode .cw > .cw-text { color: $color-olive; }
+.cw:hover > .cw-text { display: inline; }
+
+@media (prefers-color-scheme: dark) {
+  .cw > .cw-text { color: $color-olive; }
+  .light-mode .cw > .cw-text { color: $color-steel; }
+}
+
 .essai-bibliography { font-size: $font-size-note; }
 
 .stacks-bibliography div.bibliography {
