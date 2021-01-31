@@ -22,7 +22,7 @@ critique.
 I was also reading Baudrillard's *Simulacra and Simulation* [{% cite
 simulacra-and-simulation %}] around the same time and found myself, again,
 irked by puffery. This time, it was from the gratuitous application of terms
-borrowed from technical fields [{% cite cite-needed %}], which seemed to aim
+borrowed from technical fields [{% cite citation-needed %}], which seemed to aim
 more at creating an *impression* of scientific technique than at conducting
 any sort of rigorous analysis of modern scientific technique / its effects in
 social reality (possibly cf: [{% cite plastic-words %}]). I would not be
