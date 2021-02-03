@@ -64,20 +64,44 @@ metrics academicians so emphasized. People wanted to know more about *why* the
 model made a certain prediction—for example, why did the model predict that
 this customer would keep their subscription, and that one would churn? Knowing
 the why would enable the business to take action, for example, by ameliorating
-whatever the root causes of customer churn was. On the other hand, complex
-models, while usually more accurate, were less interpretable, with fewer easy
-explanations of "X factor increases Y outcome". (This is known as [Bonini's
-paradox][bonini].) Such analyses was not only less actionable to people around
-the company, they can also be perceived as being less trustworthy—nobody likes
-a black box with the potential of yielding arbitrarily wild predictions. And
-so the simplest of models have stayed fast in the toolboxes of data scientists
-through the years, despite all the recent advances and hype surrounding deep
-learning.
+whatever the root causes of customer churn was.
+
+On the other hand, complex models, while usually more accurate, were less
+interpretable, with fewer easy explanations of "X factor increases Y outcome".
+This is known as [Bonini's paradox][bonini], summed up nicely in *The
+Breakdown of Nations*:
+
+<blockquote>
+  <div class="quote" markdown="1">
+Oblivious of their own inconsistency, some of our modernists point out that
+small states had an easier time of it, being so insignificant in size and
+population. But this is exactly it! Because they were small, they could not
+only solve their problems better than their large counterparts; they could
+do so without the assistance of such brilliant minds as Marx, Schacht,
+Cripps, or Keynes. They did not need to deal with aggregates which, in large
+countries, even statisticians can only guess, and whose meaning even experts
+do not always understand. They could at all times see their economy at their
+feet—open, surveyable, manageable. They did not need to operate on
+assumptions which no one on earth can prove, however great his learning and
+many his degrees.
+  </div>
+  <cite class="attribution">
+      {% cite breakdown-of-nations -L page -l 152 %}
+  </cite>
+</blockquote>
+
+Such analyses was not only less actionable to people around the company, they
+can also be perceived as being less trustworthy—nobody likes a black box with
+the potential of yielding arbitrarily wild predictions. And so the simplest of
+models have stayed fast in the toolboxes of data scientists through the years,
+despite the inadequacy of such simple tools and explanations for the task of
+modelling the large complex world we find ourselves having to deal with, and
+despite all the recent advances and hype surrounding deep learning.
 
 The attitude I've just described—the preference for interpretability over
-accuracy—sits, in some ways, on the enlightened end of the spectrum. More
-insidious is when people unquestioningly hail the application of such models as
-some magical silver bullet. This applies to all models, and not just those
+accuracy—sits, in some odd ways, on the enlightened end of the spectrum. More
+insidious is when people unquestioningly hail the application of such models
+as some magical silver bullet. This applies to all models, and not just those
 over-hyped specimens from the AI/ML world.
 
 "All models are wrong, but some are useful," is an adage I wish more people

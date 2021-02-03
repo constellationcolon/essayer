@@ -61,5 +61,13 @@ all, that's what the experts drilled into us via our schooling. But in the
 end, who in the world really benefits from these brittle supply chains, these
 profit machines over-optimised for "normal operating parameters"?
 
+NB this charming footnote from {% cite breakdown-of-nations -L page -l 122 %}
+> This does not mean that specialization as such is undesirable. On the
+> contrary, the purpose of every community, as indicated in the preceding
+> chapter, is to foster it. But when it begins to obliterate the diversity of
+> man which, at a lesser degree of perfection, it cultivates, its advantage
+> turns into ruin. This happens in the excessive large-scale specialization
+> made possible in large states.
+
 [1]: https://www.paulkingsnorth.net/bove
 [kanagawa]: https://en.wikipedia.org/wiki/Convention_of_Kanagawa
