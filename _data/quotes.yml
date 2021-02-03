@@ -36,3 +36,25 @@ all-models-are-wrong:
     be borne in mind....
   attribution: George Box
   wiki: All_models_are_wrong
+creation-of-necessities:
+  quote: |-
+    But since when is the creation of new necessities a sign of progress?
+  attribution: Leopold Kohr
+  cite: breakdown-of-nations -L page -l 137
+buildings-shape-us:
+  quote: |-
+    We shape our buildings and afterwards our buildings shape us.
+  attribution: Winston Churchhill
+  variations:
+    - quote: We shape our tools and afterwards our tools shape us
+crank:
+  quote: |-
+    Some people call me a crank. I don’t mind at all. A crank is a low-cost,
+    low-capital tool. It can be used on a moderate small scale. It is
+    nonviolent. And it makes revolutions.
+  attribution: E. F. Schumacher
+enjoy-measles:
+  quote: |-
+    If we have measles, we can just as well enjoy them.
+    For if we do not, we shall still have measles.
+  attribution: Leopold Kohr's father
