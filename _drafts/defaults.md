@@ -41,14 +41,14 @@ clamouring for market share—nor on government officials looking to engineer
 social behaviour. Not least because we humans can be consistently relied upon
 to be very lazy indeed: back in the days of the First Browser War, Microsoft
 had infamously managed to propel Internet Explorer to market dominance by
-bundling it into their popular Windows operating system. That made <span class='small-caps'>IE</span>
-the default browser, the browser of lazy consumer (non-)choice, and in the
-process effectively killed off Netscape, the most popular browser at the time.
-All told, a stellar strategy for the lumbering tech giant attempting to break
-into a new market; why bother doing all the hard work of developing a better
-product {% hidden_sidenote %}when you could just tack it on to your
-already-popular platform<hidden_sidenote><img class="hidden sidenote" src="{%
-link /assets/images/flex_tape.gif %}">{% endhidden_sidenote %}, and make all
+bundling it into their popular Windows operating system. That made <span
+class='small-caps'>IE</span> the default browser, the browser of lazy consumer
+(non-)choice, and in the process effectively killed off Netscape, the most
+popular browser at the time. All told, a stellar strategy for the lumbering
+tech giant attempting to break into a new market; why bother doing all the
+hard work of developing a better product {% hidden_sidenote %}when you could
+just tack it on to your already-popular platform<hidden_sidenote><img src="{%
+link assets/images/flex_tape.gif %}">{% endhidden_sidenote %}, and make all
 your pre-existing users adopt it?
 
 This story of the demise of Netscape came back to me again and again as I was
@@ -623,7 +623,7 @@ pouring our attention down the drain of monetised attention.
 [climate-rebuild]: https://www.theguardian.com/environment/2019/apr/22/why-is-the-us-news-media-so-bad-at-covering-climate-change
 [climate-turn-off]: https://www.theguardian.com/environment/2018/nov/04/attenborough-dynasties-ecological-campaign
 [data-wall]: https://www.niemanlab.org/2019/12/first-party-data-becomes-medias-most-important-currency/
-[flex-tape]: {% link /assets/images/flex_tape.gif %}
+[flex-tape]: {% link assets/images/flex_tape.gif %}
 [fossil-ads-guardian]: https://www.theguardian.com/media/2020/jan/29/guardian-to-ban-advertising-from-fossil-fuel-firms-climate-crisis
 [echo-chambers]: https://www.vice.com/en/article/d3xamx/journalists-and-trump-voters-live-in-separate-online-bubbles-mit-analysis-shows
 [emotion-viral]: https://hbr.org/2016/05/research-the-link-between-feeling-in-control-and-viral-content
@@ -660,11 +660,11 @@ function darkCharts(state) {
     if ( state ) {
         var viz = document.getElementById(figId);
         while (viz.firstChild) { viz.firstChild.remove(); }
-        vegaEmbed(`#${figId}`, "{% link /assets/vega/ona18-dark.json %}", {"renderer": "svg", "actions": false});
+        vegaEmbed(`#${figId}`, "{% link assets/vega/ona18-dark.json %}", {"renderer": "svg", "actions": false});
     } else {
         var viz = document.getElementById(figId);
         while (viz.firstChild) { viz.firstChild.remove(); }
-        vegaEmbed(`#${figId}`, "{% link /assets/vega/ona18-light.json %}", {"renderer": "svg", "actions": false});
+        vegaEmbed(`#${figId}`, "{% link assets/vega/ona18-light.json %}", {"renderer": "svg", "actions": false});
     }
 }
 </script>
