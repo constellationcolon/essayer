@@ -47,6 +47,20 @@ employee who is prepared to take the company precisely where Wall Street wants
 it to go. See also: {% cite breakdown-of-nations -L page -l 28 %} for example,
 of this passage:
 
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 28 %}{% endmarginnote %}
+> But there is one element capable of accumulating its physical substance so
+> far and so unequivocally beyond the critical limit that no force on earth
+> can check it. This is the immense collective bulk of the most courted
+> organism of our time, the human mass, the people which, at a given size and
+> density, not only generates the ideal condition of anonymity at which a
+> greater number of individuals can, without danger of detection, sweep up
+> critical quantity of power than would be possible at the more translucent
+> lesser densities; at a given point the mass becomes itself so spontaneously
+> vile that, in addition to the increased quantum of individual misdeeds,
+> performed under the cloak of its darkening multitudes, it begins to produce
+> a quantum of its own, and wholly detached, badness that bears a relationship
+> to its size, but not to the nature of the human molecules composing it.
+
 > {% marginnote %}{% cite breakdown-of-nations -L page -l 35 %}{% endmarginnote %}
 > Again we shall find that the dreaded result of a society’s behaviour is the
 > consequence not of evil schemes or evil disposition but of the power that is
@@ -61,6 +75,23 @@ of this passage:
 > its defence; it becomes doubly so by breeding at a critical magnitude in the
 > people the appropriate philosophy of submission.
 <div class="section-break">&</div>
+
+> {% marginnote %}{% cite breakdown-of-nations -L page -l 154 %}{% endmarginnote %}
+> From whatever point we may look at it, the idea of a rising living standard
+> produced by modern large-scale economic development seems little more than a
+> myth magnified by repetition to a degree that it has taken on the appearance
+> of unchallengeable truth.
+>
+> Before the optimum size of organization is reached, be it in companies or in
+> labour unions, such additions are used in the fulfilment of their economic
+> functions; after it has been reached, they are squandered in personal or
+> political dissipation, in unwarranted speculations, in unwarranted political
+> pets, in unwarranted displays of power, or in that most wasteful of economic
+> activities: the construction of an idling financial security belt with  which
+> overgrown enterprises must surround themselves to withstand disasters that
+> may never occur or, if they do, may not be worth surviving.
+
+<p class="section-break">&</p>
 
 In the corridors of the Columbia Center for Career Education hangs a
 collection of business-speak motivational posters. The one that I remember to

@@ -159,10 +159,10 @@ all the time, I wouldn't have the time for doing anything else—pragmatism, not
 idealism!
 
 Well. Humour me for a minute, and think back to the last time you (doom)scrolled through a news feed{% sidenote %}
-    Just the word _feed_ itself—like the word _default_—gives me the
+    Just the word [_feed_][feed] itself—like the word _default_—gives me the
     heebie-jeebies. What is it, to be a consumer of a feed? Of animal feed? Of
     prolefeed? To be a pig, in a cage, on antibiotics? [{% cite fitter-happier
-    %}] Cf [The Breakdown of Nations](stacks/breakdown-of-nations.html#active-vs-passive).
+    %}].
 {% endsidenote %}; Facebook, Twitter, whichever, doesn't matter. Of the news
 items you came across, how many did you simply scan over the headlines and
 preview image or autoplay video of? How many did you actually click through to
@@ -623,6 +623,7 @@ pouring our attention down the drain of monetised attention.
 [climate-rebuild]: https://www.theguardian.com/environment/2019/apr/22/why-is-the-us-news-media-so-bad-at-covering-climate-change
 [climate-turn-off]: https://www.theguardian.com/environment/2018/nov/04/attenborough-dynasties-ecological-campaign
 [data-wall]: https://www.niemanlab.org/2019/12/first-party-data-becomes-medias-most-important-currency/
+[feed]: {% link _zettel/202102040106-feed.md %}
 [flex-tape]: {% link assets/images/flex_tape.gif %}
 [fossil-ads-guardian]: https://www.theguardian.com/media/2020/jan/29/guardian-to-ban-advertising-from-fossil-fuel-firms-climate-crisis
 [echo-chambers]: https://www.vice.com/en/article/d3xamx/journalists-and-trump-voters-live-in-separate-online-bubbles-mit-analysis-shows
