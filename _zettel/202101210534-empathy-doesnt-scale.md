@@ -13,22 +13,39 @@ tags: [scale, humanism]
   <cite class="attribution">{{ site.data.quotes["deaths-numbers"]["attribution"] }}</cite>
 </blockquote>
 
+<blockquote>
+  <div class="quote" markdown="1">
+As long as the victims of persecution are few, the method of execution or,
+to use a Marxian term, the *mode of production*, will consist in ceremonial
+knifings, hangings, or shootings, preceded by a semblance of legal process
+and followed by a semblance of civilized burial. The executioners, moreover,
+still not quite sure as to the sufficiency of their power and still feeling
+their wrong because of the singularity of their acts, will have an urge to
+apologize. But as the number of their victims increases, the time for
+apologies and even for indulging in guilt feelings begins to dwindle, and
+individual executions or burials not only become cumbersome but technically
+unfeasible. So new practices have to be initiated. Now the victims are led
+to wells, trenches, or rivers, executed, on the spot, and then simply thrown
+in. This represents less an increase in viciousness than an adjustment to
+the requirements of new situations which could not be handled with previous
+means.
+  </div>
+  <cite class="attribution">
+    {% cite breakdown-of-nations -L page -l 30 %}
+  </cite>
+</blockquote>
 
-> As long as the victims of persecution are few, the method of execution or,
-> to use a Marxian term, the *mode of production*, will consist in ceremonial
-> knifings, hangings, or shootings, preceded by a semblance of legal process
-> and followed by a semblance of civilized burial. The executioners, moreover,
-> still not quite sure as to the sufficiency of their power and still feeling
-> their wrong because of the singularity of their acts, will have an urge to
-> apologize. But as the number of their victims increases, the time for
-> apologies and even for indulging in guilt feelings begins to dwindle, and
-> individual executions or burials not only become cumbersome but technically
-> unfeasible. So new practices have to be initiated. Now the victims are led
-> to wells, trenches, or rivers, executed, on the spot, and then simply thrown
-> in. This represents less an increase in viciousness than an adjustment to
-> the requirements of new situations which could not be handled with previous
-> means.
-> [{% cite breakdown-of-nations -L page -l 30 %}]
+<blockquote>
+  <div class="quote" markdown="1">
+Discussing the ‘economics of extermination’ the British mathematician and
+astronomer Fred Hoyle calculated that, while the cost of killing in World
+War II was still several thousand pounds per victim, the new atomic rate per
+corpse has been brought down to a single pound ($2.80).
+  </div>
+  <cite class="attribution">
+    {% cite breakdown-of-nations -L page -l 31 %}
+  </cite>
+</blockquote>
 
 Who pays Silicon Valley's hidden costs? [{% cite who-pays-sv-hidden-costs %}]
 
@@ -43,3 +60,4 @@ immediately to their side to care for those people. To pay undue attention to
 far-off suffering is to blind ourselves to the people right in front of us, in
 our immediate vicinity, who may be suffering just the same (he had a much
 better way of putting this) [{% cite illich-in-conversation %}]
+

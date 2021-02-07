@@ -16,9 +16,33 @@ The transformation of means into ends. [{% cite tools-for-conviviality %}]
 
 ## Transformation of Quantity into Quality
 
+
+- Mass produced clothes, furniture, etc. available in higher quantity but
+  lower quality, with the effect that we require *more* of them because they
+  keep breaking down (planned obsolescence)
+- Travel occurs over larger distances—but we travel for diversion, not to
+  cross distances for the sake of it. Now we go thousands of miles away just
+  to find ourselves back in "the same sort of place we have just left behind
+  in Brooklyn." (p. 136)
+- Living within walking/biking distance of everything you need => incentive to
+  beautify surroundings. Contrast with ugliness of suburban commutes.
+
+
 <blockquote>
   <div class="quote" markdown="1">
+And this is, indeed, what historic evidence seems to prove: that vast-scale
+economic expansion has caused not an advance but a back-sliding of living
+standards and that what we confront in the fantastic increase in production
+is nothing other than a form of inflation. More of the new goods seem to
+give us less satisfaction than fewer of the old ones.
+  </div>
+  <cite class="attribution">
+    {% cite breakdown-of-nations -L page -l 140 %}
+  </cite>
+</blockquote>
 
+<blockquote>
+  <div class="quote" markdown="1">
 This condition must by necessity produce a fundamental change in the outlook
 of the citizen of the mass state. Finding himself perpetually living in the
 midst of formidable crowds it is only natural that he should begin to see
@@ -28,7 +52,6 @@ whenever another million is added to the population figure. He falls into
 the error against which Aristotle has warned, and confounds a populous state
 with a great one. Quantity suddenly turns before his dazzled eyes into
 quality.
-    
   </div>
   <cite class="attribution">
     {% cite breakdown-of-nations -l 102 %}

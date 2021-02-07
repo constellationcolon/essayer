@@ -7,9 +7,9 @@ tags: [animals, postmodernity, agriculture, farming, more-than-human]
 fallout from our insatiable appetite for cheap meat, from the intensive farming
 industry that feeds it.
 
-A nod to George Orwell's *Animal Farm* [{% cite animal-farm %}], in which the
-pigs, leaders of the communist animals, are finally revealed to be no different
-than the capitalist humans they had rebelled against in the first place.
+A nod to *Animal Farm* [{% cite animal-farm %}], in which the pigs, leaders of
+the communist animals, are finally revealed to be no different than the
+capitalist humans they had rebelled against in the first place.
 
 The metaphor cuts deep. Possibly deeper than Orwell himself first intended.
 For to look directly at the graphic inhumanity of modern farming [{% cite
@@ -51,7 +51,31 @@ animals-territory-metamorphoses %}]
 > death renders the example of the animals more shocking still than that of
 > men on an assembly line.
 
-[AI hog-farming in China][ai-pig-china]
+## Ultra-processed foods
+
+[Nova: a categorisation of foods by processing degree][ultra-processed]
+
+|-------|-----------------------------------------------------------------------------|-------------------------------------------|----------------------------------------------|
+| Phase |                        Successive phases of the image                       |                    Nova                   |                Example foods                 |
+|-------|-----------------------------------------------------------------------------|-------------------------------------------|----------------------------------------------|
+|     1 | it is the reflection of a profound reality                                  | unprocessed and minimally processed foods | parsley, carrot, steak, raisin               |
+|     2 | it masks and denatures a profound reality                                   | processed culinary ingredients            | butter, salt, sugar, lard, oil, flour        |
+|     3 | it masks the absence  of a profound reality                                 | processed foods                           | preserved, pickled, fermented or salted      |
+|     4 | it has no relation to any reality whatsoever: it is its own pure simulacrum | ultra-processed foods                     | cereal bars, soylent, hotdogs, sausage rolls |
+|-------|-----------------------------------------------------------------------------|-------------------------------------------|----------------------------------------------|
+
+
+> What characterises ultra-processed foods is that they are so altered that it
+> can be hard to recognise the underlying ingredients. These are concoctions of
+> concoctions, engineered from ingredients that are already highly refined,
+> such as cheap vegetable oils, flours, whey proteins and sugars, which are
+> then whipped up into something more appetising with the help of industrial
+> additives such as emulsifiers.
+
+[AI hog-farming in China][ai-pig-china], where apparently crowded conditions
+during animal transport has caused such stress to piglets they start biting
+each other's tails off, and some pigs have evolved to have shorter / no tail.
 
 [Animals Farmed]: https://www.theguardian.com/environment/series/animals-farmed
 [ai-pig-china]: https://www.theguardian.com/environment/2020/oct/08/behind-chinas-pork-miracle-how-technology-is-transforming-rural-hog-farming
+[ultra-processed]: https://www.theguardian.com/food/2020/feb/13/how-ultra-processed-food-took-over-your-shopping-basket-brazil-carlos-monteiro

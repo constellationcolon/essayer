@@ -61,6 +61,10 @@ body.dark-mode {
   max-width: $left-width;
 }
 
+.full-width {
+  max-width: $body-max-width;
+  width: $body-max-width;
+}
 
 @media screen and (max-width: $single-column-threshold),
        screen and (pointer: coarse) and (hover: none) {
@@ -243,11 +247,23 @@ ol, ul { padding-inline-start: 0; }
 .essai>.main-text>blockquote {
   max-width: calc(#{$left-width} - 2 * #{$grid});
 }
-blockquote cite.attribution {
+
+blockquote p.tldr::before { content: "(TL;DR: "; }
+blockquote p.tldr::after { content: ") [+]"; }
+
+blockquote p.attribution {
   display: block;
   text-align: right;
 }
-blockquote cite.attribution::before { content: "— "; }
+blockquote p.attribution::before { content: "— "; }
+
+.zettel blockquote p.tldr ~ p:not(.tldr):not(.attribution) {
+  display: none;
+}
+.zettel blockquote:hover p.tldr ~ p:not(.tldr):not(.attribution) {
+  display: block;
+}
+.zettel blockquote:hover p.tldr { display: none; }
 
 // FIGURES
 
@@ -281,9 +297,16 @@ figcaption {
 table {
   border-collapse: collapse;
   display: block;
+  margin: $grid 0;
 }
 
-th, td { vertical-align: top; }
+th, td {
+  vertical-align: top;
+  padding: ($grid / 2) ($grid / 2);
+}
+
+th:first-child, td:first-child { padding-left: 0; }
+th:last-child, td:last-child { padding-right: 0; }
 
 // TUFTE
 
@@ -561,6 +584,8 @@ verse {
   
   .main-text { margin-top: #{($grid * 2)}; }  
 
+  // tables
+
   table { padding-top: 4px; margin-bottom: -5px; }
   
   th {
@@ -594,6 +619,30 @@ verse {
   }
 
   blockquote cite.attribution { font-style: normal; }
+
+  // footnotes
+
+  sup[role="doc-noteref"] {
+    font-size: 1em;
+    top: 0;
+  }
+  sup[role="doc-noteref"]::before { content: "[" }
+  sup[role="doc-noteref"]::after { content: "]" }
+
+  div.footnotes[role="doc-endnotes"] {
+    ol li { counter-increment: footnotes; }
+    ol li:before {
+      content: "[" counter(footnotes) "]";
+      left: -5ch;
+      position: relative;
+      float: left;
+      top: $grid;
+    }
+    ol {
+      list-style: none;
+      counter-reset: footnotes;
+    }
+  }
 
 }
 

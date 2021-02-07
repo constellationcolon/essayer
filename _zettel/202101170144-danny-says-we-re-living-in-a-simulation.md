@@ -23,14 +23,12 @@ critique.
 I was also reading Baudrillard's *Simulacra and Simulation* [{% cite
 simulacra-and-simulation %}] around the same time and found myself, again,
 irked by puffery. This time, it was from the gratuitous application of terms
-borrowed from technical fields [{% cite citation-needed %}], which seemed to aim
-more at creating an *impression* of scientific technique than at conducting
-any sort of rigorous analysis of modern scientific technique / its effects in
-social reality (possibly cf: [{% cite plastic-words %}]). I would not be
-surprised, however, if this was a deliberate (if annoying) stylistic choice in
-service of advancing his "post-modern" argument. Apparently, some people
-were so irked by writing like this they wrote an entire book about it
-[{% cite fashionable-nonsense %}].
+borrowed from technical fields [{% cite citation-needed %}], which seemed to
+aim more at creating an *impression* of scientific technique than at
+conducting any sort of rigorous analysis of modern scientific technique / its
+effects in social reality (possibly cf: [{% cite plastic-words %}]). I would
+not be surprised, however, if this was a deliberate (if annoying) stylistic
+choice in service of advancing his "post-modern" argument.[^1]
 
 I will concede in both cases, however, that there is probably a tiny kernel of
 truth buried deep, deep underneath the overburden of pretentious terms and
@@ -71,24 +69,20 @@ interpretable, with fewer easy explanations of "X factor increases Y outcome".
 This is known as [Bonini's paradox][bonini], summed up nicely in *The
 Breakdown of Nations*:
 
-<blockquote>
-  <div class="quote" markdown="1">
-Oblivious of their own inconsistency, some of our modernists point out that
-small states had an easier time of it, being so insignificant in size and
-population. But this is exactly it! Because they were small, they could not
-only solve their problems better than their large counterparts; they could
-do so without the assistance of such brilliant minds as Marx, Schacht,
-Cripps, or Keynes. They did not need to deal with aggregates which, in large
-countries, even statisticians can only guess, and whose meaning even experts
-do not always understand. They could at all times see their economy at their
-feet—open, surveyable, manageable. They did not need to operate on
-assumptions which no one on earth can prove, however great his learning and
-many his degrees.
-  </div>
-  <cite class="attribution">
-      {% cite breakdown-of-nations -L page -l 152 %}
-  </cite>
-</blockquote>
+> Oblivious of their own inconsistency, some of our modernists point out that
+> small states had an easier time of it, being so insignificant in size and
+> population. But this is exactly it! Because they were small, they could not
+> only solve their problems better than their large counterparts; they could
+> do so without the assistance of such brilliant minds as Marx, Schacht,
+> Cripps, or Keynes. They did not need to deal with aggregates which, in large
+> countries, even statisticians can only guess, and whose meaning even experts
+> do not always understand. They could at all times see their economy at their
+> feet—open, surveyable, manageable. They did not need to operate on
+> assumptions which no one on earth can prove, however great his learning and
+> many his degrees.
+> 
+> {% cite breakdown-of-nations -L page -l 152 %}
+> {:.attribution}
 
 Such analyses was not only less actionable to people around the company, they
 can also be perceived as being less trustworthy—nobody likes a black box with
@@ -108,18 +102,18 @@ over-hyped specimens from the AI/ML world.
 understood. I'd also hasten to add, "in limited contexts." Oft quoted is the
 George Box version:
 
-<blockquote>
-<div class="quote">
-{{ site.data.quotes["all-models-are-wrong"]["quote"] }}
-</div>
-<cite class="attribution">
-{{ site.data.quotes["all-models-are-wrong"]["attribution"] }}
-</cite>
-</blockquote>
+> {{ site.data.quotes["all-models-are-wrong"]["quote"] }}
+>
+> {{ site.data.quotes["all-models-are-wrong"]["attribution"] }}
 
 Timely and germane is the example of how [wildfires have been handled in
-California][wildfire]. 
+California][wildfire].
 
+> Firefighters used a model of fire spread that worked only under certain
+> assumptions of "light surface fuel" which failed as fuel loads in forests
+> built up over time due to fire suppression policies
+> {:.tldr}
+>
 > Flammable as it looked, even forests mismanaged like that patch burned until
 > recently in the historical way, at low severity along the forest floor. As a
 > result, the entire field of wildfire science—including every modeling tool
@@ -170,3 +164,6 @@ precession of models.
 
 [bonini]: https://en.wikipedia.org/wiki/Bonini%27s_paradox
 [wildfire]: https://www.wired.com/story/west-coast-california-wildfire-infernos/
+
+[^1]: Apparently, some people were so irked by writing like this they wrote an
+    entire book about it [{% cite fashionable-nonsense %}].
