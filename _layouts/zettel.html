@@ -25,35 +25,22 @@ layout: base
   {% endif %}
 
   {% assign backlinks = site.data.backlinks[page.id] %}
-  {% if backlinks %}
+  {% if backlinks.size > 0 %}
     <div class="backlinks">
       <h2>Pages that link here</h2>
-      <h5>Posts</h5>
-      <p>
-        {% for backlink in backlinks %}
-          {% if backlink.collection == "posts" %}
-            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
-          {% endif %}
-        {% endfor %}
-      </p>
-      <h5>Stacks</h5>
-      <p>
-        {% for backlink in backlinks %}
-          {% assign url_parts = backlink.url | split: "/"  %}
-          {% if url_parts[1] == "stacks" %}
-            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
-          {% endif %}
-        {% endfor %}
-      </p>
-      <h5>Other Zettel</h5>
-      <p>
-        {% for backlink in backlinks %}
-          {% assign url_parts = backlink.url | split: "/"  %}
-          {% if url_parts[1] == "zettel" %}
-            <span><a href="{{ backlink.url | prepend: site.baseurl }}">{{ backlink.title }}</a></span>
-          {% endif %}
-        {% endfor %}
-      </p>
+      {% assign collections = "posts,stacks,zettel" | split: "," %}
+      {% assign titles = "Posts,Stacks,Other Zettel" | split: "," %}
+      {% for i in (0..3) %}
+        {% assign docs = backlinks | where: "collection", collections[i] %}
+        {% if docs.size > 0 %}
+          <h5>{{ titles[i] }}</h5>
+          <p>
+            {% for doc in docs %}
+              <span><a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a></span>
+            {% endfor %}
+          </p>
+        {% endif %}
+      {% endfor %}
     </div>
   {% endif %}
   </div>
