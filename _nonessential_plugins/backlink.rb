@@ -31,25 +31,17 @@ module Jekyll
 
       for doc in site.documents
         content = doc.content
-        collection = doc.type.to_s
-        if collection == "details"
-          target = site.pages.find { |page|
-            doc.id.gsub(/^\/details\//, 'stacks/') + ".html" == page.path
-          }
-        else
-          target = doc
-        end
         content.scan(/\{%\s+link\s+(.*?)\s+%}/).uniq.each { |path|
           id = link_id_from_path(path[-1])
-          id ? site.data["backlinks"][id].push(target) : nil
+          id ? site.data["backlinks"][id].push(doc) : nil
         }
         content.scan(/\{%\s+post_url\s+(.*?)\s+%}/).uniq.each { |name_|
           id = link_id_from_name(name_[-1])
-          id ? site.data["backlinks"][id].push(target) : nil
+          id ? site.data["backlinks"][id].push(doc) : nil
         }
         content.scan(/href="\/essayer\/(.*?)"/).uniq.each { |path|
           id = link_id_from_path(path[-1])
-          id ? site.data["backlinks"][id].push(target) : nil
+          id ? site.data["backlinks"][id].push(doc) : nil
         }
       end
 
