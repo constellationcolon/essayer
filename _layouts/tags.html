@@ -1,13 +1,14 @@
 ---
 layout: base
+department: meta
 ---
 
 {% assign tag_name = page.id | split: "/" | last %}
-{{ tag_name }}
 
+<div class="tags">
+{{ tag_name }}
 {% for tag in site.tags %}
   {% if tag[0] == tag_name %}
-
     {% assign tag_collections = tag[1] | group_by: "collection" %}
     {% for tag_collection in tag_collections %}
       <div>
@@ -22,3 +23,4 @@ layout: base
     {% continue %}
   {% endif %}
 {% endfor %}
+</div>

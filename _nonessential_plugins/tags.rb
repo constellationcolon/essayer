@@ -33,10 +33,13 @@ module Jekyll
                      .sub "stacks", "all_tags"
       all_tags_path_fmt = File.join(all_tags_dir, "%{tag}.md")
 
+      default_data = site.frontmatter_defaults.all("", :all_tags)
       site.tags.each do |tag, documents|
         path = all_tags_path_fmt % { :tag => tag }
         tag_doc = Document.new(
-          path, :site => site, :collection => all_tags_collection)
+          path, { :site => site, :collection => all_tags_collection }
+        )
+        tag_doc.data.merge!(default_data).merge!({ "title" => tag })
         all_tags_collection.docs << tag_doc
       end
 
