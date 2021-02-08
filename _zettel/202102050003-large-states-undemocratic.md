@@ -20,4 +20,4 @@ tags: [totalitarianism-liberalism, scale]
 >
 > Aristotle, via {% cite breakdown-of-nations -L page -l 107 %}
 
-vs a [mediated reality]({% link _zettel/202102060323-mediated-reality.md %}})
+vs a [mediated reality]({% link _zettel/202102060323-mediated-reality.md %})

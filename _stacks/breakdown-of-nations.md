@@ -96,22 +96,6 @@ What's the "half-life" of an over-large society?
 > If driven too far, it not only destroys the individual but the state as
 > well, [...]
 
-### Culture in large states
-
-> As far as true culture was concerned, they obtained what they did from
-> Greeks, Jews, or other members of small, disunited, and quarrelsome tribes
-> whom they bought on the slave markets like chattels and who lectured and
-> mastered them like the barbarians they were.
->
-> {% cite breakdown-of-nations -L page -l 125 %}
-
-On the Holy Roman Empire
-> {% marginnote %}{% cite breakdown-of-nations -L page -l 125 %}{%
- endmarginnote %}
-> They had administrators, strategists, road builders, and
-> amassers of stones in giant structures whose forms could be designed by
-> every two-year-old playing in the sand. They had great law-givers and
-> masters of government, but so had the Huns.
 
 ### "Producer goods"
 

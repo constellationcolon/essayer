@@ -50,11 +50,6 @@ body.dark-mode {
   }
 }
 
-// .essai {
-//   p, div.bibliography, li, cite { max-width: $left-width; }
-//   li p { max-width: unset; }
-// }
-
 .essai>.main-text>p,
 .essai>.main-text>div.essai-bibliography,
 .essai>.main-text>*>li {
@@ -164,10 +159,15 @@ h6 { font-size: 1rem; }
 a { color: $color-stormborn; }
 .dark-mode a { color: $color-parchment; }
 
-@media (prefers-color-scheme: dark) {
-  a { color: $color-parchment; }
-  .light-mode a { color: $color-stormborn; }
-}
+// .zettel, .essai {
+//   a::after {
+//     content: " ↪︎";
+//     font-size: 0.5em;
+//   }
+//   a[href^="/essayer/"]::after { content: " ↩︎"; }
+//   .bibliography a::after, a[href^="#"]::after { display: none; }
+// }
+
 
 code {
   font-family: $font-family-mono;
@@ -290,6 +290,27 @@ figcaption {
 
 .caption {
   font-size: $font-size-note;
+}
+
+// IMAGES
+
+img {
+  width: 100%;
+  height: (5 * $grid);
+  object-fit: cover;
+  object-position: 0 0;
+  opacity: 50%;
+  -webkit-mask-image:
+    -webkit-gradient(
+      linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+img:hover {
+  height: unset;
+  opacity: 100%;
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 // TABLES
@@ -611,11 +632,6 @@ verse {
       border-bottom: 1px solid $color-parchment;
     }
     tr:last-child>td { border-bottom: 1px solid $color-parchment; }
-    .light-mode th {
-      border-top: $color-stormborn;
-      border-bottom: $color-stormborn;
-    }
-    .light-mode tr:last-child>td { border-bottom: $color-stormborn; }
   }
 
   blockquote cite.attribution { font-style: normal; }
@@ -644,6 +660,18 @@ verse {
     }
   }
 
+  img { width: 100% }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-mode .zettel {
+    th {
+      border-top: 1px solid $color-stormborn;
+      border-bottom: 1px solid $color-stormborn;
+    }
+    tr:last-child>td { border-bottom: 1px solid $color-stormborn; }
+  }  
 }
 
 .zettel-id {

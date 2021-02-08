@@ -32,31 +32,25 @@ strangers (e.g. soldiers passing through) and locals—necessitated a form of
 one-and-done exchange facilitated via a universal, interchangeable currency:
 cold, hard cash. [{% cite debt %}]
 
-<blockquote>
-  <div class="quote"><p>
-    "War is a collectivizing process, and large-scale collectivism is
-    inherently warlike. If not militarist by nationai tradition, highly
-    centralized states must become so by the very necessity of sustaining at
-    home an inordinate, “unnatural” power concentration, by the threat of
-    their governmental mobilization as felt by other nations, and by their
-    almost inevitable transformation of commercial intercourse into organized
-    economic warfare among great economic-political blocs. There can be no
-    real peace or solid world order in a world of a few great, centralized
-    powers.”
-  </p></div>
-  <cite class="attribution">
-    Henry C. Simons, via {% cite breakdown-of-nations -L page -l 56 %}
-  </cite>
-</blockquote>
+> "War is a collectivizing process, and large-scale collectivism is
+> inherently warlike. If not militarist by nationai tradition, highly
+> centralized states must become so by the very necessity of sustaining at
+> home an inordinate, “unnatural” power concentration, by the threat of
+> their governmental mobilization as felt by other nations, and by their
+> almost inevitable transformation of commercial intercourse into organized
+> economic warfare among great economic-political blocs. There can be no
+> real peace or solid world order in a world of a few great, centralized
+> powers.”
+> 
+> Henry C. Simons, via {% cite breakdown-of-nations -L page -l 56 %}
+> {:.attribution}
 
-<blockquote>
-  <div class="quote" markdown="1">
-    With our dependence on massive existence for individual survival, every occupation disposing of a multiplying element becomes important on that account alone, while quality ceases to be a criterion of value altogether.
-  </div>
-  <cite class="attribution">
-  {% cite breakdown-of-nations -L page -l 119 %}
-  </cite>
-</blockquote>
+> With our dependence on massive existence for individual survival, every
+> occupation disposing of a multiplying element becomes important on that
+> account alone, while quality ceases to be a criterion of value altogether.
+> 
+> {% cite breakdown-of-nations -L page -l 119 %}
+> {:.attribution}
 
 Here's the rub: at every stage of the development of "civilisation", we've
 told ourselves the story that more manpower = better future for all. This is a

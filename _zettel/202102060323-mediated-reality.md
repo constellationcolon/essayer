@@ -6,7 +6,7 @@ tags: [representation]
 Lippmann re: society being too large for anyone to know everything that
 goes on in it. [{% cite public-opinion citation-needed %}]
 
-### On the variety of human experience in small states
+## On the variety of human experience in small states
 
 > The world no longer crosses an author’s path. He must go out of his way and
 > discover it indirectly and laboriously from encyclopaedias and monographs, or
@@ -18,6 +18,11 @@ goes on in it. [{% cite public-opinion citation-needed %}]
 >
 > {% cite breakdown-of-nations -L page -l 122 %}
 
+> Philosophers in small states—ancient Greeks, ancient Chinese—had so much
+> wisdom to dispense because they interacted directly and regularly with all
+> aspects of lived reality in their societies.
+> {:.tldr}
+>
 > A small state has the same governmental problems as the most monumental
 > power on earth, ever, as a small circle has the same number of degrees as a
 > large one. But what in the latter cannot be discerned by an army of
@@ -48,7 +53,25 @@ goes on in it. [{% cite public-opinion citation-needed %}]
 > unsurpassable veracity still captivates our imagination.
 >
 > {% cite breakdown-of-nations -L page -l 124 %}
+> {:.attribution}
 
 <> Axial Age philosophers (at a time when the military-coinage-industrial
 complex kicked into full swing) in {% cite debt %}?
 
+## What have the Romans ever done for us?
+
+> [The Romans] had administrators, strategists, road builders, and
+> amassers of stones in giant structures whose forms could be designed by
+> every two-year-old playing in the sand. They had great law-givers and
+> masters of government, but so had the Huns.
+>
+> {% cite breakdown-of-nations -L page -l 125 %}
+> {:.attribution}
+
+> As far as true culture was concerned, they obtained what they did from
+> Greeks, Jews, or other members of small, disunited, and quarrelsome tribes
+> whom they bought on the slave markets like chattels and who lectured and
+> mastered them like the barbarians they were.
+>
+> {% cite breakdown-of-nations -L page -l 125 %}
+> {:.attribution}
