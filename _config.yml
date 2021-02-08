@@ -19,17 +19,17 @@ collections:
 
 defaults:
   - scope: {path: "", type: "all_tags"}
-    values: {layout: "tags"}
+    values: {layout: "tags", department: "meta"}
   - scope: {path: "", type: "stacks"}
-    values: {layout: "stacks"}
+    values: {layout: "stacks", department: "stacks"}
   - scope: {path: "", type: "zettel"}
-    values: {layout: "zettel"}
+    values: {layout: "zettel", department: "zettelkasten"}
   - scope: {path: "", type: "poems"}
-    values: {layout: "poem"}
+    values: {layout: "poem", department: "essayer"}
   - scope: {path: "", type: "posts"}
-    values: {layout: "essai"}
+    values: {layout: "essai", department: "essayer"}
   - scope: {path: "", type: "drafts"}
-    values: {layout: "essai"}
+    values: {layout: "essai", department: "essayer"}
 
 markdown: Kramdown
 

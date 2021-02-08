@@ -1,9 +1,10 @@
 ---
 title: ESSAYER
 layout: base
+department: essayer
+landing: true
 ---
 
-{% include nav.html department="essayer" landing=true %}
 {% for post in site.posts %}
   {% unless post.path contains "_drafts" %}
   <div class="post">

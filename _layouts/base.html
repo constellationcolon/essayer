@@ -1,6 +1,16 @@
 ---
 ---
 
+{% assign department = site.data.navigation.departments
+  | find: "name", page.department %}
+{% assign dept_href = department.this_dept %}
+{% assign dept_name = department.name %}
+{% if page.landing %}
+  {% assign dept_href = department.next_dept %}
+  {% assign dept_name = department.name | prepend: "[" | append: "]" %}
+{% endif %}
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,6 +20,21 @@
   <title>{{ page.title }}</title>
 </head>
   <body>
+  <nav>
+    <div id="department">
+      <a href="{% link {{ dept_href }} %}">{{ dept_name }}</a>
+    </div>
+    <div id="pages">
+    {% for item in site.data.navigation.pages %}
+      {% assign item_name = item.name %}
+      {% if page.title == item.name %}
+        {% assign item_name = item.name | prepend: "[ " | append: " ]" %}
+      {% endif %}
+      <a href="{% link {{ item.path }} %}">{{ item_name }}</a>
+    {% endfor %}
+    <a id="dark-toggle" onclick="toggleDarkMode()" href="#">☯︎</a>
+    </div>
+  </nav>
   {{ content }}
   <script type="text/javascript" src="{% link assets/js/darkMode.js %}">
   </script>

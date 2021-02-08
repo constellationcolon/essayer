@@ -1,9 +1,9 @@
 ---
 title: Contact
 layout: base
+department: essayer
 ---
 
-{% include nav.html department="essayer" %}
 <link rel="stylesheet" href="/essayer/assets/css/contact.css">
 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfozGPcqP07kCJu5z-op-olgTif35KBhuDIvpsbBanvXr4zVw/formResponse"
   target="redirect" onsubmit="submitted=true;" method="POST" id="mG61Hd">

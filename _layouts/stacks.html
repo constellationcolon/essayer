@@ -1,10 +1,10 @@
 ---
 layout: base
+department: stacks
 ---
 
 {% assign key = page.id | split: "/" | last %}
 
-{% include nav.html department="stacks" %}
 <div class="essai">
 
 <div id="title">{{ site.data.bib[key].title }}</div>
@@ -70,7 +70,6 @@ layout: base
 {% endif %}
 
 <div id="reference">{% reference key %}</div>
-
 
 </div>
 

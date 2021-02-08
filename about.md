@@ -1,11 +1,10 @@
 ---
 title: About
 layout: base
+department: essayer
 ---
 
 <link rel="stylesheet" type="text/css" href="assets/css/about.css">
-
-{% include nav.html department="essayer" %}
 
 <div id="platforms">
 
