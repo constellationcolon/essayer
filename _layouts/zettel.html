@@ -2,6 +2,7 @@
 layout: base
 ---
 
+{% include nav.html department="zettelkasten" %}
 <div class="zettel">
   <h1>{{ page.title }}</h1>
   <div class="zettel-id">{{ page.id | split: "/" | last }}</div>

@@ -83,19 +83,23 @@ nav {
   margin-bottom: ($grid * 2);
 }
 
-nav a {
-  text-decoration: none;
-  text-transform: lowercase;
-}
+nav a { text-decoration: none; }
 
-.nav-item { margin-left: $grid; }
-
-#home {
+#home, #department {
   text-align: left;
   font-weight: bold;
   letter-spacing: 1ch;
   text-transform: uppercase;
 }
+
+#department, #pages { display: inline-block; }
+
+#pages {
+  float: right;
+  text-transform: lowercase;
+}
+
+#pages > a { margin-left: $grid; }
 
 #dark-toggle.disable { color: $color-steel; }
 .dark-mode #dark-toggle.disable { color: $color-olive; }

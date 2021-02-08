@@ -1,0 +1,23 @@
+{% assign department = site.data.navigation.departments
+  | find: "name", include.department %}
+{% assign dept_href = department.this_dept %}
+{% assign dept_name = department.name %}
+{% if include.landing %}
+  {% assign dept_href = department.next_dept %}
+  {% assign dept_name = department.name | prepend: "[" | append: "]" %}
+{% endif %}
+<nav>
+  <div id="department">
+    <a href="{% link {{ dept_href }} %}">{{ dept_name }}</a>
+  </div>
+  <div id="pages">
+  {% for item in site.data.navigation.pages %}
+    {% assign item_name = item.name %}
+    {% if page.title == item.name %}
+      {% assign item_name = item.name | prepend: "[ " | append: " ]" %}
+    {% endif %}
+    <a href="{% link {{ item.path }} %}">{{ item_name }}</a>
+  {% endfor %}
+  <a id="dark-toggle" onclick="toggleDarkMode()" href="#">☯︎</a>
+  </div>
+</nav>

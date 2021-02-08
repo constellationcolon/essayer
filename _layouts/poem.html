@@ -2,14 +2,11 @@
 layout: base
 ---
 
-<div class="essai">
+{% include nav.html department="essayer" %}
 
+<div class="essai">
 <div id="title">{{ page.title }}</div>
 <div id="author"><span>{{ page.author }}</span></div>
-
 <verse>{{ page.content | strip | markdownify }}</verse>
-
 <div id="reference">{% reference page.cite_key %}</div>
-
-
 </div>

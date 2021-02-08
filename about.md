@@ -5,6 +5,8 @@ layout: base
 
 <link rel="stylesheet" type="text/css" href="assets/css/about.css">
 
+{% include nav.html department="essayer" %}
+
 <div id="platforms">
 
 {% for platform in site.data.platforms %}

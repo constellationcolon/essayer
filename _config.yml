@@ -4,9 +4,6 @@ baseurl: /essayer
 url: https://constellationcolon.github.io
 permalink: none
 
-github: constellationcolon
-linkedin: suhang42
-
 exclude: [archive, bin]
 keep_files: [assets]
 
@@ -18,7 +15,7 @@ collections:
   all_tags: {output: true, permalink: /tags/:name}
   stacks: {output: true}
   poems: {output: true}
-  zettel: {output: true}
+  zettel: {output: true, permalink: /zettelkasten/:name}
 
 defaults:
   - scope: {path: "", type: "all_tags"}

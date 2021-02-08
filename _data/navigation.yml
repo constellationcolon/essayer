@@ -1,4 +1,7 @@
-- name: About
-  rel_path: /about.html
-- name: Contact
-  rel_path: /contact.html
+departments:
+  - { name: essayer, this_dept: index.md, next_dept: stacks.md }
+  - { name: stacks, this_dept: stacks.md, next_dept: zettel.md }
+  - { name: zettelkasten, this_dept: zettel.md, next_dept: index.md }
+pages:
+  - { name: About, path: about.md }
+  - { name: Contact, path: contact.md }

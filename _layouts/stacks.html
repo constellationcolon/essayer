@@ -4,6 +4,7 @@ layout: base
 
 {% assign key = page.id | split: "/" | last %}
 
+{% include nav.html department="stacks" %}
 <div class="essai">
 
 <div id="title">{{ site.data.bib[key].title }}</div>
