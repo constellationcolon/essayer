@@ -1,0 +1,24 @@
+---
+layout: base
+---
+
+{% assign tag_name = page.id | split: "/" | last %}
+{{ tag_name }}
+
+{% for tag in site.tags %}
+  {% if tag[0] == tag_name %}
+
+    {% assign tag_collections = tag[1] | group_by: "collection" %}
+    {% for tag_collection in tag_collections %}
+      <div>
+        <p>{{ tag_collection.name }}</p>
+        {% for document in tag_collection.items %}
+          <a href="{% link {{ document.path }} %}">{{ document.title }}</a>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    {% break %}
+  {% else %}
+    {% continue %}
+  {% endif %}
+{% endfor %}

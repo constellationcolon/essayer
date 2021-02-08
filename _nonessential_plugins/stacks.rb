@@ -21,7 +21,7 @@ module Jekyll
         File.dirname(site.collections["stacks"].docs[0].path),
         "%{key}.md"
       )
-      
+
       for entry in entries
         if existing_entries.include? entry.key
           next
@@ -31,6 +31,7 @@ module Jekyll
           path, :site => site, :collection => site.collections["stacks"]
         )
         stack.content = ""
+        stack.data["title"] = entry.title
         site.collections["stacks"].docs << stack
       end
 

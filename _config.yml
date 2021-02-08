@@ -15,11 +15,14 @@ plugins_dir:
   - _nonessential_plugins
 
 collections:
+  all_tags: {output: true, permalink: /tags/:name}
   stacks: {output: true}
   poems: {output: true}
   zettel: {output: true}
 
 defaults:
+  - scope: {path: "", type: "all_tags"}
+    values: {layout: "tags"}
   - scope: {path: "", type: "stacks"}
     values: {layout: "stacks"}
   - scope: {path: "", type: "zettel"}
