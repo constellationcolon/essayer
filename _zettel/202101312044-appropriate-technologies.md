@@ -1,6 +1,6 @@
 ---
 title: Appropriate Technologies
-tags: [technology, appropriate]
+tags: [appropriate-technologies, technology]
 ---
 
 Many of our inventions seem to beget more "externalities" than improve our

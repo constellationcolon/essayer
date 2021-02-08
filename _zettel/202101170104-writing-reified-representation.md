@@ -1,6 +1,6 @@
 ---
 title: Writing as Reified Representation
-tags: [writing, orality, semiotics, reification, representation]
+tags: [orality-literacy, semiotics, reification, representation]
 ---
 
 [{% cite modes-of-thought %}]

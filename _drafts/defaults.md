@@ -1,7 +1,7 @@
 ---
 title:  Defaults
 blurb:  Ripping out the IV drip of the news feed
-tags:   [news, media, tech]   
+tags:   [news, media, technology]
 ---
 
 It's a bit of a mystery how we came to use the word *default* to mean <span class='small-caps'>the standard fall-back option in the absence of an explicitly declared choice</span>. But one can guess: its Latin roots, *de* 'away' + *fallo* 'deceive, cheat,
