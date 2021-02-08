@@ -1,5 +1,6 @@
 ---
-title:      The Size Fetish
+title: The Size Fetish
+tags: [scale]
 ---
 
 [LaJeunesse's tell-all](#google-ir-head-left) about Google's long, slow slide

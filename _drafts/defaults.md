@@ -1,6 +1,7 @@
 ---
-title:    Defaults
-blurb:    Ripping out the IV drip of the news feed
+title:  Defaults
+blurb:  Ripping out the IV drip of the news feed
+tags:   [news, media, tech]   
 ---
 
 It's a bit of a mystery how we came to use the word *default* to mean <span class='small-caps'>the standard fall-back option in the absence of an explicitly declared choice</span>. But one can guess: its Latin roots, *de* 'away' + *fallo* 'deceive, cheat,
@@ -125,23 +126,14 @@ traffic was coming from people actively searching out information on Google
 Search, or from those mindlessly scrolling through that bottomless buffet of
 recommended content.
 
-<style type="text/css">
-    .grid-img {
-        width: 100%;
-        opacity: 50%;
-    }
-    .grid-img:hover {
-        opacity: 100%;
-    }
-</style>
-<figure class="image">
-<table style="width: 66%">
+<figure class="image full-width">
+<table>
     <tr>
         <td><img class="grid-img" src="{{ site.baseurl }}/assets/images/chrome-afy.png"></td>
         <td><img class="grid-img" src="{{ site.baseurl }}/assets/images/google-discover-app.png"></td>
         <td><img class="grid-img" src="{{ site.baseurl }}/assets/images/google-discover-search.png"></td>
     </tr>
-    <tr>
+    <tr style="line-height: 16px;">
         <td><span class="caption">Google Chrome's <i>Articles for you</i></span></td>
         <td><span class="caption">Google Discover, in the Google App</span></td>
         <td><span class="caption">Google Discover, on <code>google.com</code></span></td>
