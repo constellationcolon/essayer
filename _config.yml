@@ -7,6 +7,8 @@ permalink: none
 exclude: [archive, bin]
 keep_files: [assets]
 
+compile_tags: false
+
 plugins_dir:
   - _essential_plugins
   - _nonessential_plugins

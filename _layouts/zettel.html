@@ -6,6 +6,13 @@ department: zettel
 <div class="zettel">
   <h1>{{ page.title }}</h1>
   <div class="zettel-id">{{ page.id | split: "/" | last }}</div>
+  {% if site.compile_tags %}
+  <div id="tags">
+    {% for tag in page.tags %}
+      <a class="tag" href="{% link _all_tags/{{ tag }}.md %}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="main-text">
   {{ content }}
   {% if page.to_read %}

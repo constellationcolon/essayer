@@ -80,12 +80,17 @@ department: stacks
   </div>
 {% endif %}
 
-<div id="tags">
+{% if site.compile_tags %}
+<div>
   <h2>Tags</h2>
-  {% for tag in entry.tags %}
-    <a class="tag" href="{% link _all_tags/{{ tag }}.md %}">{{ tag }}</a>
-  {% endfor %}
+  <div id="tags">
+    {% for tag in entry.tags %}
+      <a class="tag" href="{% link _all_tags/{{ tag }}.md %}">{{ tag }}</a>
+    {% endfor %}
+  </div>
 </div>
+{% endif %}
+
 
 <div id="reference">{% reference key %}</div>
 

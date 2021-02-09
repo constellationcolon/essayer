@@ -10,6 +10,11 @@ module Jekyll
     attr_reader :config
 
     def generate(site)
+
+      if !site.config["compile_tags"]
+        return
+      end
+
       @site = site
       @config = Scholar.defaults.merge(site.config['scholar'] || {})
 
