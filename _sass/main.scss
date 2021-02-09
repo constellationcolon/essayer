@@ -323,6 +323,7 @@ table {
   border-collapse: collapse;
   display: block;
   margin: $grid 0;
+  font-size: 1em;
 }
 
 th, td {
@@ -478,17 +479,34 @@ div.bibliography>div {
   margin-block-end: ($grid / 2);
 }
 
-.stacks #tags .tag {
+#tags {
+  padding-top: 4px;
+  margin-bottom: -4px;
+  line-height: $grid;
+}
+
+#tags .tag {
   font-family: $font-family-mono;
   font-size: 1rem;
 }
 
-.stacks #tags .tag::before { content: "#"; }
-.stacks #tags .tag::before, .hash { color: $color-steel; }
-.dark-mode { .stacks #tags .tag::before, .hash { color: $color-olive; } }
+#tags .tag::before { content: "#"; }
+#tags .tag::before, .hash { color: $color-steel; }
+.dark-mode { #tags .tag::before, .hash { color: $color-olive; } }
 @media (prefers-color-scheme: dark) {
-  .stacks #tags .tag::before, .hash { color: $color-olive; }
-  .light-mode { .stacks #tags .tag::before, .hash { color: $color-steel; } }
+  #tags .tag::before, .hash { color: $color-olive; }
+  .light-mode { #tags .tag::before, .hash { color: $color-steel; } }
+}
+
+.zettel .tag {
+  color: $color-steel;
+  text-decoration: none;
+}
+.zettel .tag:hover { text-decoration: underline; }
+.dark-mode .zettel .tag { color: $color-olive; }
+@media (prefers-color-scheme: dark) {
+  .zettel .tag { color: $color-olive; }
+  .light-mode .zettel .tag { color: $color-steel; }
 }
 
 // COLLECTIONS
@@ -624,7 +642,7 @@ verse {
 
   // tables
 
-  table { padding-top: 4px; margin-bottom: -5px; }
+  table { padding-top: 4px; }
   
   th {
     text-align: left;
