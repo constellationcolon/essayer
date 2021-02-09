@@ -441,8 +441,7 @@ proposes that governments draw on our taxes in order to fund
 publications—academic and media alike—allotting payments according to how
 often each piece of content is accessed. For academic publishing at least,
 such a model could be a no-brainer; why do the likes of Elsevier deserve 30%
-profit margins{% sidenote %} In 2019, <span class='small-caps'>RELX</span>, Elsevier's parent
-company, reported a profit margin of 31.6% [{% cite elsevier-2019 -l 2 %}]. {%
+profit margins{% sidenote %}[In 2019, <span class='small-caps'>RELX</span>, Elsevier's parent company, reported a profit margin of 31.6% (p. 2).][relx]{%
 endsidenote %} for simply throwing academic research—often *already* funded by
 our tax dollars—behind a private paywall on the internet? I wholeheartedly
 agree, too, that there is already more than enough room in what we pay in
@@ -633,6 +632,7 @@ pouring our attention down the drain of monetised attention.
 [platform-pay-news]: https://www.reuters.com/article/us-australia-media-regulator-idUSKCN24V3UP
 [pocket]: https://blog.getpocket.com/2017/11/introducing-pocket-recommendations-in-firefox-quantum/
 [recsys]: https://nyti.ms/3kCGyY9
+[relx]: https://www.relx.com/~/media/Files/R/RELX-Group/documents/reports/annual-reports/2019-annual-report.pdf
 [Scroll]: https://scroll.com
 [sg-media]: https://en.wikipedia.org/wiki/Mass_media_in_Singapore
 [smartphone-generation]: https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/

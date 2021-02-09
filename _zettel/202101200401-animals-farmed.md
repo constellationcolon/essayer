@@ -12,9 +12,9 @@ the communist animals, are finally revealed to be no different than the
 capitalist humans they had rebelled against in the first place.
 
 The metaphor cuts deep. Possibly deeper than Orwell himself first intended.
-For to look directly at the graphic inhumanity of modern farming [{% cite
-modern-farming-dont %}] is, disconcertingly, but to look into a mirror of our
-own lives.
+For to look directly at the [graphic inhumanity of modern
+farming][modern-farming-dont] is, disconcertingly, but to look into a mirror
+of our own lives.
 
 From the inimitable Radiohead: [{% cite fitter-happier %}]
 <verse>
@@ -58,3 +58,4 @@ each other's tails off, and some pigs have evolved to have shorter / no tail.
 
 [Animals Farmed]: https://www.theguardian.com/environment/series/animals-farmed
 [ai-pig-china]: https://www.theguardian.com/environment/2020/oct/08/behind-chinas-pork-miracle-how-technology-is-transforming-rural-hog-farming
+[modern-farming-dont]: https://www.theguardian.com/environment/2020/aug/04/one-thing-ive-learned-about-modern-farming-we-shouldnt-do-it-like-this
