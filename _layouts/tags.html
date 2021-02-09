@@ -6,15 +6,17 @@ department: meta
 {% assign tag_name = page.id | split: "/" | last %}
 
 <div class="tags">
-{{ tag_name }}
+<h1>{{ tag_name }}</h1>
+<div class="main-text">
 {% for tag in site.tags %}
   {% if tag[0] == tag_name %}
     {% assign tag_collections = tag[1] | group_by: "collection" %}
     {% for tag_collection in tag_collections %}
       <div>
-        <p>{{ tag_collection.name }}</p>
+        <h2>{{ tag_collection.name }}</h2>
         {% for document in tag_collection.items %}
-          <a href="{% link {{ document.path }} %}">{{ document.title }}</a>
+          <p><a href="{% link {{ document.path }} %}">
+            {{ document.title }}</a></p>
         {% endfor %}
       </div>
     {% endfor %}
@@ -22,5 +24,6 @@ department: meta
   {% else %}
     {% continue %}
   {% endif %}
-{% endfor %}
+{% endfor %}  
+</div>
 </div>

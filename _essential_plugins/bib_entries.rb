@@ -17,8 +17,9 @@ module Jekyll
 
       for entry in entries
         site.data["bib"][entry.key] = {
-          "title"=> entry.title.to_s,
-          "author"=> entry.author.to_s,
+          "title"   => entry.title.to_s,
+          "author"  => entry.author.to_s,
+          "tags"    => (entry[:tags] or "").split(",").map { |t| t.strip() },
         }
       end
 

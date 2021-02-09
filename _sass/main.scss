@@ -478,6 +478,19 @@ div.bibliography>div {
   margin-block-end: ($grid / 2);
 }
 
+.stacks #tags .tag {
+  font-family: $font-family-mono;
+  font-size: 1rem;
+}
+
+.stacks #tags .tag::before { content: "#"; }
+.stacks #tags .tag::before, .hash { color: $color-steel; }
+.dark-mode { .stacks #tags .tag::before, .hash { color: $color-olive; } }
+@media (prefers-color-scheme: dark) {
+  .stacks #tags .tag::before, .hash { color: $color-olive; }
+  .light-mode { .stacks #tags .tag::before, .hash { color: $color-steel; } }
+}
+
 // COLLECTIONS
 
 #title { 
@@ -539,7 +552,7 @@ verse {
 }
 .essai verse p { max-width: unset; }
 
-.zettel {
+.zettel, .tags {
   
   max-width: 79ch;
 
@@ -688,4 +701,9 @@ verse {
 @media (prefers-color-scheme: dark) {
   .light-mode .zettel-id { color: $color-steel; }
   .zettel-id { color: $color-olive; }
+}
+
+.tags {
+  h1 { text-transform: none; }
+  p { margin-block-start: 0; }
 }

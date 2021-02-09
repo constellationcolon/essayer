@@ -9,6 +9,7 @@ tags:
     - reification
     - postmodernism
     - media
+    - wildfires
 ---
 
 The first time I came across Curtis' thesis in HyperNormalisation [{% cite

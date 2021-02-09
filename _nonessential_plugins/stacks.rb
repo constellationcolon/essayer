@@ -17,7 +17,6 @@ module Jekyll
         |e| e.id.split("/")[-1]
       }
 
-
       path_fmt = File.join(
         File.dirname(site.collections["stacks"].docs[0].path),
         "%{key}.md"
@@ -26,14 +25,16 @@ module Jekyll
       default_data = site.frontmatter_defaults.all("", :stacks)
       for entry in entries
         if existing_entries.include? entry.key
+          stack = site.collections["stacks"].docs.find {
+            |s| s.id.split("/")[-1] == entry.key }
+          stack.data.merge!({ "title" => entry.title.to_s })
           next
         end
         path = path_fmt % { :key => entry.key }
-        stack = Document.new(
-          path, { :site => site, :collection => site.collections["stacks"] }
-        )
+        relations = {:site => site, :collection => site.collections["stacks"]}
+        stack = Document.new(path, relations)
         stack.content = ""
-        stack.data.merge!(default_data).merge!({ "title" => entry.title })
+        stack.data.merge!(default_data).merge!({ "title" => entry.title.to_s })
         site.collections["stacks"].docs << stack
       end
 

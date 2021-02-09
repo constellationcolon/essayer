@@ -3,12 +3,16 @@ layout: base
 department: stacks
 ---
 
+
 {% assign key = page.id | split: "/" | last %}
+{% assign entry = site.data.bib[key] %}
 
-<div class="essai">
+<title>{{ entry.title }}</title>
 
-<div id="title">{{ site.data.bib[key].title }}</div>
-<div id="author"><span>{{ site.data.bib[key].author }}</span></div>
+<div class="essai stacks">
+
+<div id="title">{{ entry.title }}</div>
+<div id="author"><span>{{ entry.author }}</span></div>
 
 <div class="main-text">
 
@@ -59,15 +63,29 @@ department: stacks
   </div>
 {% endif %}
 
-{% capture contents %}
-  {% bibliography --query @*[in={{ key }}] %}
-{% endcapture %}
-{% if contents.size > 4 %}
-  <div id="contents">
-    <h2>Contains</h2>
-    <div>{{ contents }}</div>
+{% if entry.in %}
+  <div id="in_entry">
+    <h2>Part of</h2>
+    <div>{{ site.data.bib[entry.in] }}</div>
   </div>
 {% endif %}
+
+{% capture has_child_entry %}
+  {% bibliography --query @*[in={{ key }}] %}
+{% endcapture %}
+{% if has_child_entry.size > 4 %}
+  <div id="has_child_entry">
+    <h2>Contains</h2>
+    <div>{{ has_child_entry }}</div>
+  </div>
+{% endif %}
+
+<div id="tags">
+  <h2>Tags</h2>
+  {% for tag in entry.tags %}
+    <a class="tag" href="{% link _all_tags/{{ tag }}.md %}">{{ tag }}</a>
+  {% endfor %}
+</div>
 
 <div id="reference">{% reference key %}</div>
 
