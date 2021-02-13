@@ -1,0 +1,13 @@
+p { margin-block-start: 0em; margin-block-end: 0em; }
+
+.book { margin-top: 1em; margin-bottom: 1em; }
+
+.title { font-weight: bold; }
+
+.stack { text-decoration: underline; margin-top: 2em; }
+
+#abbrs { margin-top: 2em; text-align: right; }
+
+.abbr { font-weight: bold; }
+
+/*# sourceMappingURL=stacks.css.map */

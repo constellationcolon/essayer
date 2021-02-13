@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* Icons */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
+@font-face { font-family: "Byom Icons"; src: url("/essayer/assets/fonts/byom_icons.ttf"); }
+
+/* Wiki icon */
+@font-face { font-family: "Linux Libertine"; src: url("/essayer/assets/fonts/LinLibertine_R.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+/* Chinese */
+@font-face { font-family: "STFangSong"; src: url("/essayer/assets/fonts/chinese.stfangso.ttf"); }
+
+/* Monospace (and "sans-serif") */
+/* Serif */
+* { margin: 0; padding: 0; }
+
+html { font-size: 11px; padding: 80px; line-height: 16px; }
+
+body { font-family: "Space Mono", monospace; text-underline-offset: 0.2em; max-width: 120ch; margin: auto; counter-reset: sidenote-counter; background-color: #f1f7f9; color: #4c4e65; }
+
+body.dark-mode { background-color: #0b0501; color: #d0a87a; }
+
+@media (prefers-color-scheme: dark) { body { background-color: #0b0501; color: #d0a87a; } body.light-mode { background-color: #f1f7f9; color: #4c4e65; } }
+
+.essai > .main-text > p, .essai > .main-text > div.essai-bibliography, .essai > .main-text > * > li { max-width: 66%; }
+
+.full-width { max-width: 120ch; width: 120ch; }
+
+@media screen and (max-width: 500px), screen and (pointer: coarse) and (hover: none) { html { font-size: 3vw; padding: 5vw; } .essai > .main-text > p, .essai > .main-text > div.essai-bibliography, .essai > .main-text > * > li { max-width: 100%; } }
+
+nav { height: 16px; padding-top: 3px; padding-bottom: 13px; margin-bottom: 32px; }
+
+nav a { text-decoration: none; }
+
+#home, #department { text-align: left; font-weight: bold; letter-spacing: 1ch; text-transform: uppercase; }
+
+#department, #pages { display: inline-block; }
+
+#pages { float: right; text-transform: lowercase; }
+
+#pages > a { margin-left: 16px; }
+
+#dark-toggle.disable { color: #a7b2c7; }
+
+.dark-mode #dark-toggle.disable { color: #4d422c; }
+
+@media (prefers-color-scheme: dark) { .light-mode #dark-toggle.disable { color: #a7b2c7; } #dark-toggle.disable { color: #4d422c; } }
+
+h1 { font-family: "Cormorant Unicase"; text-transform: lowercase; font-weight: normal; font-size: 5rem; line-height: 48px; margin-top: 96px; padding-top: 7px; margin-bottom: -7px; }
+
+h2, h3 { font-style: italic; font-weight: normal; line-height: 32px; margin-top: 48px; }
+
+h2 { font-size: 2rem; padding-top: 8px; margin-bottom: -8px; }
+
+h3 { font-size: 1.75rem; }
+
+h4, h5, h6 { font-family: "Cormorant SC"; font-weight: normal; text-transform: lowercase; letter-spacing: 0.1em; line-height: 16px; margin-top: 32px; }
+
+h4 { font-size: 1.5rem; }
+
+h5 { font-size: 1.25rem; padding-top: 3px; margin-bottom: -3px; }
+
+h6 { font-size: 1rem; }
+
+.post { padding-top: 3px; margin-bottom: 29px; }
+
+a { color: #4c4e65; }
+
+.dark-mode a { color: #d0a87a; }
+
+code { font-family: "Space Mono", monospace; font-size: 0.8em; line-height: 0.95; }
+
+sup, sub { vertical-align: baseline; position: relative; font-size: 0.75em; line-height: 16px; }
+
+sup { top: -0.5em; }
+
+sub { top: 0.5em; }
+
+ol, ul { padding-inline-start: 0; }
+
+.essai { font-family: "Cormorant Garamond", serif, "STFangSong"; font-size: 1.56rem; line-height: 32px; }
+
+.essai p { margin-block-start: 16px; margin-block-end: 16px; }
+
+.essai .main-text > p:first-child, .essai .main-text > div > p:first-child { text-indent: initial; margin-top: 48px; }
+
+.essai .main-text > h2 + p, .essai .main-text > p.section-break + p { text-indent: initial; }
+
+.essai .main-text > p { text-indent: 16px; }
+
+.essai .main-text p { padding-top: 11px; margin-bottom: -11px; }
+
+.small-caps, #author { font-family: "Cormorant SC"; text-transform: lowercase; }
+
+.section-break { text-align: center; font-style: italic; margin: 16px 0; }
+
+@media screen and (max-width: 500px), screen and (pointer: coarse) and (hover: none) { ol, ul { padding-inline-start: 32px; } }
+
+.essai blockquote { font-size: 0.9em; line-height: 32px; padding: 16px; }
+
+.essai > .main-text > blockquote { max-width: calc(66% - 2 * 16px); }
+
+blockquote p.tldr::before { content: "(TL;DR: "; }
+
+blockquote p.tldr::after { content: ") [+]"; }
+
+blockquote p.attribution { display: block; text-align: right; }
+
+blockquote p.attribution::before { content: "— "; }
+
+.zettel blockquote p.tldr ~ p:not(.tldr):not(.attribution) { display: none; }
+
+.zettel blockquote:hover p.tldr ~ p:not(.tldr):not(.attribution) { display: block; }
+
+.zettel blockquote:hover p.tldr { display: none; }
+
+figure { margin-top: 32px; margin-bottom: 32px; margin-left: 0; margin-right: 0; }
+
+figcaption { font-size: 0.5em; font-family: "Space Mono"; text-align: right; float: right; line-height: 16px; }
+
+.viz-altair { width: 100%; height: 480px; margin-top: 32px; }
+
+.caption { font-size: 1.08rem; }
+
+img { width: 100%; height: 80px; object-fit: cover; object-position: 0 0; opacity: 50%; -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0))); mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
+
+img:hover { height: unset; opacity: 100%; -webkit-mask-image: none; mask-image: none; }
+
+table { border-collapse: collapse; display: block; margin: 16px 0; font-size: 1em; }
+
+th, td { vertical-align: top; padding: 8px 8px; }
+
+th:first-child, td:first-child { padding-left: 0; }
+
+th:last-child, td:last-child { padding-right: 0; }
+
+.sidenote, .marginnote, .hidden-sidenote { position: relative; float: right; clear: right; width: 40%; padding-top: 9px; margin-right: -50%; margin-bottom: 7px; font-size: 1.08rem; line-height: 16px; vertical-align: baseline; text-indent: 0; }
+
+.sidenote *, .marginnote *, .hidden-sidenote * { max-width: 100%; }
+
+blockquote .marginnote, blockquote .sidenote { --full: calc((100% - 2 * 16px) / 0.66); width: calc(0.4 * var(--full)); margin-right: calc(-0.5 * var(--full)); }
+
+.sidenote-number { counter-increment: sidenote-counter; }
+
+.sidenote-number:after { content: counter(sidenote-counter); }
+
+.sidenote:before { content: counter(sidenote-counter) ". "; }
+
+.marginnote-symbol { display: none; text-decoration: underline; font-size: 1rem; }
+
+.hidden-sidenote-label { border-bottom: 1px dotted #4c4e65; }
+
+.hidden-sidenote-label .dark-mode { border-bottom: 1px dotted #d0a87a; }
+
+@media (prefers-color-scheme: dark) { .hidden-sidenote-label { border-bottom: 1px dotted #d0a87a; } .light-mode .hidden-sidenote-label { border-bottom: 1px dotted #4c4e65; } }
+
+.hidden-sidenote-label .hidden-sidenote { visibility: hidden; }
+
+.hidden-sidenote-label:hover .hidden-sidenote { visibility: visible; }
+
+input.sidenote-toggle, input.marginnote-toggle, input.hidden-sidenote-toggle { display: none; }
+
+@media screen and (max-width: 500px), screen and (pointer: coarse) and (hover: none) { .sidenote, .marginnote { display: none; } .sidenote-number { text-decoration: underline; } .marginnote-symbol { display: inline; } .hidden-sidenote { display: none; visibility: visible; } .sidenote-number, .marginnote-symbol, .hidden-sidenote-label { cursor: pointer; } .sidenote-toggle:checked + .sidenote, .marginnote-toggle:checked + .marginnote, .hidden-sidenote-toggle:checked + .sidenote { display: block; top: 0; float: left; clear: both; margin: 8px 0; padding-top: 0px; } .sidenote-toggle:checked + .sidenote, .marginnote-toggle:checked + .marginnote { width: calc(100% - 2 * 16px); padding-left: 16px; padding-right: 16px; } .hidden-sidenote-toggle:checked + .sidenote { width: 100%; } }
+
+.citation { white-space: nowrap; }
+
+div.bibliography { padding-top: 3px; margin-bottom: -3px; }
+
+div.bibliography > div { line-height: 16px; text-indent: -16px; padding-left: 16px; margin-block-start: 8px; margin-block-end: 8px; }
+
+.anchor-wiki { white-space: pre; }
+
+.wiki { font-family: "Linux Libertine"; letter-spacing: -0.8ch; line-height: 16px; }
+
+.sup-mat { font-family: "Byom Icons"; font-size: 0.8em; }
+
+.cw > .cw-text { display: none; font-size: 1.08rem; text-decoration: none; color: #a7b2c7; line-height: 16px; }
+
+.dark-mode .cw > .cw-text { color: #4d422c; }
+
+.cw:hover > .cw-text { display: inline; }
+
+@media (prefers-color-scheme: dark) { .cw > .cw-text { color: #4d422c; } .light-mode .cw > .cw-text { color: #a7b2c7; } }
+
+.essai-bibliography { font-size: 1.08rem; }
+
+.stacks-bibliography div.bibliography { max-width: 100%; }
+
+.stacks-bibliography div.bibliography > div { line-height: 24px; margin-block-start: 8px; margin-block-end: 8px; }
+
+#tags { padding-top: 4px; margin-bottom: -4px; line-height: 16px; }
+
+#tags .tag { font-family: "Space Mono", monospace; font-size: 1rem; }
+
+#tags .tag::before { content: "#"; }
+
+#tags .tag::before, .hash { color: #a7b2c7; }
+
+.dark-mode #tags .tag::before, .dark-mode .hash { color: #4d422c; }
+
+@media (prefers-color-scheme: dark) { #tags .tag::before, .hash { color: #4d422c; } .light-mode #tags .tag::before, .light-mode .hash { color: #a7b2c7; } }
+
+.zettel .tag { color: #a7b2c7; text-decoration: none; }
+
+.zettel .tag:hover { text-decoration: underline; }
+
+.dark-mode .zettel .tag { color: #4d422c; }
+
+@media (prefers-color-scheme: dark) { .zettel .tag { color: #4d422c; } .light-mode .zettel .tag { color: #a7b2c7; } }
+
+#title { font-family: "Cormorant Unicase"; text-transform: lowercase; font-weight: normal; font-size: 3rem; line-height: 32px; padding-top: 6px; margin-top: 80px; margin-bottom: -6px; text-align: center; }
+
+#author { text-align: center; padding-top: 5px; margin-top: 32px; padding-bottom: 30px; font-size: 1.25rem; line-height: 1.25rem; }
+
+#author > span { border-top: 1px solid #4c4e65; }
+
+.dark-mode #author > span { padding-top: 2px; border-top: 1px solid #d0a87a; }
+
+@media (prefers-color-scheme: dark) { #author > span { border-top: 1px solid #d0a87a; } .light-mode #author > span { border-top: 1px solid #4c4e65; } }
+
+#reference { text-align: center; font-size: 1rem; margin-top: 80px; padding-top: 5px; margin-bottom: -5px; line-height: 16px; }
+
+#uncite > div, #see-alsos > div { padding-top: 11px; margin-bottom: -11px; }
+
+verse { display: block; white-space: pre-wrap; width: max-content; margin-left: auto; margin-right: auto; }
+
+.essai verse p { max-width: unset; }
+
+.zettel, .tags { max-width: 79ch; }
+
+.zettel p, .zettel h1, .zettel h2, .zettel h3, .zettel h4, .zettel h5, .zettel h6, .zettel div.bibliography, .zettel cite, .tags p, .tags h1, .tags h2, .tags h3, .tags h4, .tags h5, .tags h6, .tags div.bibliography, .tags cite { margin-block-start: 16px; padding-top: 4px; margin-bottom: -4px; }
+
+.zettel h1, .zettel h2, .zettel h3, .zettel h4, .zettel h5, .zettel h6, .tags h1, .tags h2, .tags h3, .tags h4, .tags h5, .tags h6 { font-size: 1rem; line-height: 16px; margin-top: 16px; font-style: normal; font-family: "Space Mono", monospace; text-transform: none; letter-spacing: unset; }
+
+.zettel h1, .zettel h2, .zettel h3, .tags h1, .tags h2, .tags h3 { text-transform: uppercase; margin-top: 32px; }
+
+.zettel h2, .tags h2 { text-indent: -2ch; }
+
+.zettel h2::before, .tags h2::before { content: "# "; }
+
+.zettel .bibliography, .tags .bibliography { font-size: 1rem; }
+
+.zettel div.bibliography > div, .tags div.bibliography > div { margin-block-start: 0; margin-block-end: 0; }
+
+.zettel .wiki, .tags .wiki { font-family: "Space Mono", monospace; letter-spacing: -0.4ch; }
+
+.zettel .anchor-wiki, .tags .anchor-wiki { white-space: normal; }
+
+.zettel ol, .zettel ul, .tags ol, .tags ul { margin-block-start: 16px; margin-block-end: 16px; }
+
+.zettel ol.desc-list, .zettel ul.desc-list, .tags ol.desc-list, .tags ul.desc-list { margin-block-start: 0px; }
+
+.zettel ul, .tags ul { list-style: none; }
+
+.zettel ul li:before, .tags ul li:before { content: "- "; }
+
+.zettel ul li, .tags ul li { text-indent: -2ch; }
+
+.zettel li, .tags li { padding-top: 4px; margin-bottom: -4px; }
+
+.zettel li p, .tags li p { padding-top: 0px; margin-bottom: -0px; }
+
+.zettel blockquote, .tags blockquote { margin: 16px 2ch; }
+
+.zettel .main-text, .tags .main-text { margin-top: 32px; }
+
+.zettel table, .tags table { padding-top: 4px; }
+
+.zettel th, .tags th { text-align: left; font-weight: normal; line-height: 14px; }
+
+.zettel th, .tags th { border-top: 1px solid #4c4e65; border-bottom: 1px solid #4c4e65; }
+
+.zettel tr:last-child > td, .tags tr:last-child > td { border-bottom: 1px solid #4c4e65; }
+
+.zettel .dark-mode th, .tags .dark-mode th { border-top: #d0a87a; border-bottom: #d0a87a; }
+
+.zettel .dark-mode tr:last-child > td, .tags .dark-mode tr:last-child > td { border-bottom: #d0a87a; }
+
+@media (prefers-color-scheme: dark) { .zettel th, .tags th { border-top: 1px solid #d0a87a; border-bottom: 1px solid #d0a87a; } .zettel tr:last-child > td, .tags tr:last-child > td { border-bottom: 1px solid #d0a87a; } }
+
+.zettel blockquote cite.attribution, .tags blockquote cite.attribution { font-style: normal; }
+
+.zettel sup[role="doc-noteref"], .tags sup[role="doc-noteref"] { font-size: 1em; top: 0; }
+
+.zettel sup[role="doc-noteref"]::before, .tags sup[role="doc-noteref"]::before { content: "["; }
+
+.zettel sup[role="doc-noteref"]::after, .tags sup[role="doc-noteref"]::after { content: "]"; }
+
+.zettel div.footnotes[role="doc-endnotes"] ol li, .tags div.footnotes[role="doc-endnotes"] ol li { counter-increment: footnotes; }
+
+.zettel div.footnotes[role="doc-endnotes"] ol li:before, .tags div.footnotes[role="doc-endnotes"] ol li:before { content: "[" counter(footnotes) "]"; left: -5ch; position: relative; float: left; top: 16px; }
+
+.zettel div.footnotes[role="doc-endnotes"] ol, .tags div.footnotes[role="doc-endnotes"] ol { list-style: none; counter-reset: footnotes; }
+
+.zettel img, .tags img { width: 100%; }
+
+@media (prefers-color-scheme: dark) { .light-mode .zettel th { border-top: 1px solid #4c4e65; border-bottom: 1px solid #4c4e65; } .light-mode .zettel tr:last-child > td { border-bottom: 1px solid #4c4e65; } }
+
+.zettel-id { padding-top: 4px; margin-bottom: -4px; color: #a7b2c7; }
+
+.dark-mode .zettel-id { color: #4d422c; }
+
+@media (prefers-color-scheme: dark) { .light-mode .zettel-id { color: #a7b2c7; } .zettel-id { color: #4d422c; } }
+
+.tags h1 { text-transform: none; }
+
+.tags p { margin-block-start: 0; }
+
+/*# sourceMappingURL=styles.css.map */

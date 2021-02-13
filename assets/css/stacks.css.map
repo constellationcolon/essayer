@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "stacks.css",
+	"sources": [
+		"stacks.scss"
+	],
+	"sourcesContent": [
+		"p { margin-block-start: 0em; margin-block-end: 0em; }\n.book { margin-top: 1em; margin-bottom: 1em; }\n.title { font-weight: bold; }\n.stack { text-decoration: underline; margin-top: 2em; }\n#abbrs { margin-top: 2em; text-align: right }\n.abbr { font-weight: bold; }"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,CAAC,CAAC,EAAE,kBAAkB,EAAE,GAAG,EAAE,gBAAgB,EAAE,GAAG,GAAI;;AACtD,AAAA,KAAK,CAAC,EAAE,UAAU,EAAE,GAAG,EAAE,aAAa,EAAE,GAAG,GAAI;;AAC/C,AAAA,MAAM,CAAC,EAAE,WAAW,EAAE,IAAI,GAAI;;AAC9B,AAAA,MAAM,CAAC,EAAE,eAAe,EAAE,SAAS,EAAE,UAAU,EAAE,GAAG,GAAI;;AACxD,AAAA,MAAM,CAAC,EAAE,UAAU,EAAE,GAAG,EAAE,UAAU,EAAE,KAAM,GAAE;;AAC9C,AAAA,KAAK,CAAC,EAAE,WAAW,EAAE,IAAI,GAAI"
+}

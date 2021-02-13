@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "about.css",
+	"sources": [
+		"about.scss"
+	],
+	"sourcesContent": [
+		"#platforms p {\n  padding-top: 4px;\n  margin-bottom: -4px;\n}\n\n.platform {\n  display: inline-block;\n  width: 10ch;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,UAAU,CAAC,CAAC,CAAC,EACX,WAAW,EAAE,GAAG,EAChB,aAAa,EAAE,IAAI,GACpB;;AAED,AAAA,SAAS,CAAC,EACR,OAAO,EAAE,YAAY,EACrB,KAAK,EAAE,IAAI,GACZ"
+}

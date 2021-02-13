@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/essayer/assets/css/styles.css">
+  <title>Danny says we're living in a simulation</title>
+</head>
+  <body>
+  <nav>
+    <div id="department">
+      <a href="/essayer/zettel.html">zettelkasten</a>
+    </div>
+    <div id="pages">
+    
+      
+      
+      <a href="/essayer/about.html">About</a>
+    
+      
+      
+      <a href="/essayer/contact.html">Contact</a>
+    
+    <a id="dark-toggle" onclick="toggleDarkMode()" href="#">☯︎</a>
+    </div>
+  </nav>
+  <div class="zettel">
+  <h1>Danny says we're living in a simulation</h1>
+  <div class="zettel-id">202101170144-danny-says-we-re-living-in-a-simulation</div>
+  
+  <div class="main-text">
+  <p id="paragraph-0">The first time I came across Curtis’ thesis in HyperNormalisation [<a class="citation" href="#hypernormalisation">Curtis, 2016</a>], I thought he’d gone off the deep end. He claims that,
+starting in the 70’s, politicians and capitalists have given up on the
+messiness of the real world and have instead substituted and sustained a
+simpler world of their own design. I’d deeply admired Century of the Self [<a class="citation" href="#century-of-the-self">Curtis, 2002</a>], but HyperNormalisation just came across like a
+basket of conspiracy theories cobbled together and served up as social
+critique.</p>
+
+<p id="paragraph-1">I was also reading Baudrillard’s <em>Simulacra and Simulation</em> [<a class="citation" href="#simulacra-and-simulation">Baudrillard, 1981</a>] around the same time and found myself, again,
+irked by puffery. This time, it was from the gratuitous application of terms
+borrowed from technical fields [<a class="citation" href="#citation-needed"><i>Citation Needed</i>, n.d.</a>], which seemed to
+aim more at creating an <em>impression</em> of scientific technique than at
+conducting any sort of rigorous analysis of modern scientific technique / its
+effects in social reality (possibly cf: [<a class="citation" href="#plastic-words">Pörksen, 2004</a>]). I would
+not be surprised, however, if this was a deliberate (if annoying) stylistic
+choice in service of advancing his “post-modern” argument.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p id="paragraph-2">I will concede in both cases, however, that there is probably a tiny kernel of
+truth buried deep, deep underneath the overburden of pretentious terms and
+over-exaggeration. We humans rely on models of the world in order to be able
+to live effectively in it. There is not such a thing as an un-mediated
+reality, and our representations of the world become less discerning as the
+horizon we have to deal with expands outwards (the analysis in <em>Public
+Opinion</em> [<a class="citation" href="#public-opinion">Lippmann, 1922</a>] comes in useful here).</p>
+
+<p id="paragraph-3">On the state level, such representations—of people, of resources—have to be
+systematised in a grid of the state’s making in order to make <em>legible</em>
+everything within its confines, to levy taxes and effect conscription (so as
+to wage wars). The aspects of the world that appear on such representations
+(e.g. census, cadastral surveys, maps) are highly restricted, privileging
+those that are of interest to the state, regardless of the fidelity of such
+representations to the lived reality of the everyperson. [<a class="citation" href="#seeing-like-a-state">Scott, 1998</a>]</p>
+
+<p id="paragraph-4">This reductionist tendency is one I have observed in practice of data science.
+As a younger data scientist, I was baffled whenever more senior colleagues
+would reach automatically for the absolute simplest tools—linear regression,
+logistic regression, those techniques you learn about in the first week of
+introductory machine learning—when conducting analyses of business data. There
+are so many models out there that would be able to give us much more accurate
+predictions, so why are we still sticking to these dinky little elementary
+tools?</p>
+
+<p id="paragraph-5">Well, I soon learned that outside the confines of academia, people cared very
+much about the interpretability of such models, often over and above the error
+metrics academicians so emphasized. People wanted to know more about <em>why</em> the
+model made a certain prediction—for example, why did the model predict that
+this customer would keep their subscription, and that one would churn? Knowing
+the why would enable the business to take action, for example, by ameliorating
+whatever the root causes of customer churn was.</p>
+
+<p id="paragraph-6">On the other hand, complex models, while usually more accurate, were less
+interpretable, with fewer easy explanations of “X factor increases Y outcome”.
+This is known as <a href="https://en.wikipedia.org/wiki/Bonini%27s_paradox">Bonini’s paradox</a>, summed up nicely in <em>The
+Breakdown of Nations</em>:</p>
+
+<blockquote>
+  <p id="paragraph-7">Oblivious of their own inconsistency, some of our modernists point out that
+small states had an easier time of it, being so insignificant in size and
+population. But this is exactly it! Because they were small, they could not
+only solve their problems better than their large counterparts; they could
+do so without the assistance of such brilliant minds as Marx, Schacht,
+Cripps, or Keynes. They did not need to deal with aggregates which, in large
+countries, even statisticians can only guess, and whose meaning even experts
+do not always understand. They could at all times see their economy at their
+feet—open, surveyable, manageable. They did not need to operate on
+assumptions which no one on earth can prove, however great his learning and
+many his degrees.</p>
+
+  <p class="attribution" id="paragraph-8"><a class="citation" href="#breakdown-of-nations">Kohr, 1957/1978, p. 152</a></p>
+</blockquote>
+
+<p id="paragraph-9">Such analyses was not only less actionable to people around the company, they
+can also be perceived as being less trustworthy—nobody likes a black box with
+the potential of yielding arbitrarily wild predictions. And so the simplest of
+models have stayed fast in the toolboxes of data scientists through the years,
+despite the inadequacy of such simple tools and explanations for the task of
+modelling the large complex world we find ourselves having to deal with, and
+despite all the recent advances and hype surrounding deep learning.</p>
+
+<p id="paragraph-10">The attitude I’ve just described—the preference for interpretability over
+accuracy—sits, in some odd ways, on the enlightened end of the spectrum. More
+insidious is when people unquestioningly hail the application of such models
+as some magical silver bullet. This applies to all models, and not just those
+over-hyped specimens from the AI/ML world.</p>
+
+<p id="paragraph-11">“All models are wrong, but some are useful,” is an adage I wish more people
+understood. I’d also hasten to add, “in limited contexts.” Oft quoted is the
+George Box version:</p>
+
+<blockquote>
+  <p id="paragraph-12">… all models are approximations. Essentially, all models are wrong, but
+some are useful. However, the approximate nature of the model must always
+be borne in mind….</p>
+
+  <p id="paragraph-13">George Box</p>
+</blockquote>
+
+<p id="paragraph-14">Timely and germane is the example of how <a href="https://www.wired.com/story/west-coast-california-wildfire-infernos/">wildfires have been handled in
+California</a>.</p>
+
+<blockquote>
+  <p class="tldr" id="paragraph-15">Firefighters used a model of fire spread that worked only under certain
+assumptions of “light surface fuel” which failed as fuel loads in forests
+built up over time due to fire suppression policies</p>
+
+  <p id="paragraph-16">Flammable as it looked, even forests mismanaged like that patch burned until
+recently in the historical way, at low severity along the forest floor. As a
+result, the entire field of wildfire science—including every modeling tool
+with which firefighters make life-or-death decisions and society structures
+itself in fire-prone areas—is based on that kind of fire behavior. The core
+mathematics of this science date to the early 1970s, when a Forest Service
+researcher named Richard Rothermel used small laboratory fires to produce
+equations expressing the relationship between wind speed, ground slope, and
+how fast a fire spreads. Rothermel knew his approach worked properly only
+for wildfire in light surface fuel like that in his lab—and failed to
+capture what happened when blazes got into treetops and jumped
+crown-to-crown. But these so-called Rothermel spread equations were
+applicable to so many wildfires that the Forest Service quickly developed
+paper-and-pencil ways for firefighters to plug in numbers for wind and slope
+angle and make reasonable guesses about how fast and in which direction a
+fire might spread—in a single heading, on a straight line. Eventually that
+modeling framework was run on cumbersome supercomputers, then on handheld
+calculators. In the early 1990s, PC-based software finally allowed
+firefighters to predict fire spread in two dimensions on a map.</p>
+</blockquote>
+
+<ol>
+  <li>Modellers usually know the limitations of their models up front—any model
+requires the acceptance of certain assumptions, the negligence of certain
+terms. Such limitations need to be communicated clearly, especially to
+non-technical end-users, lest the model be over-extended in its
+application. Sometimes, though, when a model becomes <em>too</em> useful, it is
+no longer within the control of the modeller as to where it gets
+applied—and that’s where the trouble starts.</li>
+  <li>There is an understandable, if sometimes damnable universalising tendency
+that undergirds our culture. All models are built on certain sets of
+assumptions, assumptions that are inevitably an encoding of the modeller’s
+own culture and experiences. Even in physics—the models we developed
+first, and indeed are the most sure of, are those of the space- and
+time-scales that we humans have the most direct experience of. To deny the
+limited applicability of models (and especially those outside of the
+“hard” sciences) takes ignorance, arrogance, avarice, sloth, or some
+combination thereof. In California, as in Australia, the accumulated
+wisdom of the natives in managing their dry and fire-prone homelands was
+ignored in favour of the forest management techniques the colonizing
+Europeans brought from their comparatively wetter climes, to horrifying
+consequences.</li>
+</ol>
+
+<p id="paragraph-17">And so, from Curtis: yes, state and bureaucratic machinations necessitate
+simplifying assumptions for their efficient workings. It doesn’t mean there is
+a grand conspiracy starting only in the 70’s that’s engulfed us all today; if
+anything, we’ve been hypernormalised since the birth of the state. Possibly
+before. From Baudrillard: what he calls the precession of simulacra, I call the
+precession of models.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p id="paragraph-18">Apparently, some people were so irked by writing like this they wrote an
+entire book about it [<a class="citation" href="#fashionable-nonsense">Sokal &amp; Bricmont, 1999</a>]. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+  
+    <div class="to-read">
+      <h2>To read</h2>
+      <p id="paragraph-19">
+      
+        <span>[<a class="citation" href="#fashionable-nonsense">Sokal &amp; Bricmont, 1999</a>]</span>
+      
+        <span>[<a class="citation" href="#mismeasure-of-men">Gould, 1981</a>]</span>
+      
+      </p>
+    </div>
+  
+
+  
+  
+    <h2>Bibliography</h2>
+    <div class="essai-bibliography">
+<h5 class="bibliography">Books</h5>
+<div class="bibliography">
+<div>
+<span id="simulacra-and-simulation">Baudrillard, J. (1981). <i>Simulacres et Simulation</i>. Paris: Galilée.</span>
+
+<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/Simulacra_and_Simulation"><span class="wiki">VV</span>  </a>
+
+<span><a href="/essayer/stacks/simulacra-and-simulation.html">✒︎</a></span>
+</div>
+<div>
+<span id="plastic-words">Pörksen, U. (2004). <i>Plastic Words: The Tyranny of a Modular Language</i> (J. Mason &amp; D. Cayley, Trans.). Pennsylvania State University Press.</span>
+
+
+
+<span><a href="/essayer/stacks/plastic-words.html">✒︎</a></span>
+</div>
+<div>
+<span id="public-opinion">Lippmann, W. (1922). <i>Public Opinion</i>. New York: Harcourt, Brace &amp; Co.</span>
+
+<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/Public_Opinion_(book)"><span class="wiki">VV</span>  </a>
+
+<span><a href="/essayer/stacks/public-opinion.html">✒︎</a></span>
+</div>
+<div>
+<span id="seeing-like-a-state">Scott, J. C. (1998). <i>Seeing Like a State:
+               How Certain Schemes to Improve the Human Condition Have Failed</i>. New Haven, CT: Yale University Press.</span>
+
+<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/Seeing_Like_a_State"><span class="wiki">VV</span>  </a>
+
+<span><a href="/essayer/stacks/seeing-like-a-state.html">✒︎</a></span>
+</div>
+<div>
+<span id="breakdown-of-nations">Kohr, L. (1957/1978). <i>The Breakdown of Nations</i>. New York: Dutton.</span>
+<span class="cw"><u>⚠︎</u><span class="cw-text"> dated/offensive vocabulary</span></span>
+
+
+<span><a href="/essayer/stacks/breakdown-of-nations.html">✒︎</a></span>
+</div>
+<div>
+<span id="fashionable-nonsense">Sokal, A. D., &amp; Bricmont, J. (1999). <i>Fashionable Nonsense:
+               Postmodern Intellectuals’ Abuse Of Science</i>. New York: St. Martins Press.</span>
+
+
+
+<span><a href="/essayer/stacks/fashionable-nonsense.html">✒︎</a></span>
+</div>
+<div>
+<span id="mismeasure-of-men">Gould, S. J. (1981). <i>The Mismeasure of Man</i> (1st ed). New York: Norton.</span>
+
+
+
+<span><a href="/essayer/stacks/mismeasure-of-men.html">✒︎</a></span>
+</div>
+</div>
+<h5 class="bibliography">Documentaries</h5>
+<div class="bibliography">
+<div>
+<span id="hypernormalisation">Curtis, A. (2016). <i>HyperNormalisation</i>. BBC.</span>
+
+<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/HyperNormalisation"><span class="wiki">VV</span>  </a>
+
+<span><a href="/essayer/stacks/hypernormalisation.html">✒︎</a></span>
+</div>
+<div>
+<span id="century-of-the-self">Curtis, A. (2002). <i>The Century of the Self</i>. BBC.</span>
+
+<a class="anchor-wiki" href="https://en.wikipedia.org/wiki/The_Century_of_the_Self"><span class="wiki">VV</span>  </a>
+
+<span><a href="/essayer/stacks/century-of-the-self.html">✒︎</a></span>
+</div>
+</div>
+<h5 class="bibliography">Miscellaneous</h5>
+<div class="bibliography"><div>
+<span id="citation-needed"><i>citation needed</i>.</span>
+
+
+
+<span><a href="/essayer/stacks/citation-needed.html">✒︎</a></span>
+</div></div>
+</div>
+  
+
+  
+  
+  </div>
+</div>
+
+  <script type="text/javascript" src="/essayer/assets/js/darkMode.js">
+  </script>
+  </body>
+</html>
